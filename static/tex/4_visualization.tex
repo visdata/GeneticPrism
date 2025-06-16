@@ -1,0 +1,134 @@
+\section{Visualization}
+\label{sec:Vis}
+
+\begin{figure*}[tb]
+  \centering
+  \includegraphics[width=\textwidth]{figs/GeneticPrismV6.png}
+  \caption{%
+  	GeneticPrism design and its alternatives: (a) GeneticPrism top view utilizing a polygon chord diagram; (b) GeneticPrism side view utilizing a topic-specific GF graph; (c), (d), and (e) are alternative designs to GeneticPrism.%
+  }
+  \label{fig:GeneticPrism}
+\end{figure*}
+
+Over GF analytics and topic modeling, we propose a coordinated multi-view design to illustrate the scientific impact evolution of key scholars and academic venues. As shown in \rfig{GeneticPrismSystem}, the interface is composed of five panels: a visualization controller to config the entire system (\rfig{GeneticPrismSystem}(a)), a demographics panel to display statistics of the current scholar (\rfig{GeneticPrismSystem}(b)), a topic interaction panel to present high-level citation influence patterns among topics (\rfig{GeneticPrismSystem}(c)), a paper list panel to detail high-impact papers of that scholar (\rfig{GeneticPrismSystem}(e)), and finally the main panel in the middle to visualize GF graphs. In the default overview mode, the GeneticPrism visualization is displayed (\rfig{GeneticPrismSystem}(d)); in the other per-topic mode, the main panel will switch to the GeneticScroll visualization (\rfig{GeneticScroll}(a)).
+
+%\emph{GeneticPrism} consists of two integrated visualization to facilitate the tasks in Section 3.2: \rfig{GeneticPrismSystem}(d) GenticPrism for global view and \rfig{GeneticPrismSystem}(c) GeneticSroll for focused view. The global view employs the prism metaphor, allowing users to rotate the prism to see different facets, each representing a different aspect of an author research topics. The focused view uses the scroll metaphor, enabling users to expand and delve into detailed visualizations of specific topics, much like unrolling a scroll to reveal intricate details.
+
+\subsection{GeneticPrism}
+
+The global view (GeneticPrism, \rfig{GeneticPrism}) is designed to provide users with an overall understanding of the data (T1) and the primary flow between topics(T3). The top view (\rfig{GeneticPrism}(a)) adopts a polygon-shaped chord diagram illustrating the flow and influence between topics, while the side view (\rfig{GeneticPrism}(b)) shows the GF graph for each topic.
+
+With its monument-like shape, GeneticPrism symbolizes the lasting and impactful nature of the author's contributions. Each face of the prism represents a specific topic, with the top view's chord diagram highlighting the intricate and interconnected relationships between these topics. The side view's GF graph provides a temporal perspective, illustrating how these contributions evolve and influence over time. This metaphor encapsulates the stability and enduring significance of scholarly achievements, portraying them as inscriptions that withstand the test of time and continually influence the academic landscape.
+
+In the side view, we employ a hierarchical layout algorithm to arrange the paper nodes, assigning each node to a layer corresponding to its publication year. Structured hierarchically with time as the primary axis, it provides a clear temporal analysis of a scholar's impact. Since the layers are predefined, we bypass the layering step and proceed directly to node reordering and coordinate assignment. To layout the extension edges between papers, we add dummy nodes at each layer to ensure that edges only connect to nodes in adjacent layers. Each edge is drawn as a third-order Bezier curve for smooth and aesthetic visualization. Users can click on directed edges to access the citation context. To minimize edge crossings, nodes within the same layer are rearranged using a Sugiyama-style algorithm. We implement our layout algorithm using the popular GraphViz package with the dot command.
+
+These topic GF graphs are displayed on the sides of the prism, adhering to the hierarchical layout algorithm and using publication time as the hierarchical axis. They share the same Y-axis (time axis) and the same height of the prism. Therefore, earlier papers appear towards the top of the prism, while later papers are positioned towards the bottom. This side view visualization leverages the prism metaphor to its fullest advantage. Each facet of the prism represents the scholarly journey of an individual author within a specific topic, creating a multifaceted view of academic impact (T2). The hierarchical arrangement based on publication time enables users to observe the evolution of research contributions over time.
+
+\paragraph{Alternative Design} Emphasizing the use of a hierarchical layout is crucial for our visualization. The loss or reduction of layered information impacts the clarity and effectiveness of the GF graph. We explored several alternative designs:
+
+\begin{itemize}
+    \item \emph{Force-directed layout}: in \rfig{GeneticPrism}(c), a force-directed layout based on physical rules minimizes edge crossings and optimizes space usage. However, without year information, the overall flow and temporal progression of the scholar's work are obscured, making it difficult to discern the research evolution.
+    \item \emph{GF graph without year constraints}: in \rfig{GeneticPrism}(d), when the hierarchical layout does not consider publication years, the graph depth equals the maximum distance in the directed graph. For typical GF graphs, citation chains rarely exceed five, resulting in overly wide, disproportionate visuals. This demonstrates that year information contributes to a more aesthetically pleasing layout.
+    \item \emph{Full GF graph}: in \rfig{GeneticPrism}(e), This layout constrains nodes to specific years while applying force-directed principles. In large graphs, the layout fails to converge due to topic node density, leading to excessive jittering. The density constraint also results in numerous edge crossings, reducing the intuitive clarity provided by the GF graph.
+\end{itemize}
+
+These alternative design attempts highlight the irreplaceable advantages of the GeneticPrism: clear temporal hierarchy, intuitive research flow, and efficient space utilization. As the name suggests, the GeneticPrism is visually appealing and effectively conveys the continuous and flowing nature of scholarly impact.
+
+\paragraph{Interaction}
+
+The GeneticPrism visualization supports the following interaction modes:
+
+\begin{itemize}
+    \item \emph{Configuration}: In \rfig{GeneticPrismSystem}(a), we provide three sliders to control the thresholds for core papers, extended citations, and topic similarity, allowing users to filter the data displayed in the graph. Additionally, users can adjust the granularity of the year, central edge weight, edge bundling, and node shape to customize visualization preferences.
+
+    \item \emph{Rotate}: By clicking and dragging with the left mouse button, users can rotate the prism 360 degrees. By default, a 30-degree tilted view is employed, enabling simultaneous visibility of both the top and side views. The prism rotates around its center at a rate of one degree per frame, helping highlight different aspects of the data and making it easier to understand the overall structure and flow.
+
+    \item \emph{Pan and Zoom}: By clicking and dragging with the right mouse button, users can pan the prism, shifting its position within the view. By using the middle mouse button, users can zoom in or out, adjusting the distance to the prism for a better view.
+
+    \item \emph{Switch View}: By clicking the "Show Detail" button, users can enter the focused view (GeneticScroll) of a target topic. By clicking "Hide Detail," users can return to the global view (GeneticPrism).
+
+\end{itemize}
+
+
+\subsection{Topic Chord Diagram}
+
+% \sunye{TODO: Chord diagram new design description}
+% \sunye{TODO: Topic color scheme using Color Brewer Qualitative Set3}
+
+The chord diagram is a powerful visualization tool used to represent inter-relationships between data points in a matrix format. As shown in \rfig{GeneticPrismSystem}(b), it employs a circular layout where arcs represent nodes and chords represent flow between nodes, with the length and thickness of the chords indicating the strength and direction of these relationships. The top view of GeneticPrism uses a polygon-shaped chord diagram (\rfig{GeneticPrismSystem}(c)), transforming the traditional circular layout into an inscribed polygon design to align with the prism visualization framework. We employ masking techniques to replace circular arcs with polygon fringes and adjust the chord endpoints to connect segments of these fringes while preserving the inherent meaning of the chord diagram.
+
+In our application (\rfig{GeneticPrism}(a)), we focus on the flow between different topics, where each arc represents a topic and each chord represents the bi-directional flow between topic \(T_i\) and topic \(T_j\). These topics are denoted as \(T_1, T_2, \ldots, T_t\). The angle of an arc is proportional to the total efflux of papers within that topic. The thickness of the arc is proportional to the total number of papers within that topic, denoted as size(\(T_i\)). The angle of the bi-directional chord between topic \(T_i\) and topic \(T_j\) is proportional to the efflux from \(T_i\) to \(T_j\) and vice versa, given by \requ{efflux}.
+
+\begin{equation}
+\begin{aligned}
+efflux(T_i, T_j) = | \{ e_{kl} \mid e_{kl} \in E, &v_k \in V(T_i) \wedge v_k \notin V(T_j) \wedge \\
+&v_l \in V(T_j) \wedge v_l \notin V(T_i) \} |
+\end{aligned}
+\label{eq:efflux}
+\end{equation}
+
+
+In this formula, the efflux from topic \(T_i\) to topic \(T_j\) is the number of edges where the source node belongs to \(T_i\) but not to \(T_j\), while the target node belongs to \(T_j\) but not to \(T_i\). Since the angle of the arc for each topic is proportional to the total efflux, angles are comparable across different arcs. By comparing the angles of the bi-directional flow, we can clearly observe the influence difference between topics \(T_i\) and \(T_j\). If one side is wider than the other, it indicates a greater influence from one topic to the other. The highlighted flows in the diagram show topics that have significant mutual influence.
+
+To enhance visual clarity and aesthetic appeal, we employed the Color Brewer Qualitative Set3 color scheme, which not only resonates with the visual metaphor of a prism refracting light into a spectrum of colors but also makes it easier to distinguish between different topics. The top three topics, often the most important for a scholar, are distinguished with the most easily recognizable colors: orange, light teal, and pink.
+
+Interactive features have been added to the chord diagram. Hovering over a node displays the interactions of the respective topic, while hovering over a ribbon reveals the source and target topics along with the corresponding flow quantities.
+
+The chord diagram provides a high-level overview of topic interactions, allowing users to discern whether a topic primarily influences others or is more influenced by them. The width of the ribbons indicates the proportion of influx or efflux for each topic, offering insights into the dynamics of topic flows.
+
+
+\subsection{GeneticScroll}
+
+\begin{figure}[tb]
+  \centering
+  \includegraphics[width=\columnwidth, clip, trim=10pt 10pt 10pt 10pt]{figs/GeneticScrollV5.png}
+  \caption{%
+  	GeneticScroll design and its alternatives. (a) GeneticScroll, composed of a central topic-specific GF graph with influx/efflux flow map, flanked by influx/efflux streamgraphs on both sides, and influx/efflux bars on the top and bottom. (b) and (c) show two alternative designs that were found to be cluttered and chaotic due to an excess of visual elements, making it difficult to discern flow patterns.%
+  }
+  \label{fig:GeneticScroll}
+\end{figure}
+
+The focused view, termed GeneticScroll (\rfig{GeneticScroll}), is designed for detailed exploration of a single topic (T2) and the detailed flow to and from the topic (T3). The main body displays the topic-specific GF graph with an influx/efflux flow map. Streamlined borders on either side of the main body use streamgraphs to show the statistics of influx and efflux of the topic across years, while bars at the top and bottom display the proportions of each topic's influx and efflux, corresponding to the left and right streamgraphs.
+
+Resembling a traditional scroll painting, GeneticScroll conveys the detailed and unfolding narrative of the author's contributions to a specific topic. The topic-specific GF graph in the main body represents the comprehensive and continuous development of ideas and the influence and impact of each paper. The flow map symbolizes the dynamic flow of influences, illustrating how various topics impact the central papers, while the streamgraph borders depict the changes of influence over time. This metaphor emphasizes the journey-like nature of academic research, where contributions are seen as part of an ongoing story, richly detailed and evolving. The entire scroll resembles a landscape painting, recording the evolution of the topic (T2) and illustrating the detailed influences of other topics (T3). The influx streamgraph on the left decomposes into multiple flows, passing through the central village (the topic-specific GF graph), where some flows terminate, and new ones are generated. These newly generated flows gradually converge, ultimately flowing into the efflux streamgraph on the right. This visual metaphor forms a highly intuitive and meaningful representation, capturing the essence of a topic's evolution and its interactions with other topics.
+
+\paragraph{Influx/Efflux Streamgraph}
+The streamgraph, a visual representation of data flow over time, is used to show the influx and efflux of topics. Embedded in the main body’s sides (\rfig{GeneticScroll}-A2, A4), the streamgraphs illustrate how the influence of various topics on the current topic changes over time. Topics with the greatest overall impact are drawn nearest the center, with others radiating outward.
+
+Connecting the main body at the top and bottom are the influx bar (\rfig{GeneticScroll}-A1) and efflux bar (\rfig{GeneticScroll}-A3), which provide an overview of the total influence of each topic on the current topic. The bar lengths are proportional to the influence, aligning from left to right. This design allows users to grasp the influence of each topic at a macro level, echoing the scroll bar's visual metaphor as a starting and ending point.
+
+In practice, since the source points influencing the central topic are often from earlier times, and the target points influenced by the central topic are usually from later times, the streamgraph tends to display a left-high, right-low trend. This visual form reflects the data's inherent properties.
+
+\paragraph{Six Degree of Impact Metaphor} In GeneticScroll, nodes are designed using regular hexagons to symbolize the multidirectional influence and impact of each paper. These hexagons come in three sizes based on the number of citations: the smallest hexagons represent papers with fewer than 50 citations, medium hexagons represent papers with citations between 50 and 100, and the largest hexagons represent papers with more than 100 citations. The citation count is displayed as a number in the center of the hexagon.
+
+To address the need for visualizing interdisciplinary research, we use multi-layered hexagon colors. In GeneticScroll for a given topic \( T_i \), each hexagon can have up to three layers: the outer layer represents influx topic (other topics influencing the current paper, and the paper has this topic), the middle layer corresponds to the current topic \( T_i \); the inner layer indicates efflux topic (the current paper influencing other topics, and the paper has this topic). If there are multiple topics that meet the criteria for the inner and outer layers, the topic with the highest similarity is chosen. The areas of these regions follow Steven's law, where the area of each region is proportional to the 0.7th power of the similarity between the paper and the corresponding topic.
+
+We call this visual encoding "Six Degree of Impact Metaphor." It accurately represents the interdisciplinary impact of papers, identifying key papers in the process of topic interaction and influence. This method enables a clear and nuanced understanding of the cross-disciplinary significance and the pivotal role of influential papers within the research landscape.
+
+\paragraph{Topic-specific GF graph with flow map} consists of two layers: the bottom layer is the influx/efflux flow map, and the top layer is the topic-specific GF graph. These two layers coexist seamlessly through an effective layout algorithm that prevents visual conflict and retains most of the useful information.
+
+First, the topic-specific GF graph represents the main structure of the topic, using high-saturation nodes and darker solid lines, which are clearly distinguishable from the background flow map. This ensures that the primary information of the topic is prominently displayed.
+
+Second, to consider the influence of other topics on the central topic, we use the flow map as the background layer. These flow maps cleverly avoid the nodes, and intersections with existing edges are minimized. The layout of the flows includes those moving from the left side to the central nodes and from the central nodes to the right side. These flows originate from a single source point and spread to multiple nodes, with the thickness of the flows proportional to the number of citations. For aesthetic purposes, the target points on the right axis are adjusted, converging into an efflux on the right axis.
+
+\paragraph{Interaction}
+
+The GeneticScroll visualization supports the following interaction modes:
+
+\begin{itemize}
+\item \emph{Pan and Zoom}: By clicking and dragging with the left mouse button, users can pan the scroll, shifting its position within the view. By using the middle mouse button, users can zoom in or out, adjusting the size of the scroll.
+\item \emph{Highlight Paper/Extension}: By clicking on nodes and edges within the topic-specific GF graph, users can display specific paper or citation information in panel Fig.1(f). We display the paper's title, core paper probability, venue, year, citation count, topics, and abstract; for extensions, we show the extend probability, cited paper, citing paper, and citation context.
+
+\item \emph{Highlight Flow}: Users can interact with the influx/efflux streamgraph/bar to see the influence of other topics over time. When hovering over a specific topic's streamgraph or bar, not only the overall/yearly influx/efflux of the topic will be shown, but also the flow map of the topic will overlay the context flow map, highlighted in red. Clicking on a stream will move the streamgraph of the topic to the edge of the scroll and display papers that influence or are influenced by the topic. Clicking on the icon will reveal detailed information about the papers.
+\end{itemize}
+
+\paragraph{Alternative Design}
+
+We considered two alternative designs, which provided valuable insights for refining GeneticScroll:
+
+\begin{itemize}
+    \item \emph{Topic-specific GF Graph with Gourds}: This design placed a topic GF graph at the center, with strings of gourd-like shapes on the left and right, each representing a topic. Each gourd in the string was a pie chart for the topic in a particular year, directly connected to the central nodes. However, the layout was cluttered, with many overlapping lines, making it difficult to discern the connections.
+    \item \emph{Topic-specific GF Graph with Stacked Bar Chart}: This design split the incoming and outgoing edges into left and right layouts, with stacked bar charts representing papers influencing the central topic. Each bar was directly connected to the central node, showing the influence of each paper. Although this layout highlighted inflow and outflow patterns, it suffered from excessive visual elements and many overlapping edges, making the central layout difficult to interpret.
+\end{itemize}
+
+Based on these alternatives, we considered the impact of context edges on the central graph layout, integrating the context edges with the topic GF graph to design the influx-efflux-enhanced Hierarchical layout algorithm, achieving a refined and comprehensible visualization in GeneticScroll. 

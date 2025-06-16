@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FR7K2YVNR"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-9FR7K2YVNR'); </script>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/src/image/favicon.ico" type="image/x-icon"/>
+    <title>3D Prism Visualization</title>
+    <link rel='stylesheet' type='text/css' href="/src/css/style.css">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); */
+            /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
+            background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+        }
+        canvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+            overflow: visible;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <script src="/src/js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/exporters/GLTFExporter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gif.js@0.2.0/dist/gif.js"></script>
+    
+    <script src="/src/js/d3.min.js"></script>
+    <script src="/src/js/d3-tip.js"></script>
+    <script src="/src/js/d3-hsv.min.js"></script>
+    <script src="/src/js/viz-standalone.js"></script>
+    <script src="/src/js/viz-context.js"></script>
+
+    <script src="/src/js/download-svg.js"></script>
+    <script src="/src/js/mygraph.js"></script>
+    <script src="/src/js/load-data.js"></script>
+    <script src="/src/js/prism.js"></script>
+    <script src="/src/js/index.js"></script>
+
+</head>
+<body>
+    <select id="remove-survey" class="form-select" name="removeSurvey" style="display: none;">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select>
+    <select id="mode" class="form-select" name="mode" style="display: none;">
+        <option value="0">No</option>
+        <option value="2">Partial</option>
+        <option value="1">Yes</option>
+    </select>
+
+    
+    <div id="draw-area" style="display: grid; width: 900px; height: 860px; position: relative; ">
+        <div style="z-index: 9; position: absolute; top: 5px; right: 10px;">
+            <button id="restore" class="icon-button" data-tooltip="Refresh"><i class="fa-solid fa-rotate-right icon"></i></button>
+            <button id="recreate" class="icon-button" data-tooltip="Create GIF and Download"><i class="fa-solid fa-video icon"></i></button>
+            <button id="full-visualization" class="icon-button" data-tooltip="Go to Full Visualization"><i class="fa-solid fa-house"></i></button>
+            <button id="save" class="icon-button" data-tooltip="Download GIF"><i class="fa-solid fa-arrow-down icon"></i></button>
+            <button id="saveall" class="icon-button" data-tooltip="Download SVG"><i class="fa-solid fa-download icon"></i></button>
+        </div>
+        <div id="field" style="text-align: center; color: #054863; position: absolute; top: 50px; font-size: 32px; width: 100%; z-index: 9; "></div>
+        
+    
+        <div id="prismWebGL" style="height: 100%;"></div>
+        <div id="mainsvg" style="height: 100%; display: none;"></div>
+        <div id="tagcloud" style="position: absolute; height: 18%; width: 100%; bottom: 0px;"></div>
+    </div>
+    
+<script>
+
+$('#save').click(downloadExistingGif)
+$('#recreate').click(generateGifFromRotation)
+$("#full-visualization").click(function() {
+    window.location.href = `/index?field=${fieldType}&id=${authorID}`;
+})
+$("#saveall").click(saveall);
+$("#restore").click(function() {
+    $("#mainsvg").hide();
+    $("#prismWebGL").show();
+    $("#field").show();
+    rotationSpeed = defaultRotationSpeed;
+});
+
+$(function () {
+    /* 系统说明图片状态：0为前端没有图片，1为前端有且正在展示图片 */   
+    image_status = false;
+    image_data = "";
+    authorID = "{{ authorID }}";
+    name = "{{ name }}";
+    fields = {{ fields|safe }};
+    fieldType = "{{ fieldType }}";
+    paperCount = "{{ paperCount }}";
+    authorName = "{{ name }}";
+    download = "{{ download }}";
+    node_prob = "{{ node_prob }}";
+    edge_prob = "{{ edge_prob }}";
+    nodeSlider = null;
+    edgeSlider = null;
+    topicSlider = null;
+    rangeSlider = null;
+    downloadAbled = true;
+    
+    let fields_dic = {}
+    fields.forEach(d => {
+        fields_dic[d[0]] = d
+    });
+    fields = fields_dic;
+    
+    d3.json(`/src/config.json`).then(data => {
+        config =  data['default'];
+        $('#remove-survey').value = config['remove_survey'];
+        $('#mode').value = config['remove_isolated'];
+
+        let fieldName = fieldType == 'domain'? authorID: fieldType;
+        if (fieldName in data) {
+            Object.assign(config, data[fieldName])
+        }
+        if (node_prob !== -1) config["node_prob"] = node_prob;
+        if (edge_prob !== -1) config["edge_prob"] = edge_prob;
+        const fieldlabel = data[fieldName].name;
+        $("#field").text(`${authorName} (${fieldlabel})`);
+        // onclick, hidden the #field
+        $("#field").click(function() {
+            $(this).hide();
+        });
+
+        Viz.instance().then(function(v) {
+            VizContext.instance().then(function(vc) {
+                viz = v;
+                vizContext = vc;
+                d3.json(`/src/json/${fieldType}/${authorID}.json`).then(data => {
+                    authorData = data;
+                    visType = $("#vis-type").val();
+                    
+                    loadGlobalData(node_prob, edge_prob);
+                    drawPrism(global_paper_field);
+                });
+            });
+        })
+    })
+});
+
+
+</script>
+</body>
+</html>

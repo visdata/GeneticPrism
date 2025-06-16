@@ -1,0 +1,160 @@
+{
+    "default": {
+        "remove_survey": "1",
+        "remove_isolated": "0",
+        "node_prob": 0.5,
+        "edge_prob": 0.5,
+        "topic_prob": 0.55,
+        "node_width": 10,
+        "help_link": "https://n.genetic-flow.com/gallery/GFVis/GeneticFlow2.0UserManual.pdf"
+    },
+    "VCG": {
+        "name": "VR, Graphics, and VIS",
+        "icon": "fa-solid fa-cubes icon",
+        "description": "Visual Reality, Computer Graphics and Visualization",
+        "type": "CS Subfield",
+        "papers": 399623,
+        "authors": 12089,
+        "links": 466525,
+        "topic": 168
+    },
+    "NLP": {
+        "edge_prob": 0.4,
+        "name": "NLP",
+        "icon": "fa-solid fa-pencil icon",
+        "description": "Natural Language Processing",
+        "type": "CS Subfield",
+        "papers": 193431,
+        "authors": 10043,
+        "links": 227685,
+        "topic": 153
+    },
+    "visualization": {
+        "name": "Visualization",
+        "icon": "fas fa-eye icon",
+        "type": "CS Subfield",
+        "papers": 75813,
+        "authors": 5015,
+        "links": 88669,
+        "topic": 70
+    },
+    "Security": {
+        "name": "Computer Security",
+        "icon": "fa-brands fa-microsoft icon",
+        "type": "CS Subfield",
+        "papers": 233903,
+        "authors": 10795,
+        "links": 212741,
+        "topic": 175
+    },
+    "ACMFellow": {
+        "name": "ACM Fellows",
+        "icon": "fas fa-user-graduate icon",
+        "description1": "Fellows of the ACM (20250106 version)",
+        "question": "Some scholars in the original award list are not included as their major contributions are not presented as scientific publications or they do not focus on the computer science area.",
+        "year": "fellowYear",
+        "type": "Top Scholar",
+        "papers": 423805,
+        "authors": 1335,
+        "links": 845021,
+        "topic": 348
+    },
+    "turing": {
+        "name": "Turing Award Winners",
+        "icon": "fas fa-user-graduate icon",
+        "description1": "ACM Turing Award Winners (20250106 version)",
+        "description": "Some scholars in the original award list are not included as their major contributions are not presented as scientific publications or they do not focus on the computer science area.",
+        "question": "Some scholars in the original award list are not included as their major contributions are not presented as scientific publications or they do not focus on the computer science area.",
+        "year": "turingYear",
+        "type": "Top Scholar",
+        "papers": 17512,
+        "authors": 69,
+        "links": 31770,
+        "topic": 348
+    },
+    "CG": {
+        "name": "Graphics",
+        "icon": "fa-brands fa-codepen icon",
+        "description": "Computer Graphics",
+        "type": "CS Subfield",
+        "papers": 80607,
+        "authors": 5370,
+        "links": 76891,
+        "topic": 77
+    },
+    "CA": {
+        "name": "Computer Architecture",
+        "icon": "fa-solid fa-database icon",
+        "type": "CS Subfield",
+        "papers": 621720,
+        "authors": 20360,
+        "links": 739401,
+        "topic": 216
+    },
+    "SE": {
+        "name": "Software & Programming Language",
+        "icon": "fa-brands fa-microsoft icon",
+        "type": "CS Subfield",
+        "papers": 284180,
+        "authors": 12588,
+        "links": 397215,
+        "topic": 140
+    },
+    "HCI": {
+        "name": "Human-Computer Interaction",
+        "icon": "fa-solid fa-display icon",
+        "type": "CS Subfield",
+        "papers": 153540,
+        "authors": 5195,
+        "links": 183118,
+        "topic": 98
+    },
+    "CN": {
+        "name": "Networking & Parallel/Distributed/Real-time/Embedded Computing",
+        "icon": "fa-solid fa-network-wired icon",
+        "type": "CS Subfield",
+        "papers": 1061232,
+        "authors": 20471,
+        "links": 1350751,
+        "topic": 287
+    },
+    "database": {
+        "name": "Database & Data Science",
+        "icon": "fa-solid fa-database icon",
+        "type": "CS Subfield",
+        "papers": 226238,
+        "authors": 12702,
+        "links": 195713,
+        "topic": 153
+    },
+    "TA": {
+        "name": "Theory & Algorithms",
+        "icon": "fa-solid fa-paper icon",
+        "question": "Most papers in this field are in alphabetical author order, so that the \"core paper\" computation in this field may not be accurate.",
+        "type": "CS Subfield",
+        "papers": 774777,
+        "authors": 24570,
+        "links": 894961,
+        "topic": 271
+    },
+    "AI": {
+        "name": "Artificial Intelligence at Large",
+        "icon": "fa-solid fa-robot icon",
+        "type": "CS Subfield",
+        "papers": 4836561,
+        "authors": 54637,
+        "links": 8420229,
+        "topic": 497
+    },
+    "graphdrawing": {
+        "name": "Graph Drawing Conference",
+        "icon": "fa-solid fa-chart-area icon",
+        "type": "Domain",
+        "log2_citationCount": 4,
+        "edge_prob": 0.7,
+        "papers": 1703,
+        "authors": 2120,
+        "links": 3128,
+        "topic": 28
+    }
+}

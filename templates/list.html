@@ -1,0 +1,274 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FR7K2YVNR"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-9FR7K2YVNR'); </script>
+    <title>List</title>
+    <link rel="icon" href="/src/image/favicon.ico" type="image/x-icon"/>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/src/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="/src/css/style.css" rel='stylesheet' type='text/css' />
+    <link href="/src/css/all.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="/src/js/jquery.min.js"></script>
+    <script src="/src/js/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- background-color: #cedfe6; -->
+    <div class="container-fluid" style="min-height: 100vh; background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);">
+        <div class="navigation" style="background-color: #054863; padding-bottom: 2%; padding-top: 2%;">
+            <div class="logo" style="margin-left: 8%;">
+                <!--h1><span>G</span>eneticFlow</h1-->
+                <a href="/"><img src="/src/image/logo-index.jpg" width="330" height="77"></a>
+                <div id="field" style="display: inline-block;"><h1></h1></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="banner-info" style="margin-left: 8%;">
+            <nav id="nav-pagination" aria-label="Page navigation" style="margin-top: -0.5%; margin-bottom: -1%;">
+                <ul class="pagination" id="pagination"></ul>
+            </nav>
+            <table class="table" style="float: left; width: 95%; box-shadow:5px 5px 5px rgba(0, 0, 0, 0.5),-5px 5px 5px rgba(0, 0, 0, 0.5);">
+                <thead>
+                    <tr id="tableHeaderRow">
+                        <th></th>
+                        <th>Scholar Name</th>
+                        <th id="paperCount">Paper Count</th>
+                        <th id="citations">Paper Citations</th>
+                        <th id="h-index"  class="asc">h-index</th>
+                        <th id="corePaperCount">Core Paper Count</th>
+                        <th>Core Paper Citations</th>
+                        <th>Core h-index</th>
+                        <th id="year"></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <script>
+        let setting;
+        function compare(index, sortType) {
+            return function(row1, row2) {
+                var aValue = row1[index];
+                    bValue = row2[index];
+                if (index == "name" || index == "fellow") {
+                    if (sortType == 'asc') return aValue > bValue ? 1 : aValue < bValue ? -1 : 0;
+                    else return aValue > bValue ? -1 : aValue < bValue ? 1 : 0;
+                }
+                else {
+                    aValue = parseInt(aValue);
+                    bValue = parseInt(bValue);
+                    return sortType == 'desc' ? aValue - bValue : bValue - aValue;
+                }
+            }
+        }
+        function findMatch(str) {
+            const pattern = /\b1:(\d+),/; // 正则表达式，匹配模式 "1:xxx,"
+            const match = str.match(pattern);
+            return match ? match[1] : ''; // 返回匹配的数字部分，如果没有匹配则返回 null
+        }
+
+        function findNumberAfterPattern(str, pat=10) {
+            // 正则表达式用于匹配 pat 变量后面的数字，可以是 "^pat:" 或 ",pat:"
+            var regex = new RegExp('(?:^|,)' + pat + ':(\\d+)');
+            var match = regex.exec(str);
+
+            // 如果找到匹配项，则返回匹配的数字，否则返回 null
+            return match ? match[1] : 0;
+        }
+
+        function displayData(page) {
+            $('table tbody').empty();
+            const startIndex = (page - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            
+            // 检查是否需要插入 Field 列
+            if (fieldType == 0 && !$('#fieldHeader').length) {
+                // 插入表头中的 Field 列
+                $('<th id="fieldHeader">Field</th>').insertAfter('#tableHeaderRow th:nth-child(1)');
+            }
+            
+            for (let i = startIndex; i < endIndex && i < scholarList.length; i++) {
+                let scholar = scholarList[i];
+                var fellowStr = setting['year'] ? `<td>${scholar[setting['year']]}</td>` : '';
+                // 如果 fieldType 是 None，插入 Field 列
+                var fieldColumn = fieldType == 0 ? `<td>${setting[scholar["field"]]["name"]}</td>` : '';
+                var field = fieldType == 0 ? scholar["field"] : fieldType;
+                
+                var content = `
+                    <tr>
+                        <td>${i + 1}</td>
+                        ${fieldColumn}
+                        <td>${scholar["original"] || scholar["name"]}</td>
+                        <td>${scholar["paperCount"]}</td>
+                        <td>${scholar["citationCount"]}</td>
+                        <td>${scholar["hIndex"]}</td>
+                        <td>${scholar["corePaperCount"]}</td>
+                        <td>${scholar["coreCitationCount"]}</td>
+                        <td>${scholar["corehIndex"]}</td>${fellowStr}
+                        <td style="padding: 2px; min-width: 80px;">
+                            <a href="/prism?field=${field}&id=${scholar["authorID"]}&download=3" target="_blank" style="font-size: 16px; padding: 6px 10px; text-decoration: none; display: inline-block;">
+                                ⬇️ GIF
+                            </a>
+                        </td>
+                        <td style="padding: 2px; min-width: 80px;">
+                            <a href="/prism?field=${field}&id=${scholar["authorID"]}&download=2" target="_blank" style="font-size: 16px; padding: 6px 10px; text-decoration: none; display: inline-block;">
+                                ⬇️ PIC
+                            </a>
+                        </td>
+                        <td style="padding: 2px; min-width: 80px;">
+                            <a href="/index?field=${field}&id=${scholar["authorID"]}" target="_blank" style="font-size: 16px; padding: 6px 10px; text-decoration: none; display: inline-block;">
+                                🖼️ VIS
+                            </a>
+                        </td>
+
+
+                        
+                    </tr>`;
+                $('table tbody').append(content);
+                // 备用emoji: 👁️‍🗨️👁️
+            }
+        }
+
+
+        function displayPagination() {
+            const totalItems = scholarList.length;
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            for (let i = 1; i <= totalPages; i++) {
+                const listItem = $('<li class="page-item"></li>');
+                const link = $('<a class="page-link" href="#">' + i + '</a>');
+                link.click(function (e) {
+                    e.preventDefault();
+                    displayData(i);
+                });
+                listItem.append(link);
+                if (totalPages == 1) {
+                    $('#nav-pagination').remove();
+                    break;
+                }
+                $('#pagination').append(listItem);
+            }
+            displayData(1);
+        }
+
+        function createList() {
+            itemsPerPage = 1000;    // 每页显示的数据数量
+            scholarList = {{ scholarList|safe }};
+            fieldType = "{{ fieldType }}";
+            searchName = "{{ name }}";
+            
+            
+            if (setting.hasOwnProperty('year')) {
+                scholarList.forEach(scholar => {
+                    scholar['turingYear'] = findNumberAfterPattern(scholar["fellow"]);
+                    scholar['fellowYear'] = findNumberAfterPattern(scholar["fellow"], 1);
+                })
+                let content = setting['year'].replace('fellow', 'Fellow ').replace('turing', 'Turing ').replace('Fellow Year', 'ACM Fellow');
+                document.getElementById('year').innerHTML = content;
+            }
+
+            var fieldlabel, questionContent, imgHeight;
+            fieldlabel = fieldType == 0 ? "All Fields": setting.name;
+            if (searchName && searchName!='None') fieldlabel += ' - ' + searchName;
+            
+            imgHeight = $("img").css("height");
+            $("#field").css("height", imgHeight);
+            $("#field").css("line-height", imgHeight);
+            $("h1").append(`<span><i>- ${fieldlabel}</i></span>`);
+            questionContent = `The scholar metrics below are obtained from all the publications tagged as ${fieldlabel} papers in Microsoft Academic Graph (MAG) + OpenAlex dataset, till 2024.10. All paper citation counts are native data from MAG and OpenAlex.`;
+            var content = `
+            <div class="question">
+                <img src="/src/image/question.png" alt="Question Icon" width="18px" height="18px">
+                <span class="question-tip" style="font-size: 14px;">
+                    $$content$$
+                </span>
+            </div>`;
+            $("#paperCount").append(content.replace('$$content$$', questionContent));
+            $("#corePaperCount").append(content.replace('$$content$$', "Core paper = first-author paper or advisee's first-author paper"));
+
+            scholarList.sort(compare("hIndex", "asc"));
+            displayPagination();
+        }
+
+        function isTestEnv() {
+			return fetch('/src/.test')
+			.then(response => {
+				return response.ok;
+			})
+			.catch(error => {
+				return true
+			});
+		}
+
+		$(function() {
+			fetch('/src/config.json')
+			.then(response => response.json())
+			.then(data => {
+				isTestEnv().then(isTest => {
+					fieldType = "{{ fieldType }}";
+                    if (fieldType == 0) {
+                        setting = data;
+                        Object.entries(data['default']).forEach(([key, value]) => {
+                            setting[key] = value;
+                        });
+                    } else {
+                        setting = data[fieldType];
+                    }
+                    // if (isTest) {
+                    //     setting['year'] = setting['year'] || "fellowYear";
+                    // }
+					createList();
+				})
+			})
+			.catch(error => console.error('Error:', error));
+		});
+
+        $('table').on('click', 'th', function () {
+            var index = $(this).index();
+            if (fieldType == 0) index -= 1;
+            if (index > 0) {
+                const indexLabel = ["rank", "name", "paperCount", "citationCount", "hIndex", 
+                "corePaperCount", "coreCitationCount", "corehIndex", setting['year']];
+                var thClass = $(this).hasClass('asc') ? 'desc' : 'asc';
+                console.log('sort on index', index, indexLabel[index], thClass)
+                scholarList.sort(compare(indexLabel[index], thClass));
+                
+                $('table th').removeClass('asc desc');
+                $(this).addClass(thClass);
+                displayData(1);
+            }
+        });
+    // 对于year字段，在config.json中定义各个领域显示的year
+    // 如果没有定义：test环境下显示fellowYear，正式服下不显示
+    
+    
+    function adjustElementWidthToTable() {
+        const table = document.querySelector("table"); // 选择表格
+        const elementsToAdjust = document.querySelectorAll(".container-fluid"); // 选择需要调整的元素
+
+        if (table && window.innerWidth < 768) {
+            const tableWidth = table.offsetWidth;
+            console.log('tableWidth', tableWidth);
+            elementsToAdjust.forEach(element => {
+                element.style.width = `${tableWidth * 1.1}px`;
+            });
+        }
+    }
+
+    // 初始化时调整宽度
+    setTimeout(adjustElementWidthToTable, 50);
+
+    // 监听窗口变化动态调整
+    window.addEventListener("resize", adjustElementWidthToTable);
+
+    </script>
+</body>
+</html>

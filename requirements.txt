@@ -1,0 +1,4 @@
+django
+graphviz
+thefuzz
+google-analytics-data

@@ -1,0 +1,9 @@
+versionID,date,updateContent
+v1.0,2023-09-17,GeneticFlow System has been officially released.
+v1.1,2023-10-17,"It was found that due to the incompleteness of MAG's ""visualization"" category, about 22% visualization papers is missing in our system. A new version was released to fix this issue."
+v1.2,2023-10-20,"GeneticFlow system has released a new version, incorporating data in the database field and providing visualization."
+v1.3,2023-11-29,GeneticFlow system has expanded into the new fields of Computer Graphics.
+v1.4,2024-01-06,"GeneticFlow system has expanded into several new fields, including Software & Programming Language, Human-Computer Interaction, and Networking & Parallel/Distributed/Real-time/Embedded Computing."
+v1.5,2024-02-11,"GeneticFlow system has expanded into the AI field, including related subfields such as computer vision, natural language processing, and others."
+v1.6,2024-06-02,"GeneticFlow system has added two new fields: Architecture and System Security. Additionally, it has optimized the full-screen layout and download of the graph, as well as the number of displayed topics."
+v2.0,2025-01-02,"GeneticFlow system has been upgraded to version 2.0, featuring a brand-new 3D visualization design, support for downloading scholar profile GIFs and JPGs, and data updated to October 1, 2024."

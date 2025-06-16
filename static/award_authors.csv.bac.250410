@@ -1,0 +1,4330 @@
+original_author_name,year,type,MAGID,ARCID
+Joakim Nivre,2021,2,NULL,NULL
+Qun Liu,2021,2,NULL,NULL
+Luke Zettlemoyer,2021,2,NULL,NULL
+Anette Frank,2021,2,NULL,NULL
+Joyce Chai,2021,2,NULL,NULL
+Eneko Agirre,2021,2,NULL,NULL
+Chengqing Zong,2021,2,NULL,NULL
+Amanda Stent,2021,2,NULL,NULL
+Philip Cohen,2020,2,NULL,NULL
+Pascale Fung,2020,2,NULL,NULL
+Iryna Gurevych,2020,2,NULL,NULL
+Dan Jurafsky,2020,2,NULL,NULL
+Hermann Ney,2020,2,2293758362,NULL
+Philip Resnik,2020,2,NULL,NULL
+Donia Scott,2020,2,NULL,NULL
+Noah Smith,2020,2,NULL,NULL
+Kam-Fai Wong,2020,2,NULL,NULL
+Barbara Grosz,2019,2,NULL,NULL
+Graeme Hirst,2019,2,NULL,NULL
+Mirella Lapata,2019,2,NULL,NULL
+Hang Li,2019,2,NULL,NULL
+Paola Merlo,2019,2,NULL,NULL
+Michael Strube,2019,2,NULL,NULL
+Robert Dale,2018,2,NULL,NULL
+Jason Eisner,2018,2,NULL,NULL
+Mari Ostendorf,2018,2,2046206377,NULL
+Dragomir Radev,2018,2,NULL,NULL
+Ellen Riloff,2018,2,NULL,NULL
+Regina Barzilay,2017,2,NULL,NULL
+Ralph Grishman,2017,2,NULL,NULL
+Lillian Lee,2017,2,NULL,NULL
+Diane Litman,2017,2,NULL,NULL
+Fernando Pereira,2017,2,2117274611,NULL
+Stuart Shieber,2017,2,NULL,NULL
+Bonnie J. Dorr,2016,2,NULL,NULL
+Marilyn Walker,2016,2,NULL,NULL
+Haifeng Wang,2016,2,NULL,NULL
+Ralph Weischedel,2016,2,NULL,NULL
+Claire Cardie,2015,2,NULL,NULL
+Kenneth Church,2015,2,NULL,NULL
+Salim Roukos,2015,2,NULL,NULL
+Janyce Wiebe,2015,2,NULL,NULL
+Walter Daelemans,2014,2,NULL,NULL
+Kevin Knight,2014,2,NULL,NULL
+Daniel Marcu,2014,2,NULL,NULL
+Raymond Mooney,2014,2,NULL,NULL
+Martha Palmer,2014,2,NULL,NULL
+Junichi Tsujii,2014,2,NULL,NULL
+Dekang Lin,2013,2,NULL,NULL
+Candace Sidner,2013,2,NULL,NULL
+Ido Dagan,2013,2,NULL,NULL
+David Yarowsky,2013,2,NULL,NULL
+Hwee Tou Ng,2012,2,NULL,NULL
+Dan Roth,2012,2,NULL,NULL
+Richard Sproat,2012,2,NULL,NULL
+Bonnie Webber,2012,2,NULL,NULL
+Nicoletta Calzolari,2011,2,NULL,NULL
+Eugene Charniak,2011,2,NULL,NULL
+Michael Collins,2011,2,NULL,NULL
+Eva Hajičová,2011,2,NULL,NULL
+Julia Hirschberg,2011,2,1983359683,NULL
+Eduard Hovy,2011,2,NULL,NULL
+Mark Johnson,2011,2,NULL,NULL
+Aravind Joshi,2011,2,NULL,NULL
+Ronald M. Kaplan,2011,2,NULL,NULL
+Lauri Karttunen,2011,2,NULL,NULL
+Christopher D. Manning,2011,2,NULL,NULL
+Mitch Marcus,2011,2,NULL,NULL
+Yuji Matsumoto,2011,2,NULL,NULL
+Kathleen R. McKeown,2011,2,NULL,NULL
+Robert L. Mercer,2011,2,NULL,NULL
+Robert C. Moore,2011,2,NULL,NULL
+Dekai Wu,2011,2,NULL,NULL
+James M. Adams,1994,1,NULL,NULL
+Frances E. Allen,1994,1,NULL,NULL
+Franz Leopold Alt,1994,1,NULL,NULL
+William F. Atchison,1994,1,NULL,NULL
+Richard H. Austing,1994,1,NULL,NULL
+Kenneth E. Batcher,1994,1,NULL,NULL
+C. Gordon Bell,1994,1,NULL,NULL
+Michael W. Blasgen,1994,1,NULL,NULL
+Danny Bobrow,1994,1,NULL,NULL
+David Reeves Boggs,1994,1,NULL,NULL
+Lorraine Borman,1994,1,NULL,NULL
+Charles L. Bradshaw,1994,1,NULL,NULL
+Daniel S. Bricklin,1994,1,NULL,NULL
+Frederick P. Brooks Jr.,1994,1,NULL,NULL
+Douglas K. Brotz,1994,1,NULL,NULL
+Richard R. Burton,1994,1,NULL,NULL
+Richard G. Canning,1994,1,NULL,NULL
+Walter M. Carlson,1994,1,NULL,NULL
+Donald D. Chamberlin,1994,1,NULL,NULL
+Edgar F. Codd,1994,1,NULL,NULL
+Edward G. Coffman,1994,1,NULL,NULL
+Fernando J. Corbató,1994,1,NULL,NULL
+Harvey G. Cragon,1994,1,NULL,NULL
+Thomas A. D'Auria,1994,1,NULL,NULL
+Jack B. Dennis,1994,1,NULL,NULL
+L Peter Deutsch,1994,1,NULL,NULL
+J. Presper Eckert,1994,1,NULL,NULL
+Peter Elias,1994,1,NULL,NULL
+Gerald L. Engel,1994,1,NULL,NULL
+John H. Esbin,1994,1,NULL,NULL
+Bob O. Evans,1994,1,NULL,NULL
+Tse-Yun Feng,1994,1,NULL,NULL
+Aaron Finerman,1994,1,NULL,NULL
+Robert W. Floyd,1994,1,NULL,NULL
+Michael J. Flynn,1994,1,NULL,NULL
+Robert Frankston,1994,1,NULL,NULL
+Frank L. Friedman,1994,1,NULL,NULL
+Bernard A. Galler,1994,1,NULL,NULL
+C. W. Gear,1994,1,NULL,NULL
+Adele J. Goldberg,1994,1,NULL,NULL
+Calvin C. Gotlieb,1994,1,NULL,NULL
+Susan L. Graham,1994,1,NULL,NULL
+Cordell Green,1994,1,NULL,NULL
+Carl Hammer,1994,1,NULL,NULL
+Richard Hamming,1994,1,NULL,NULL
+Fred H. Harris,1994,1,NULL,NULL
+Danny Hillis,1994,1,NULL,NULL
+John Hopcroft,1994,1,NULL,NULL
+Tom Hull,1994,1,NULL,NULL
+J. N. Hume,1994,1,NULL,NULL
+Harry Douglas Huskey,1994,1,NULL,NULL
+William Kahan,1994,1,NULL,NULL
+Ronald M. Kaplan,1994,1,NULL,NULL
+Richard M. Karp,1994,1,NULL,NULL
+Donald Knuth,1994,1,2137000881,NULL
+David J. Kuck,1994,1,NULL,NULL
+Thomas Eugene Kurtz,1994,1,NULL,NULL
+Ray Kurzweil,1994,1,NULL,NULL
+Butler W. Lampson,1994,1,NULL,NULL
+Stephen S. Lavenberg,1994,1,NULL,NULL
+Joshua Lederberg,1994,1,NULL,NULL
+John A. Lee,1994,1,NULL,NULL
+Bruce G. Lindsay,1994,1,NULL,NULL
+Joyce Currie Little,1994,1,NULL,NULL
+Chung Laung Liu,1994,1,NULL,NULL
+M. Stuart Lynn,1994,1,NULL,NULL
+Herbert Maisel,1994,1,NULL,NULL
+John McCarthy,1994,1,2121245618,NULL
+Edward J. McCluskey,1994,1,NULL,NULL
+Daniel D. McCracken,1994,1,NULL,NULL
+Paul R. McJones,1994,1,NULL,NULL
+A J Milner,1994,1,NULL,NULL
+Roger Michael Needham,1994,1,NULL,NULL
+Monroe M. Newborn,1994,1,NULL,NULL
+John Kenneth Ousterhout,1994,1,NULL,NULL
+Susan S. Owicki,1994,1,NULL,NULL
+William B. Poucher,1994,1,NULL,NULL
+Anthony Ralston,1994,1,NULL,NULL
+Jeff Rulifson,1994,1,NULL,NULL
+Dana Scott,1994,1,NULL,NULL
+Daniel Siewiorek,1994,1,NULL,NULL
+Herbert A. Simon,1994,1,NULL,NULL
+Barbara B. Simons,1994,1,NULL,NULL
+Martha E. Sloan,1994,1,NULL,NULL
+Donald R. Slutz,1994,1,NULL,NULL
+Burton J. Smith,1994,1,NULL,NULL
+Richard E. Stearns,1994,1,NULL,NULL
+Thomas B. Steel,1994,1,NULL,NULL
+Guy L. Steele,1994,1,NULL,NULL
+Harold S. Stone,1994,1,NULL,NULL
+William Strecker,1994,1,NULL,NULL
+Patrick Suppes,1994,1,NULL,NULL
+Gerald Sussman,1994,1,NULL,NULL
+Ivan Sutherland,1994,1,NULL,NULL
+Edward A. Taft,1994,1,NULL,NULL
+Robert William Taylor,1994,1,NULL,NULL
+Charles P. Thacker,1994,1,NULL,NULL
+Irving L. Traiger,1994,1,NULL,NULL
+Joseph Traub,1994,1,NULL,NULL
+Allen B. Tucker,1994,1,NULL,NULL
+Willis Howard Ware,1994,1,NULL,NULL
+Stuart Wecker,1994,1,NULL,NULL
+Ben Wegbreit,1994,1,NULL,NULL
+Eric A. Weiss,1994,1,NULL,NULL
+David John Wheeler,1994,1,NULL,NULL
+Maurice Vincent Wilkes,1994,1,NULL,NULL
+Shmuel Winograd,1994,1,NULL,NULL
+Seymour J. Wolfson,1994,1,NULL,NULL
+William Allan Wulf,1994,1,NULL,NULL
+L. A. Zadeh,1994,1,NULL,NULL
+Stephen W. Dunwell,1994,1,NULL,NULL
+Paul W. Abrahams,1995,1,NULL,NULL
+Robert L. Ashenhurst,1995,1,NULL,NULL
+Alan H. Barr,1995,1,NULL,NULL
+Lawrence Bernstein,1995,1,NULL,NULL
+David H. Brandin,1995,1,NULL,NULL
+Richard P. Brent,1995,1,NULL,NULL
+Loren C. Carpenter,1995,1,NULL,NULL
+Edwin Catmull,1995,1,NULL,NULL
+Robert Lee Constable,1995,1,2059506051,NULL
+Dorothy E. Denning,1995,1,NULL,NULL
+Larry E. Druffel,1995,1,NULL,NULL
+Erwin Engeler,1995,1,NULL,NULL
+Stuart I. Feldman,1995,1,NULL,NULL
+Zvi Galil,1995,1,NULL,NULL
+M. R. Garey,1995,1,NULL,NULL
+Myron Ginsberg,1995,1,NULL,NULL
+John B. Goodenough,1995,1,NULL,NULL
+Herbert R. J. Grosch,1995,1,NULL,NULL
+Bertram Herzog,1995,1,NULL,NULL
+Harold J. Highland,1995,1,2166638240,NULL
+Lance J. Hoffman,1995,1,NULL,NULL
+David S. Johnson,1995,1,NULL,NULL
+Kenneth W. Kennedy,1995,1,NULL,NULL
+Won Kim,1995,1,2116124413,NULL
+S. Rao Kosaraju,1995,1,NULL,NULL
+S. Lakshmivarahan,1995,1,NULL,NULL
+Ed Lazowska,1995,1,NULL,NULL
+Nancy G. Leveson,1995,1,NULL,NULL
+Jay Misra,1995,1,NULL,NULL
+Jürg Nievergelt,1995,1,NULL,NULL
+Anthony G. Oettinger,1995,1,NULL,NULL
+Franco P. Preparata,1995,1,NULL,NULL
+Roy Rada,1995,1,NULL,NULL
+Daniel J. Rosenkrantz,1995,1,NULL,NULL
+Gerard Salton,1995,1,NULL,NULL
+Larry Snyder,1995,1,NULL,NULL
+Norihisa Suzuki,1995,1,NULL,NULL
+Chris S. Wallace,1995,1,NULL,NULL
+John R. White,1995,1,NULL,NULL
+J. Turner Whitted,1995,1,NULL,NULL
+Chak-Kuen Wong,1995,1,NULL,NULL
+Andrew C. Yao,1995,1,NULL,NULL
+Paul R. Young,1995,1,NULL,NULL
+William Richards Adrion,1996,1,NULL,NULL
+Alfred V. Aho,1996,1,NULL,NULL
+Kurt Akeley,1996,1,NULL,NULL
+Anita Borg,1996,1,NULL,NULL
+B. Chandrasekaran,1996,1,NULL,NULL
+Bernard Chazelle,1996,1,NULL,NULL
+Narsingh Deo,1996,1,NULL,NULL
+George G. Dodd,1996,1,NULL,NULL
+José Luis Encarnação,1996,1,NULL,NULL
+Jeanne Ferrante,1996,1,NULL,NULL
+Michael J. Fischer,1996,1,NULL,NULL
+Dennis J. Frailey,1996,1,NULL,NULL
+Robert M. Graham,1996,1,NULL,NULL
+Michael A. Harrison,1996,1,2304366500,NULL
+Philip Heidelberger,1996,1,NULL,NULL
+Mary Jane Irwin,1996,1,NULL,NULL
+Jeffrey M. Jaffe,1996,1,NULL,NULL
+Raj Jain,1996,1,NULL,NULL
+Anita K. Jones,1996,1,NULL,NULL
+Maria M. Klawe,1996,1,NULL,NULL
+Lawrence H. Landweber,1996,1,NULL,NULL
+Michael E. Lesk,1996,1,NULL,NULL
+Henry M. Levy,1996,1,NULL,NULL
+Barbara H. Liskov,1996,1,NULL,NULL
+Richard R. Muntz,1996,1,NULL,NULL
+Richard E. Nance,1996,1,NULL,NULL
+Takao Nishizeki,1996,1,NULL,NULL
+Bryan T. Preas,1996,1,NULL,NULL
+T. R. N. Rao,1996,1,NULL,NULL
+Edward M. Reingold,1996,1,NULL,NULL
+Sartaj K. Sahni,1996,1,NULL,NULL
+John E. Savage,1996,1,NULL,NULL
+Ravi Sethi,1996,1,NULL,NULL
+Mary M. Shaw,1996,1,2141334907,NULL
+John A. Stankovic,1996,1,NULL,NULL
+Larry Stockmeyer,1996,1,NULL,NULL
+Mary K. Vernon,1996,1,NULL,NULL
+Uzi Vishkin,1996,1,NULL,NULL
+Jeffrey S. Vitter,1996,1,118037170,NULL
+Mark Wegman,1996,1,NULL,NULL
+Fred W. Weingarten,1996,1,NULL,NULL
+Ian Witten,1996,1,2163446563,NULL
+Marshall C. Yovits,1996,1,NULL,NULL
+Ian F. Akyildiz,1997,1,NULL,NULL
+Jean-Loup Baer,1997,1,NULL,NULL
+Roger R. Bate,1997,1,NULL,NULL
+Barry W. Boehm,1997,1,NULL,NULL
+Imrich Chlamtac,1997,1,NULL,NULL
+J. D. Couger,1997,1,NULL,NULL
+Gordon B. Davis,1997,1,NULL,NULL
+David P. Dobkin,1997,1,NULL,NULL
+Herbert Freeman,1997,1,NULL,NULL
+Irene Greif,1997,1,NULL,NULL
+John L. Hennessy,1997,1,NULL,NULL
+Zvi Kedem,1997,1,NULL,NULL
+Richard A. Kemmerer,1997,1,NULL,NULL
+H. W. Lawson,1997,1,NULL,NULL
+Der-Tsai Lee,1997,1,NULL,NULL
+Richard J. Lipton,1997,1,NULL,NULL
+Nancy A. Lynch,1997,1,NULL,NULL
+Daniel A. Menasce,1997,1,NULL,NULL
+Raymond E. Miller,1997,1,NULL,NULL
+Ronald H. Perrott,1997,1,NULL,NULL
+Nicholas Pippenger,1997,1,NULL,NULL
+Vaughan R. Pratt,1997,1,NULL,NULL
+Raymond Reiter,1997,1,NULL,NULL
+Paul Schneck,1997,1,NULL,NULL
+Robert Sedgewick,1997,1,NULL,NULL
+Kenneth Clem Sevcik,1997,1,NULL,NULL
+Micha Sharir,1997,1,NULL,NULL
+Alan C. Shaw,1997,1,NULL,NULL
+Kenneth Steiglitz,1997,1,NULL,NULL
+Donald F. Towsley,1997,1,NULL,NULL
+Peter Widmayer,1997,1,NULL,NULL
+Robert Wilensky,1997,1,NULL,NULL
+Paolo Zanella,1997,1,NULL,NULL
+Dharma P. Agrawal,1998,1,NULL,NULL
+Gregory R. Andrews,1998,1,NULL,NULL
+Robert S. Cartwright,1998,1,2305176596,NULL
+Peter P. Chen,1998,1,NULL,NULL
+Lori A. Clarke,1998,1,NULL,NULL
+Richard J. Cole,1998,1,NULL,NULL
+Clarence A. Ellis,1998,1,NULL,NULL
+Richard P. Gabriel,1998,1,NULL,NULL
+Gopal Krishna Gupta,1998,1,2101413274,NULL
+James Jay Horning,1998,1,NULL,NULL
+Aravind K. Joshi,1998,1,NULL,NULL
+Stephen T. Kent,1998,1,NULL,NULL
+Simon S. Lam,1998,1,NULL,NULL
+Kai Li,1998,1,NULL,NULL
+Susan Nycum,1998,1,NULL,NULL
+P. Venkat Rangan,1998,1,NULL,NULL
+John T. Richards,1998,1,NULL,NULL
+Lawrence A. Rowe,1998,1,NULL,NULL
+Alan L. Selman,1998,1,NULL,NULL
+Carlo H. Séquin,1998,1,NULL,NULL
+Howard Jay Siegel,1998,1,NULL,NULL
+Éva Tardos,1998,1,NULL,NULL
+Albert J. Turner,1998,1,NULL,NULL
+Emmerich Welzl,1998,1,NULL,NULL
+Stuart H. Zweben,1998,1,NULL,NULL
+Marc Auslander,1999,1,NULL,NULL
+Kenneth P. Birman,1999,1,NULL,NULL
+Ronald J. Brachman,1999,1,NULL,NULL
+Robert T. Braden,1999,1,NULL,NULL
+Robert L. Cook,1999,1,NULL,NULL
+Joseph S. DeBlasi,1999,1,NULL,NULL
+James Demmel,1999,1,NULL,NULL
+Richard J. Fateman,1999,1,NULL,NULL
+John D. Gannon,1999,1,NULL,NULL
+C. M. Geschke,1999,1,NULL,NULL
+Ronald L. Graham,1999,1,NULL,NULL
+Toshihide Ibaraki,1999,1,NULL,NULL
+Philip M. Lewis,1999,1,NULL,NULL
+David B. MacQueen,1999,1,NULL,NULL
+Dianne Martin,1999,1,NULL,NULL
+Larry Masinter,1999,1,NULL,NULL
+David L. Mills,1999,1,NULL,NULL
+Dhiraj K. Pradhan,1999,1,NULL,NULL
+Ahmed Sameh,1999,1,NULL,NULL
+Marc Snir,1999,1,NULL,NULL
+Chung-Jen Tan,1999,1,NULL,NULL
+Koji Torii,1999,1,NULL,NULL
+David L. Waltz,1999,1,NULL,NULL
+John Warnock,1999,1,NULL,NULL
+Prithviraj Banerjee,2000,1,NULL,NULL
+Francine Berman,2000,1,NULL,NULL
+Laxmi N. Bhuyan,2000,1,NULL,NULL
+Alan W. Biermann,2000,1,NULL,NULL
+Shahid H. Bokhari,2000,1,NULL,NULL
+Randy Bryant,2000,1,NULL,NULL
+Douglas E. Comer,2000,1,NULL,NULL
+Karen Duncan,2000,1,NULL,NULL
+Deborah Estrin,2000,1,NULL,NULL
+Peter A. Freeman,2000,1,2153265399,NULL
+W. Kent Fuchs,2000,1,NULL,NULL
+Donald J. Haderle,2000,1,NULL,NULL
+Michael T. Heath,2000,1,NULL,NULL
+Leonard Kleinrock,2000,1,NULL,NULL
+Axel van Lamsweerde,2000,1,NULL,NULL
+Raymond A. Lorie,2000,1,NULL,NULL
+Donald W. Loveland,2000,1,NULL,NULL
+Albert R. Meyer,2000,1,NULL,NULL
+James H. Morris,2000,1,NULL,NULL
+Larry L. Peterson,2000,1,NULL,NULL
+Robin J. R. Williams,2000,1,NULL,NULL
+Willy Zwaenepoel,2000,1,NULL,NULL
+Jacob A. Abraham,2001,1,NULL,NULL
+Robert M. Aiken,2001,1,NULL,NULL
+Tetsuo Asano,2001,1,NULL,NULL
+Joel S. Birnbaum,2001,1,NULL,NULL
+Alan H. Borning,2001,1,NULL,NULL
+Jin-Yi Cai,2001,1,NULL,NULL
+Johan de Kleer,2001,1,NULL,NULL
+David J. Farber,2001,1,NULL,NULL
+Domenico Ferrari,2001,1,NULL,NULL
+Sally Floyd,2001,1,NULL,NULL
+Erol Gelenbe,2001,1,NULL,NULL
+John P. Hayes,2001,1,NULL,NULL
+Joseph F. JaJa,2001,1,NULL,NULL
+Robert E. Kahn,2001,1,NULL,NULL
+Sung-Mo Kang,2001,1,NULL,NULL
+Richard B. Kieburtz,2001,1,NULL,NULL
+Jeffrey Kramer,2001,1,NULL,NULL
+James F. Kurose,2001,1,NULL,NULL
+Giovanni De Micheli,2001,1,NULL,NULL
+Jeffrey C. Mogul,2001,1,NULL,NULL
+Cherri M. Pancake,2001,1,NULL,NULL
+Christos Papadimitriou,2001,1,2220829341,NULL
+Donn B. Parker,2001,1,NULL,NULL
+Janak H. Patel,2001,1,NULL,NULL
+Yale N. Patt,2001,1,NULL,NULL
+Ira Pohl,2001,1,NULL,NULL
+J. Mark Pullen,2001,1,NULL,NULL
+Ramamritham Krithivasan,2001,1,NULL,NULL
+John C. Reynolds,2001,1,NULL,NULL
+Krishan K. Sabnani,2001,1,NULL,NULL
+Richard D. Schlichting,2001,1,NULL,NULL
+David B. Shmoys,2001,1,NULL,NULL
+Alan J. Smith,2001,1,NULL,NULL
+Jonathan Turner,2001,1,NULL,NULL
+Marilyn C. Wolf,2001,1,NULL,NULL
+Pankaj K. Agarwal,2002,1,NULL,NULL
+Vishwani D. Agrawal,2002,1,NULL,NULL
+Özalp Babaoğlu,2002,1,NULL,NULL
+David E. Culler,2002,1,NULL,NULL
+William J. Dally,2002,1,NULL,NULL
+Thomas G. Dietterich,2002,1,NULL,NULL
+Susan J. Eggers,2002,1,NULL,NULL
+Harold N. Gabow,2002,1,NULL,NULL
+Ambuj Goyal,2002,1,NULL,NULL
+Adolfo Guzmán-Arenas,2002,1,NULL,NULL
+Joseph Halpern,2002,1,716715026,NULL
+Wen-mei Hwu,2002,1,1183556006,NULL
+Sidney Karin,2002,1,NULL,NULL
+Gary L. Miller,2002,1,NULL,NULL
+C. Mohan,2002,1,NULL,NULL
+Bantwal R. Rau,2002,1,NULL,NULL
+David Salesin,2002,1,NULL,NULL
+Mahadev Satyanarayanan,2002,1,NULL,NULL
+Mateo Valero,2002,1,NULL,NULL
+George Varghese,2002,1,NULL,NULL
+Rakesh Agrawal,2003,1,2138427228,NULL
+Mostafa Ammar,2003,1,NULL,NULL
+Victor Bahl,2003,1,NULL,NULL
+Bonnie Berger,2003,1,NULL,NULL
+Richard A. DeMillo,2003,1,NULL,NULL
+Barbara J. Grosz,2003,1,NULL,NULL
+Brent Hailpern,2003,1,NULL,NULL
+Mary Jean Harrold,2003,1,NULL,NULL
+Peter E. Hart,2003,1,NULL,NULL
+Mark A. Horowitz,2003,1,NULL,NULL
+H. V. Jagadish,2003,1,NULL,NULL
+Ramesh C. Jain,2003,1,2133201272,NULL
+Niraj K. Jha,2003,1,NULL,NULL
+Lin Yi-bing,2003,1,NULL,NULL
+Kathleen McKeown,2003,1,NULL,NULL
+Eugene W. Myers,2003,1,NULL,NULL
+Craig Partridge,2003,1,NULL,NULL
+Daniel A. Reed,2003,1,NULL,NULL
+Stuart J. Russell,2003,1,NULL,NULL
+C. J. van Rijsbergen,2003,1,NULL,NULL
+Gurindar S. Sohi,2003,1,NULL,NULL
+Bella Bose,2004,1,NULL,NULL
+Janis A. Bubenko Jr.,2004,1,NULL,NULL
+Andrew A. Chien,2004,1,NULL,NULL
+George E. Collins,2004,1,NULL,NULL
+Joel Emer,2004,1,NULL,NULL
+Allan Gottlieb,2004,1,NULL,NULL
+Mark D. Hill,2004,1,NULL,NULL
+Yannis E. Ioannidis,2004,1,435837623,NULL
+Frans Kaashoek,2004,1,NULL,NULL
+Paul V. Mockapetris,2004,1,NULL,NULL
+Simon Peyton Jones,2004,1,2142246817,NULL
+Michael D. Schroeder,2004,1,NULL,NULL
+Stamatis Vassiliadis,2004,1,NULL,NULL
+Benjamin W. Wah,2004,1,NULL,NULL
+David S. Wise,2004,1,NULL,NULL
+Richard Schantz,2004,1,NULL,NULL
+Thomas E. Anderson,2005,1,2148869393,NULL
+Dines Bjørner,2005,1,NULL,NULL
+Stephen R. Bourne,2005,1,NULL,NULL
+Rodney Brooks,2005,1,NULL,NULL
+Christophe Diot,2005,1,NULL,NULL
+Michel Dubois,2005,1,NULL,NULL
+T. V. Lakshman,2005,1,NULL,NULL
+Krishna Palem,2005,1,NULL,NULL
+Thomas W. Reps,2005,1,341386833,NULL
+Lui Sha,2005,1,NULL,NULL
+Mikkel Thorup,2005,1,NULL,NULL
+Eli Upfal,2005,1,NULL,NULL
+Umesh Vazirani,2005,1,NULL,NULL
+Vijay Vazirani,2005,1,NULL,NULL
+Roy Want,2005,1,NULL,NULL
+Daniel S. Weld,2005,1,NULL,NULL
+Michael P. Wellman,2005,1,NULL,NULL
+Walter Willinger,2005,1,NULL,NULL
+David A. Wood,2005,1,NULL,NULL
+Hui Zhang,2005,1,NULL,NULL
+Uri C. Weiser,2005,1,NULL,NULL
+Eric Allender,2006,1,NULL,NULL
+Arvind,2006,1,NULL,NULL
+Ming-Syan Chen,2006,1,2111630871,NULL
+Usama Fayyad,2006,1,NULL,NULL
+Kenneth D. Forbus,2006,1,NULL,NULL
+Albert G. Greenberg,2006,1,NULL,NULL
+William D. Gropp,2006,1,293862447,NULL
+Roch Guerin,2006,1,NULL,NULL
+Laura M. Haas,2006,1,NULL,NULL
+Alon Yitzchak Halevy,2006,1,2154833104,NULL
+Anthony C. Hearn,2006,1,NULL,NULL
+Norman P. Jouppi,2006,1,NULL,NULL
+John E. Laird,2006,1,NULL,NULL
+Charles E. Leiserson,2006,1,NULL,NULL
+Nick McKeown,2006,1,NULL,NULL
+J Strother Moore,2006,1,2112233366,NULL
+Alan F. Newell,2006,1,NULL,NULL
+Peter Norvig,2006,1,NULL,NULL
+Dianne P. O'Leary,2006,1,NULL,NULL
+Dan R. Olsen Jr.,2006,1,NULL,NULL
+Kunle Olukotun,2006,1,NULL,NULL
+M. Tamer Özsu,2006,1,NULL,NULL
+Michael L. Scott,2006,1,NULL,NULL
+Heung Yeung Shum,2006,1,2147729234,NULL
+Alfred Z. Spector,2006,1,NULL,NULL
+Victor D. Vianu,2006,1,152493642,NULL
+Alexander L. Wolf,2006,1,NULL,NULL
+Bryant W. York,2006,1,NULL,NULL
+Anant Agarwal,2007,1,NULL,NULL
+Utpal Banerjee,2007,1,NULL,NULL
+Catriel Beeri,2007,1,NULL,NULL
+Avrim Blum,2007,1,NULL,NULL
+Eric A. Brewer,2007,1,NULL,NULL
+Andrei Z. Broder,2007,1,NULL,NULL
+Michael F. Cohen,2007,1,2156496335,NULL
+Larry L. Constantine,2007,1,NULL,NULL
+Rodney Graham Downey,2007,1,NULL,NULL
+Edward A. Feigenbaum,2007,1,NULL,NULL
+Lance Fortnow,2007,1,NULL,NULL
+Daniel P. Huttenlocher,2007,1,NULL,NULL
+John C. Klensin,2007,1,NULL,NULL
+Bhubaneswar Mishra,2007,1,NULL,NULL
+Gary M. Olson,2007,1,NULL,NULL
+Randy Pausch,2007,1,NULL,NULL
+Aristides Requicha,2007,1,NULL,NULL
+Eric S. Roberts,2007,1,NULL,NULL
+Michael S. Scarborough,2007,1,NULL,NULL
+Donald E. Thomas,2007,1,NULL,NULL
+Zhang Hongjiang,2007,1,NULL,NULL
+Martín Abadi,2008,1,NULL,NULL
+Gregory D. Abowd,2008,1,NULL,NULL
+Alexander S. Aiken,2008,1,NULL,NULL
+Sanjeev Arora,2008,1,NULL,NULL
+Hari Balakrishnan,2008,1,NULL,NULL
+William A. S. Buxton,2008,1,2326945342,NULL
+Kenneth L. Clarkson,2008,1,NULL,NULL
+Jason Cong,2008,1,NULL,NULL
+Perry Cook,2008,1,NULL,NULL
+Stephen A. Cook,2008,1,NULL,NULL
+Xiaotie Deng,2008,1,NULL,NULL
+J. J. Garcia-Luna-Aceves,2008,1,NULL,NULL
+Michel X. Goemans,2008,1,NULL,NULL
+Patrick Hanrahan,2008,1,NULL,NULL
+Charles H. House,2008,1,NULL,NULL
+Alan C. Kay,2008,1,NULL,NULL
+Joseph A. Konstan,2008,1,NULL,NULL
+Roy Levin,2008,1,NULL,NULL
+P. Geoffrey Lowney,2008,1,NULL,NULL
+Jitendra Malik,2008,1,NULL,NULL
+Joel Moses,2008,1,NULL,NULL
+J. Ian Munro,2008,1,NULL,NULL
+Judith S. Olson,2008,1,NULL,NULL
+Jonathan S. Rose,2008,1,NULL,NULL
+Mendel Rosenblum,2008,1,NULL,NULL
+Rob A. Rutenbar,2008,1,NULL,NULL
+Tuomas W. Sandholm,2008,1,NULL,NULL
+Mark S. Squillante,2008,1,NULL,NULL
+Per Stenström,2008,1,NULL,NULL
+Douglas B. Terry,2008,1,NULL,NULL
+Ricardo A. Baeza-Yates,2009,1,528588921,NULL
+Vijay P. Bhatkar,2009,1,NULL,NULL
+José A. Blakeley,2009,1,NULL,NULL
+Nell B. Dale,2009,1,NULL,NULL
+Bruce S. Davie,2009,1,NULL,NULL
+Jeffrey Dean,2009,1,NULL,NULL
+Thomas Dean,2009,1,NULL,NULL
+Bruce Randall Donald,2009,1,NULL,NULL
+Thomas D. Erickson,2009,1,2183602536,NULL
+Andrew V. Goldberg,2009,1,NULL,NULL
+Laurie J. Hendren,2009,1,2057929015,NULL
+Urs Hölzle,2009,1,NULL,NULL
+Farnam Jahanian,2009,1,NULL,NULL
+Erich Kaltofen,2009,1,NULL,NULL
+David R. Karger,2009,1,NULL,NULL
+Hans-Peter Kriegel,2009,1,2135052836,NULL
+John C.S. Lui,2009,1,NULL,NULL
+Margaret Martonosi,2009,1,NULL,NULL
+Yossi Matias,2009,1,NULL,NULL
+Renée J. Miller,2009,1,NULL,NULL
+John T. Riedl,2009,1,NULL,NULL
+Martin C. Rinard,2009,1,343541395,NULL
+Patricia G. Selinger,2009,1,NULL,NULL
+R. K. Shyamasundar,2009,1,NULL,NULL
+Shang-Hua Teng,2009,1,NULL,NULL
+Chandramohan A. Thekkath,2009,1,NULL,NULL
+Robbert van Renesse,2009,1,NULL,NULL
+Baba C. Vemuri,2009,1,NULL,NULL
+Paulo Veríssimo,2009,1,NULL,NULL
+Yorick Alexander Wilks,2009,1,NULL,NULL
+David Abramson,2010,1,NULL,NULL
+Sarita Adve,2010,1,NULL,NULL
+Lorenzo Alvisi,2010,1,NULL,NULL
+Luiz André Barroso,2010,1,NULL,NULL
+Doug Burger,2010,1,NULL,NULL
+Jennifer Chayes,2010,1,NULL,NULL
+Peter M. Chen,2010,1,NULL,NULL
+Anne Condon,2010,1,NULL,NULL
+Mark Crovella,2010,1,NULL,NULL
+Ron K. Cytron,2010,1,NULL,NULL
+Michael Dahlin,2010,1,NULL,NULL
+Amr El Abbadi,2010,1,2055247794,NULL
+Carla S. Ellis,2010,1,NULL,NULL
+James Goodman,2010,1,NULL,NULL
+Michael I. Jordan,2010,1,NULL,NULL
+Lydia E. Kavraki,2010,1,NULL,NULL
+Philip N. Klein,2010,1,NULL,NULL
+Richard F. Lyon,2010,1,NULL,NULL
+Raymond J. Mooney,2010,1,NULL,NULL
+S. Muthukrishnan,2010,1,NULL,NULL
+Fernando Pereira,2010,1,2117274611,NULL
+Pavel Pevzner,2010,1,NULL,NULL
+Robert B. Schnabel,2010,1,NULL,NULL
+Daniel A. Spielman,2010,1,NULL,NULL
+Subhash Suri,2010,1,NULL,NULL
+Josep Torrellas,2010,1,NULL,NULL
+Stephen Trimberger,2010,1,NULL,NULL
+David M. Ungar,2010,1,2041937263,NULL
+Dieter Rombach,2010,1,NULL,NULL
+Ronald Baecker,2011,1,107632699,NULL
+Thomas J. Ball,2011,1,2121300700,NULL
+Guy Blelloch,2011,1,149058271,NULL
+Carl Ebeling,2011,1,NULL,NULL
+David Eppstein,2011,1,NULL,NULL
+Geoffrey Charles Fox,2011,1,2165267828,NULL
+George W. Furnas,2011,1,NULL,NULL
+David K. Gifford,2011,1,NULL,NULL
+Ramesh Govindan,2011,1,NULL,NULL
+Christian S. Jensen,2011,1,2187435788,NULL
+Howard J. Karloff,2011,1,NULL,NULL
+Stephen W. Keckler,2011,1,NULL,NULL
+Peter B. Key,2011,1,NULL,NULL
+Scott Kirkpatrick,2011,1,NULL,NULL
+Susan Landau,2011,1,NULL,NULL
+Ming C. Lin,2011,1,NULL,NULL
+Peter S. Magnusson,2011,1,NULL,NULL
+Dahlia Malkhi,2011,1,NULL,NULL
+Keith Marzullo,2011,1,NULL,NULL
+Max Nelson,2011,1,NULL,NULL
+Joe Mitchell,2011,1,NULL,NULL
+Shubu Mukherjee,2011,1,NULL,NULL
+Zehra Meral Ozsoyoglu,2011,1,388475989,NULL
+János Pach,2011,1,NULL,NULL
+Linda Petzold,2011,1,NULL,NULL
+Martha E. Pollack,2011,1,NULL,NULL
+Dan Roth,2011,1,NULL,NULL
+John W Sanguinetti,2011,1,NULL,NULL
+Margo Seltzer,2011,1,NULL,NULL
+Amit Singhal,2011,1,NULL,NULL
+Diane L. Souvaine,2011,1,NULL,NULL
+Dean M. Tullsen,2011,1,NULL,NULL
+Amin Vahdat,2011,1,NULL,NULL
+David Wetherall,2011,1,NULL,NULL
+Frank Kenneth Zadeck,2011,1,NULL,NULL
+Lars Arge,2012,1,NULL,NULL
+Pierre Baldi,2012,1,NULL,NULL
+Hans-J. Boehm,2012,1,NULL,NULL
+Craig Boutilier,2012,1,NULL,NULL
+Tracy Camp,2012,1,NULL,NULL
+Rick Cattell,2012,1,NULL,NULL
+Larry Davis,2012,1,NULL,NULL
+Lixin Gao,2012,1,NULL,NULL
+Simson Garfinkel,2012,1,2583112299,NULL
+Garth A. Gibson,2012,1,NULL,NULL
+John Hershberger,2012,1,NULL,NULL
+Andrew B. Kahng,2012,1,NULL,NULL
+Anna R. Karlin,2012,1,NULL,NULL
+Srinivasan Keshav,2012,1,NULL,NULL
+Joseph O'Rourke,2012,1,NULL,NULL
+Andrew M. Pitts,2012,1,NULL,NULL
+Raj Reddy,2012,1,NULL,NULL
+Keith W. Ross,2012,1,NULL,NULL
+Robert Schreiber,2012,1,NULL,NULL
+Ron Shamir,2012,1,NULL,NULL
+Yoav Shoham,2012,1,NULL,NULL
+Alistair Sinclair,2012,1,NULL,NULL
+Clifford Stein,2012,1,NULL,NULL
+Leslie G. Valiant,2012,1,NULL,NULL
+Kathy Yelick,2012,1,NULL,NULL
+Ramin Zabih,2012,1,NULL,NULL
+Mark S. Ackerman,2013,1,NULL,NULL
+James H. Anderson,2013,1,NULL,NULL
+Christine L. Borgman,2013,1,NULL,NULL
+Krishnendu Chakrabarty,2013,1,NULL,NULL
+Ramalingam Chellappa,2013,1,NULL,NULL
+Ingemar J. Cox,2013,1,NULL,NULL
+Carlos J. P. de Lucena,2013,1,2182731144,NULL
+Chip Elliott,2013,1,NULL,NULL
+James Gosling,2013,1,NULL,NULL
+Marti A. Hearst,2013,1,NULL,NULL
+Sampath Kannan,2013,1,NULL,NULL
+David J. Kasik,2013,1,NULL,NULL
+Dina Katabi,2013,1,NULL,NULL
+Henry A. Kautz,2013,1,NULL,NULL
+Jon Kleinberg,2013,1,NULL,NULL
+Panganamala Ramana Kumar,2013,1,NULL,NULL
+Douglas S. Lea,2013,1,NULL,NULL
+Yoelle Maarek,2013,1,NULL,NULL
+Christopher D. Manning,2013,1,NULL,NULL
+Madhav Marathe,2013,1,NULL,NULL
+John Mellor-Crummey,2013,1,NULL,NULL
+Dana S. Nau,2013,1,NULL,NULL
+Satish Rao,2013,1,NULL,NULL
+Timothy Roscoe,2013,1,NULL,NULL
+Timoleon K. Sellis,2013,1,NULL,NULL
+Nir N. Shavit,2013,1,NULL,NULL
+David P. Williamson,2013,1,NULL,NULL
+Ellen W. Zegura,2013,1,NULL,NULL
+Yuanyuan Zhou,2013,1,NULL,NULL
+David Zuckerman,2013,1,NULL,NULL
+Charles W. Bachman,2014,1,NULL,NULL
+Allan Borodin,2014,1,NULL,NULL
+Timothy A. Davis,2014,1,NULL,NULL
+Srini Devadas,2014,1,NULL,NULL
+Inderjit S. Dhillon,2014,1,NULL,NULL
+Nikil D. Dutt,2014,1,NULL,NULL
+Faith Ellen,2014,1,NULL,NULL
+Eric Grimson,2014,1,NULL,NULL
+Mark Guzdial,2014,1,NULL,NULL
+Gernot Heiser,2014,1,NULL,NULL
+Thorsten Joachims,2014,1,NULL,NULL
+Michael Kearns,2014,1,NULL,NULL
+Valerie King,2014,1,NULL,NULL
+Yishay Mansour,2014,1,NULL,NULL
+Subhasish Mitra,2014,1,NULL,NULL
+Robert Morris,2014,1,NULL,NULL
+Vijaykrishnan Narayanan,2014,1,NULL,NULL
+Ranganathan Parthasarathy,2014,1,NULL,NULL
+Omer Reingold,2014,1,NULL,NULL
+Ronitt Rubinfeld,2014,1,NULL,NULL
+Daniela Rus,2014,1,NULL,NULL
+Alberto Luigi Sangiovanni-Vincentelli,2014,1,681596721,NULL
+Stuart M. Shieber,2014,1,NULL,NULL
+Ramakrishnan Srikant,2014,1,NULL,NULL
+Aravind Srinivasan,2014,1,NULL,NULL
+S. Sudarshan,2014,1,NULL,NULL
+Nancy M. Amato,2015,1,NULL,NULL
+David M. Blei,2015,1,NULL,NULL
+Naehyuck Chang,2015,1,NULL,NULL
+Kevin Fall,2015,1,NULL,NULL
+Babak Falsafi,2015,1,NULL,NULL
+Ramanathan V. Guha,2015,1,NULL,NULL
+Piotr Indyk,2015,1,NULL,NULL
+Tei-Wei Kuo,2015,1,NULL,NULL
+Chih-Jen Lin,2015,1,NULL,NULL
+Michael George Luby,2015,1,NULL,NULL
+Patrick Drew McDaniel,2015,1,2056207806,NULL
+Victor Miller,2015,1,NULL,NULL
+Elizabeth Mynatt,2015,1,18171182,NULL
+Dragomir R. Radev,2015,1,NULL,NULL
+Sriram Rajamani,2015,1,2083764764,NULL
+Pablo Rodriguez,2015,1,NULL,NULL
+Peter Schröder,2015,1,NULL,NULL
+Assaf Schuster,2015,1,NULL,NULL
+Kevin Skadron,2015,1,NULL,NULL
+Santosh Vempala,2015,1,NULL,NULL
+Tandy Warnow,2015,1,NULL,NULL
+Noga Alon,2016,1,NULL,NULL
+Paul Barford,2016,1,NULL,NULL
+Luca Benini,2016,1,NULL,NULL
+Ricardo Bianchini,2016,1,NULL,NULL
+Stephen Blackburn,2016,1,2146610949,NULL
+Carla Brodley,2016,1,NULL,NULL
+Erik Demaine,2016,1,NULL,NULL
+Frédo Durand,2016,1,NULL,NULL
+Jason Flinn,2016,1,NULL,NULL
+William Freeman,2016,1,2112716162,NULL
+Robert Lee Grossman,2016,1,2095279874,NULL
+Rajesh K. Gupta,2016,1,2180675385,NULL
+James Hendler,2016,1,NULL,NULL
+Monika Henzinger,2016,1,NULL,NULL
+Tony Hey,2016,1,NULL,NULL
+Robert J. K. Jacob,2016,1,NULL,NULL
+Ravindran Kannan,2016,1,NULL,NULL
+Anne-Marie Kermarrec,2016,1,NULL,NULL
+Christos Kozyrakis,2016,1,NULL,NULL
+James Landay,2016,1,29409133,NULL
+J. Brian Lyles,2016,1,NULL,NULL
+Todd C. Mowry,2016,1,NULL,NULL
+Trevor Mudge,2016,1,NULL,NULL
+Venkata Padmanabhan,2016,1,NULL,NULL
+Shwetak Patel,2016,1,2127286128,NULL
+Radia Perlman,2016,1,NULL,NULL
+Michael Saks,2016,1,NULL,NULL
+Sachin S. Sapatnekar,2016,1,NULL,NULL
+Sudipta Sengupta,2016,1,NULL,NULL
+André Seznec,2016,1,NULL,NULL
+Valerie E. Taylor,2016,1,NULL,NULL
+Carlo Tomasi,2016,1,NULL,NULL
+Paul van Oorschot,2016,1,2101866374,NULL
+Manuela M. Veloso,2016,1,2108671403,NULL
+Zhou Zhi-Hua,2016,1,2286237009,NULL
+Edouard Bugnion,2017,1,NULL,NULL
+Shih-Fu Chang,2017,1,NULL,NULL
+Edith Cohen,2017,1,NULL,NULL
+Dorin Comaniciu,2017,1,NULL,NULL
+Susan M. Dray,2017,1,NULL,NULL
+Richard M. Fujimoto,2017,1,NULL,NULL
+Carla Gomes,2017,1,NULL,NULL
+Martin Grohe,2017,1,NULL,NULL
+Venkatesan Guruswami,2017,1,NULL,NULL
+Dan Gusfield,2017,1,NULL,NULL
+Gregory D. Hager,2017,1,NULL,NULL
+Steven Michael Hand,2017,1,NULL,NULL
+Mor Harchol-Balter,2017,1,NULL,NULL
+Laxmikant Kale,2017,1,2115450241,NULL
+Michael Kass,2017,1,NULL,NULL
+Angelos Dennis Keromytis,2017,1,299775663,NULL
+Carl Kesselman,2017,1,NULL,NULL
+Edward Knightly,2017,1,NULL,NULL
+Craig Knoblock,2017,1,1991211814,NULL
+Li Erran Li,2017,1,NULL,NULL
+Gabriel H. Loh,2017,1,NULL,NULL
+Tomás Lozano-Pérez,2017,1,NULL,NULL
+Clifford Lynch,2017,1,NULL,NULL
+Yi Ma,2017,1,NULL,NULL
+Andreas Moshovos,2017,1,NULL,NULL
+Onur Mutlu,2017,1,NULL,NULL
+Nuria Oliver,2017,1,NULL,NULL
+Balaji Prabhakar,2017,1,NULL,NULL
+K. K. Ramakrishnan,2017,1,NULL,NULL
+Yong Rui,2017,1,NULL,NULL
+Bernhard Schölkopf,2017,1,NULL,NULL
+Michael Sipser,2017,1,NULL,NULL
+Anand Sivasubramaniam,2017,1,NULL,NULL
+Mani B. Srivistava,2017,1,NULL,NULL
+Alexander Vardy,2017,1,NULL,NULL
+Martin D. F. Wong,2017,1,NULL,NULL
+Cheng Xiang Zhai,2017,1,NULL,NULL
+Krste Asanović,2018,1,NULL,NULL
+N. Asokan,2018,1,NULL,NULL
+Paul Barham,2018,1,NULL,NULL
+Peter L. Bartlett,2018,1,NULL,NULL
+Elizabeth Belding,2018,1,NULL,NULL
+Katy Börner,2018,1,NULL,NULL
+Amy S. Bruckman,2018,1,NULL,NULL
+André DeHon,2018,1,NULL,NULL
+Premkumar T. Devanbu,2018,1,1481757371,NULL
+Tamal Dey,2018,1,NULL,NULL
+Sandhya Dwarkadas,2018,1,NULL,NULL
+Steven K. Feiner,2018,1,252695556,NULL
+Mohammad Hajiaghayi,2018,1,NULL,NULL
+Dan Halperin,2018,1,NULL,NULL
+Johan Håstad,2018,1,NULL,NULL
+Tian He,2018,1,NULL,NULL
+Wendi Heinzelman,2018,1,NULL,NULL
+Jessica Hodgins,2018,1,601642093,NULL
+John Hughes,2018,1,2306143182,NULL
+Charles Lee Isbell Jr.,2018,1,NULL,NULL
+Kimberly Keeton,2018,1,NULL,NULL
+Sanjeev Khanna,2018,1,NULL,NULL
+Lillian Lee,2018,1,NULL,NULL
+F. Thomson Leighton,2018,1,NULL,NULL
+Fei-Fei Li,2018,1,NULL,NULL
+Michael L. Littman,2018,1,NULL,NULL
+Jiebo Luo,2018,1,NULL,NULL
+Bruce Maggs,2018,1,NULL,NULL
+Bangalore S. Manjunath,2018,1,NULL,NULL
+Vishal Misra,2018,1,NULL,NULL
+Frank Mueller,2018,1,NULL,NULL
+David Parkes,2018,1,NULL,NULL
+Gurudatta Parulkar,2018,1,NULL,NULL
+Toniann Pitassi,2018,1,NULL,NULL
+Lili Qiu,2018,1,NULL,NULL
+Matthew Roughan,2018,1,NULL,NULL
+Alex Snoeren,2018,1,NULL,NULL
+Gerald Tesauro,2018,1,NULL,NULL
+Ellen Voorhees,2018,1,NULL,NULL
+Alec Wolman,2018,1,NULL,NULL
+Scott Aaronson,2019,1,NULL,NULL
+Tarek F. Abdelzaher,2019,1,1970017610,NULL
+Magdalena Bałazińska,2019,1,2345141441,NULL
+Paul Beame,2019,1,NULL,NULL
+Emery D. Berger,2019,1,NULL,NULL
+Ronald F. Boisvert,2019,1,NULL,NULL
+Brad Calder,2019,1,NULL,NULL
+Claire Cardie,2019,1,NULL,NULL
+Timothy M. Chan,2019,1,NULL,NULL
+K. Mani Chandy,2019,1,NULL,NULL
+Xilin Chen,2019,1,NULL,NULL
+Vincent Conitzer,2019,1,NULL,NULL
+Noshir Contractor,2019,1,NULL,NULL
+Michael J. Freedman,2019,1,NULL,NULL
+Deborah Frincke,2019,1,NULL,NULL
+Maria L. Gini,2019,1,NULL,NULL
+Subbarao Kambhampati,2019,1,NULL,NULL
+Tamara G. Kolda,2019,1,NULL,NULL
+Songwu Lu,2019,1,NULL,NULL
+Wendy Mackay,2019,1,1925449899,NULL
+Diana Marculescu,2019,1,NULL,NULL
+Sheila McIlraith,2019,1,NULL,NULL
+Rada Mihalcea,2019,1,NULL,NULL
+Robin Murphy,2019,1,2117700858,NULL
+Marc Najork,2019,1,NULL,NULL
+Jason Nieh,2019,1,NULL,NULL
+Timothy M. Pinkston,2019,1,NULL,NULL
+Mihai Pop,2019,1,NULL,NULL
+Andreas Reuter,2019,1,NULL,NULL
+Jeffrey S. Rosenschein,2019,1,NULL,NULL
+Srinivasan Seshan,2019,1,NULL,NULL
+Prashant J. Shenoy,2019,1,NULL,NULL
+Peter Shor,2019,1,NULL,NULL
+Mona Singh,2019,1,NULL,NULL
+Ramesh Sitaraman,2019,1,NULL,NULL
+Moshe Tennenholtz,2019,1,NULL,NULL
+Nisheeth K. Vishnoi,2019,1,NULL,NULL
+Darrell Whitley,2019,1,NULL,NULL
+Yuan Xie,2019,1,NULL,NULL
+Moustafa Amin Youssef,2019,1,NULL,NULL
+Lidong Zhou,2019,1,NULL,NULL
+Wil van der Aalst,2020,1,621424736,NULL
+Daniel Abadi,2020,1,2170206103,NULL
+Srinivas Aluru,2020,1,NULL,NULL
+Andrea Arpaci-Dusseau,2020,1,NULL,NULL
+Remzi Arpaci-Dusseau,2020,1,NULL,NULL
+Suman Banerjee,2020,1,NULL,NULL
+Manuel Blum,2020,1,NULL,NULL
+Lionel Briand,2020,1,2144557644,NULL
+David Brooks,2020,1,NULL,NULL
+Anantha P. Chandrakasan,2020,1,NULL,NULL
+Yao-Wen Chang,2020,1,NULL,NULL
+Moses Charikar,2020,1,NULL,NULL
+Yiran Chen,2020,1,NULL,NULL
+Whitfield Diffie,2020,1,NULL,NULL
+Bonnie Dorr,2020,1,NULL,NULL
+Nicholas Duffield,2020,1,NULL,NULL
+Alan Edelman,2020,1,NULL,NULL
+Jodi Forlizzi,2020,1,NULL,NULL
+Sanjay Ghemawat,2020,1,NULL,NULL
+Antonio González,2020,1,NULL,NULL
+Steven Gribble,2020,1,NULL,NULL
+Susanne Hambrusch,2020,1,NULL,NULL
+Martin Hellman,2020,1,NULL,NULL
+Nicholas Higham,2020,1,NULL,NULL
+Holger H. Hoos,2020,1,NULL,NULL
+Ihab Ilyas,2020,1,1982738670,NULL
+Lizy John,2020,1,NULL,NULL
+Nam Sung Kim,2020,1,2121754334,NULL
+Sven Koenig,2020,1,NULL,NULL
+Arvind Krishnamurthy,2020,1,NULL,NULL
+Kevin Leyton-Brown,2020,1,NULL,NULL
+Steven H. Low,2020,1,NULL,NULL
+Chenyang Lu,2020,1,NULL,NULL
+Scott Mahlke,2020,1,NULL,NULL
+David Maltz,2020,1,NULL,NULL
+Maja Matarić,2020,1,NULL,NULL
+Filippo Menczer,2020,1,NULL,NULL
+Jose Meseguer,2020,1,NULL,NULL
+Radhika Nagpal,2020,1,NULL,NULL
+Chandrasekhar Narayanaswami,2020,1,NULL,NULL
+Sam Noh,2020,1,NULL,NULL
+Manish Parashar,2020,1,NULL,NULL
+Keshab Parhi,2020,1,741769158,NULL
+Haesun Park,2020,1,NULL,NULL
+Gordon Plotkin,2020,1,NULL,NULL
+Michael O. Rabin,2020,1,NULL,NULL
+Paul Resnick,2020,1,NULL,NULL
+Steven Salzberg,2020,1,NULL,NULL
+Sanjit Arunkumar Seshia,2020,1,260128524,NULL
+Amit Sheth,2020,1,2295682018,NULL
+Adam D. Smith,2020,1,2132461468,NULL
+Rick Stevens,2020,1,NULL,NULL
+Leandros Tassiulas,2020,1,NULL,NULL
+Ken Thompson,2020,1,NULL,NULL
+Andrew Tomkins,2020,1,NULL,NULL
+Olga Troyanskaya,2020,1,NULL,NULL
+Wei Wang,2020,1,2981772981,NULL
+Cathy H. Wu,2020,1,NULL,NULL
+Shuicheng Yan,2020,1,NULL,NULL
+Leonard Adleman,2021,1,NULL,NULL
+David Bader,2021,1,2148365076,NULL
+Meenakshi Balakrishnan,2021,1,NULL,NULL
+Nikolaj Bjørner,2021,1,NULL,NULL
+Mark Braverman,2021,1,NULL,NULL
+Edward Y. Chang,2021,1,2108840372,NULL
+Anind Dey,2021,1,NULL,NULL
+Lieven Eeckhout,2021,1,NULL,NULL
+Martin Farach-Colton,2021,1,NULL,NULL
+Amos Fiat,2021,1,NULL,NULL
+Hubertus Franke,2021,1,NULL,NULL
+Batya Friedman,2021,1,NULL,NULL
+Evgeniy Gabrilovich,2021,1,NULL,NULL
+Judith Gal-Ezer,2021,1,NULL,NULL
+Deepak Ganesan,2021,1,NULL,NULL
+Anupam Gupta,2021,1,NULL,NULL
+Zygmunt Haas,2021,1,NULL,NULL
+Elad Hazan,2021,1,NULL,NULL
+Xiaobo Sharon Hu,2021,1,NULL,NULL
+Zachary Ives,2021,1,53579654,NULL
+David R. Kaeli,2021,1,NULL,NULL
+Robert Kleinberg,2021,1,NULL,NULL
+Thomas Lengauer,2021,1,NULL,NULL
+Fei-Fei Li,2021,1,NULL,NULL
+Hai Li,2021,1,NULL,NULL
+Tie-Yan Liu,2021,1,2240541904,NULL
+Matthew T. Mason,2021,1,NULL,NULL
+Dale A. Miller,2021,1,2144406363,NULL
+Elchanan Mossel,2021,1,NULL,NULL
+Bernhard Nebel,2021,1,NULL,NULL
+Joel Ouaknine,2021,1,NULL,NULL
+David Z. Pan,2021,1,NULL,NULL
+Rosalind Picard,2021,1,NULL,NULL
+Glenn Ricart,2021,1,NULL,NULL
+Tajana Rosing,2021,1,NULL,NULL
+Robert B. Ross,2021,1,NULL,NULL
+Mubarak Ali Shah,2021,1,NULL,NULL
+Aravinda P. Sistla,2021,1,NULL,NULL
+Luca Trevisan,2021,1,NULL,NULL
+Wenping Wang,2021,1,NULL,NULL
+Ming-Hsuan Yang,2021,1,2127109347,NULL
+Mohammed Zaki,2021,1,2165917828,NULL
+Lin Zhong,2021,1,NULL,NULL
+Shlomo Zilberstein,2021,1,NULL,NULL
+Bonnie Webber,2020,3,NULL,NULL
+Ron Kaplan,2019,3,NULL,NULL
+Mark Steedman,2018,3,NULL,NULL
+Barbara Grosz,2017,3,NULL,NULL
+Joan Bresnan,2016,3,NULL,NULL
+Sheng Li,2015,3,NULL,NULL
+Robert L. Mercer,2014,3,NULL,NULL
+Jerry Hobbs,2013,3,NULL,NULL
+Charles Fillmore,2012,3,NULL,NULL
+Eugene Charniak,2011,3,NULL,NULL
+William A. Woods,2010,3,NULL,NULL
+Fred Jelinek,2009,3,NULL,NULL
+Yorick Wilks,2008,3,NULL,NULL
+Lauri Karttunen,2007,3,NULL,NULL
+Eva Hajicova,2006,3,NULL,NULL
+Martin Kay,2005,3,NULL,NULL
+Karen Sparck Jones,2004,3,NULL,NULL
+Makoto Nagao,2003,3,NULL,NULL
+Aravind Joshi,2002,3,NULL,NULL
+Junichi Tsujii,2021,3,NULL,NULL
+Dan Suciu,2022,4,1986159374,NULL
+Alon Halevy,2021,4,2154833104,NULL
+Beng Chin Ooi,2020,4,2037466936,NULL
+Anastasia Ailamaki,2019,4,2024002627,NULL
+Raghu Ramakrishnan,2018,4,2164040783,NULL
+Goetz Graefe,2017,4,2284116839,NULL
+Gerhard Weikum,2016,4,514836396,NULL
+Laura Haas,2015,4,2304639312,NULL
+Martin Kersten,2014,4,2117317669,NULL
+Stefano Ceri,2013,4,519054157,NULL
+Bruce Lindsay,2012,4,2020635548,NULL
+Surajit Chaudhuri,2011,4,2163909284,NULL
+Umeshwar Dayal,2010,4,689294964,NULL
+Masaru Kitsuregawa,2009,4,390930505,NULL
+Moshe Y. Vardi,2008,4,1970575723,NULL
+Jennifer Widom,2007,4,671527850,NULL
+Jeffrey D. Ullman,2006,4,2289364316,NULL
+Michael Carey,2005,4,2157114695,NULL
+Ronald Fagin,2004,4,2103086064,NULL
+Don Chamberlin,2003,4,NULL,NULL
+Patricia Selinger,2002,4,NULL,NULL
+Rudolf Bayer,2001,4,NULL,NULL
+Rakesh Agrawal,2000,4,2138427228,NULL
+Hector Garcia-Molina,1999,4,237419955,NULL
+Serge Abiteboul,1998,4,172400696,NULL
+David Maier,1997,4,2064546257,NULL
+C. Mohan,1996,4,NULL,NULL
+David DeWitt,1995,4,1979791317,NULL
+Philip Bernstein,1994,4,2304774990,NULL
+Jim Gray,1993,4,2131537204,NULL
+Michael Stonebraker,1992,4,1998938290,NULL
+Lionel Briand,2022,5,2144557644,NULL
+Prem Devanbu,2021,5,NULL,NULL
+Michael Ernst,2020,5,2235702021,NULL
+Mark Harman,2019,5,2150723893,NULL
+Andreas Zeller,2018,5,2106620385,NULL
+Daniel Jackson,2017,5,2120858950,NULL
+James Herbsleb,2016,5,202682525,NULL
+Carlo Ghezzi,2015,5,2233149120,NULL
+Alexander Wolf,2014,5,2115607830,NULL
+David Notkin,2013,5,477007165,NULL
+Lori Clarke,2012,5,2106467035,NULL
+David Garlan,2011,5,2256096860,NULL
+Mary Shaw,2011,5,2141334907,NULL
+Erich Gamma,2010,5,NULL,NULL
+Richard Helm,2010,5,NULL,NULL
+Ralph Johnson,2010,5,2159634021,NULL
+John Vlissides,2010,5,NULL,NULL
+Richard N. Taylor,2009,5,2113585066,NULL
+Axel van Lamsweerde,2008,5,NULL,NULL
+Elaine J. Weyuker,2007,5,697582,NULL
+David Harel,2006,5,427806604,NULL
+Jeff Kramer,2005,5,2095806276,NULL
+Jeff Magee,2005,5,2097290386,NULL
+Nancy Leveson,2004,5,2150992688,NULL
+Leon J. Osterweil,2003,5,2248607981,NULL
+Gerard Holzmann,2002,5,2028047182,NULL
+Michael Jackson,2001,5,2761218531,NULL
+Victor Basili,2000,5,2011353662,NULL
+Harlan Mills,1999,5,2151179467,NULL
+Niklaus Wirth,1999,5,2327738716,NULL
+David Parnas,1998,5,88694571,NULL
+Barry Boehm,1997,5,2068686281,NULL
+NELSON MORGAN,2022,6,2153557346,NULL
+HERVÉ BOURLARD,2022,6,NULL,NULL
+DAVID NAHAMOO,2021,6,2039775407,NULL
+HYNEK HERMANSKY,2020,6,316105680,NULL
+HERMANN NEY,2019,6,2293758362,NULL
+MARI OSTENDORF,2018,6,2046206377,NULL
+MARK YOFFE LIBERMAN,2017,6,2020807148,NULL
+TAKEHIRO MORIYA,2016,6,2094492567,NULL
+STEPHEN JOHN YOUNG,2015,6,NULL,NULL
+BIING-HWANG JUANG,2014,6,2806243324,NULL
+VICTOR ZUE,2013,6,1980755861,NULL
+JAMES BAKER,2012,6,NULL,NULL
+JANET BAKER,2012,6,NULL,NULL
+JULIA HIRSCHBERG,2011,6,1983359683,NULL
+SADAOKI FURUI,2010,6,719538715,NULL
+JOHN MAKHOUL,2009,6,2003402953,NULL
+RAJ REDDY,2008,6,NULL,NULL
+ALLEN GERSHO,2007,6,201268087,NULL
+James D. Johnston,2006,6,NULL,NULL
+FREDERICK R. JELINEK,2005,6,2019534230,NULL
+GUNNAR FANT,2004,6,681368066,NULL
+KENNETH N. STEVENS,2004,6,2096589589,NULL
+Pramod K. Varshney,2021,7,NULL,NULL
+Charles Bouman,2021,7,NULL,NULL
+Jose Carlos Principe,2020,7,2112831471,NULL
+C.-C. Jay Kuo,2019,7,1250704735,NULL
+Michael Elad,2018,7,NULL,NULL
+Patrick Flandrin,2017,7,NULL,NULL
+Ahmed H. Tewfik,2017,7,NULL,NULL
+Jelena Kovacevic,2016,7,NULL,NULL
+Bhaskar D. Rao,2016,7,2103662685,NULL
+Li Deng,2015,7,2101552792,NULL
+Moeness G. Amin,2014,7,NULL,NULL
+Richard G. Baraniuk,2014,7,NULL,NULL
+Yonina Eldar,2013,7,NULL,NULL
+Al Hero,2013,7,NULL,NULL
+Shih-Fu Chang,2012,7,NULL,NULL
+Ali H. Sayed,2012,7,NULL,NULL
+Bernd Girod,2011,7,NULL,NULL
+Björn Ottersten,2011,7,NULL,NULL
+Aggelos Katsaggelos,2010,7,NULL,NULL
+José M. F. Moura,2010,7,NULL,NULL
+K. J. Ray Liu,2009,7,NULL,NULL
+Alan S. Willsky,2009,7,NULL,NULL
+Harry L. Van Trees,2008,7,NULL,NULL
+Michael Unser,2008,7,NULL,NULL
+H. Vincent Poor,2007,7,NULL,NULL
+Chin-hui Lee,2006,7,2163150924,NULL
+Arye Nehorai,2006,7,NULL,NULL
+Alan Bovik,2005,7,NULL,NULL
+Hermann Ney,2005,7,2293758362,NULL
+Edward J. Delp,2004,7,NULL,NULL
+Stephen J. Young,2004,7,NULL,NULL
+Johann Bohme,2003,7,NULL,NULL
+Arogyaswami J. Paulraj,2003,7,NULL,NULL
+Henrique S. Malvar,2002,7,NULL,NULL
+Michael D. Zoltowski,2002,7,NULL,NULL
+P. P. Vaidyanathan,2001,7,NULL,NULL
+Martin Vetterli,2001,7,2545000257,NULL
+Rama Chellappa,2000,7,NULL,NULL
+Georgios B. Giannakis,2000,7,NULL,NULL
+John R. Treichler,1999,7,NULL,NULL
+Donald W. Tufts,1999,7,NULL,NULL
+Biing-Hwang Juang,1998,7,2806243324,NULL
+Hugo De Man,1998,7,NULL,NULL
+Robert M. Gray,1997,7,NULL,NULL
+Boaz Porat,1997,7,NULL,NULL
+Petre Stoica,1996,7,2019767560,NULL
+Murat Kunt,1996,7,NULL,NULL
+Sanjit K. Mitra,1995,7,NULL,NULL
+Teuvo Kohonen,1995,7,NULL,NULL
+"Thomas P. Barnwell, III",1994,7,2169720417,NULL
+Louis L. Scharf,1994,7,NULL,NULL
+John W. Woods,1993,7,NULL,NULL
+David G. Messerschmitt,1993,7,NULL,NULL
+S. Y. Kung,1992,7,NULL,NULL
+R.A. Roberts,1991,7,NULL,NULL
+R. W. Broderson,1990,7,NULL,NULL
+B. Friedlander,1989,7,NULL,NULL
+T. Kailath,1988,7,NULL,NULL
+J.B. Allan,1987,7,NULL,NULL
+T.S. Huang,1987,7,NULL,NULL
+J. H. McClellan,1986,7,NULL,NULL
+C. S. Burrus,1985,7,NULL,NULL
+B. Liu,1984,7,NULL,NULL
+L. B. Jackson,1983,7,NULL,NULL
+J. Makhoul,1982,7,NULL,NULL
+K. Steiglitz,1981,7,NULL,NULL
+T. W. Parks,1980,7,NULL,NULL
+R. W. Schafer,1979,7,NULL,NULL
+L. R. Rabiner,1978,7,NULL,NULL
+A.H. Gray,1977,7,NULL,NULL
+J.F. Kaiser,1977,7,NULL,NULL
+J.D. Markel,1977,7,NULL,NULL
+A.V. Oppenheim,1976,7,NULL,NULL
+C. Rader,1976,7,NULL,NULL
+B.S. Atal,1975,7,NULL,NULL
+J.W. Cooley,1975,7,NULL,NULL
+B. Gold,1972,7,NULL,NULL
+J.L. Flanagan,1971,7,NULL,NULL
+W.W. Lang,1970,7,NULL,NULL
+H.B. Knowles,1969,7,NULL,NULL
+M.S. Corrington,1968,7,NULL,NULL
+D. von Recklinghausen,1967,7,NULL,NULL
+H. H. Scott,1965,7,NULL,NULL
+C. D. Mee,1964,7,NULL,NULL
+D. F. Eldridge,1963,7,NULL,NULL
+J. K. Hilliard,1962,7,NULL,NULL
+J. R. MacDonald,1961,7,NULL,NULL
+W. B. Snow,1960,7,NULL,NULL
+A. B. Bereskin,1959,7,NULL,NULL
+P.C. Goldmark,1959,7,NULL,NULL
+D.W. Martin,1958,7,NULL,NULL
+M. Camras,1957,7,NULL,NULL
+H.E. Roys,1956,7,NULL,NULL
+H.F. Olson,1955,7,NULL,NULL
+B.B. Bauer,1954,7,NULL,NULL
+Bernard Gold,1997,8,NULL,NULL
+Charles M. Rader,1997,8,NULL,NULL
+Thomas G. Stockham,1998,8,NULL,NULL
+Lawrence R. Rabiner,1999,8,2020830328,NULL
+James F. Kaiser,2000,8,NULL,NULL
+Thomas S. Huang,2001,8,2149631809,NULL
+James W. Cooley,2002,8,NULL,NULL
+Hans W. Schuessler,2003,8,NULL,NULL
+Thomas W. Parks,2004,8,NULL,NULL
+James H. McClellan,2004,8,NULL,NULL
+Fumitada Itakura,2005,8,2158059718,NULL
+Thomas Kailath,2006,8,NULL,NULL
+Alan V. Oppenheim,2007,8,NULL,NULL
+Robert M. Gray,2008,8,NULL,NULL
+Charles Sidney Burrus,2009,8,NULL,NULL
+Ronald Schafer,2010,8,NULL,NULL
+Ingrid Daubechies,2011,8,NULL,NULL
+Clifford Carter,2012,8,NULL,NULL
+Bishnu S. Atal,2013,8,NULL,NULL
+"Thomas P. Barnwell, III",2014,8,2169720417,NULL
+Harry L. Van Trees,2015,8,NULL,NULL
+Louis Scharf,2016,8,NULL,NULL
+Martin Vetterli,2017,8,2545000257,NULL
+Bede Liu,2018,8,NULL,NULL
+Alan Willsky,2019,8,NULL,NULL
+Ramalingam Chellappa,2020,8,NULL,NULL
+Emmanuel Candès,2021,8,NULL,NULL
+Terence Tao,2021,8,NULL,NULL
+David L. Donoho,2022,8,NULL,NULL
+Alan J. Perlis,1966,10,NULL,NULL
+Maurice V. Wilkes,1967,10,NULL,NULL
+Richard Hamming,1968,10,NULL,NULL
+Marvin Minsky,1969,10,NULL,NULL
+James H. Wilkinson,1970,10,NULL,NULL
+John McCarthy,1971,10,2121245618,NULL
+Edsger Dijkstra,1972,10,NULL,NULL
+Charles W. Bachman,1973,10,NULL,NULL
+Donald E. Knuth,1974,10,NULL,NULL
+Allen Newell,1975,10,NULL,NULL
+Herbert A. Simon,1975,10,NULL,NULL
+Michael O. Rabin,1976,10,NULL,NULL
+Dana S. Scott,1976,10,NULL,NULL
+John Backus,1977,10,NULL,NULL
+Robert W. Floyd,1978,10,NULL,NULL
+Kenneth E. Iverson,1979,10,NULL,NULL
+C. Antony R. Hoare,1980,10,NULL,NULL
+Edgar F. Codd,1981,10,NULL,NULL
+Stephen A. Cook,1982,10,NULL,NULL
+Ken Thompson,1983,10,NULL,NULL
+Dennis M. Ritchie,1983,10,NULL,NULL
+Richard M. Karp,1985,10,NULL,NULL
+John Hopcroft,1986,10,NULL,NULL
+Robert Tarjan,1986,10,NULL,NULL
+John Cocke,1987,10,NULL,NULL
+Ivan Sutherland,1988,10,NULL,NULL
+William Morton Kahan,1989,10,NULL,NULL
+Fernando J. Corbató,1990,10,NULL,NULL
+Butler W. Lampson,1992,10,NULL,NULL
+Richard E. Stearns,1993,10,NULL,NULL
+Edward Feigenbaum,1994,10,NULL,NULL
+Raj Reddy,1994,10,NULL,NULL
+Manuel Blum,1995,10,NULL,NULL
+Douglas Engelbart,1997,10,NULL,NULL
+James Gray,1998,10,NULL,NULL
+Frederick Phillips Brooks，Jr．,1999,10,NULL,NULL
+Andrew Chi-Chih Yao,2000,10,NULL,NULL
+Ole-Johan Dahl,2001,10,NULL,NULL
+Kristen Nygaard,2001,10,NULL,NULL
+Leonard M. Adleman,2002,10,NULL,NULL
+Alan Kay,2003,10,NULL,NULL
+Robert E. Kahn,2004,10,NULL,NULL
+Peter Naur,2005,10,NULL,NULL
+Frances E. Allen,2006,10,NULL,NULL
+Allen Emerson,2007,10,NULL,NULL
+Charles Thacker,2009,10,NULL,NULL
+Leslie Valiant,2010,10,NULL,NULL
+Whitfield Diffie,2015,10,NULL,NULL
+Martin Hellman,2015,10,NULL,NULL
+Tim Berners-Lee,2016,10,NULL,NULL
+John Hennessy,2017,10,NULL,NULL
+David Patterson,2017,10,NULL,NULL
+Yoshua Bengio,2018,10,NULL,NULL
+Geoffrey Hinton,2018,10,NULL,NULL
+Yann LeCun,2018,10,NULL,NULL
+Patrick M. Hanrahan,2019,10,NULL,NULL
+Edwin E. Catmull,2019,10,NULL,NULL
+Jeffrey David Ullman,2020,10,NULL,NULL
+Alfred Vaino Aho,2020,10,NULL,NULL
+Jack J. Dongarra,2021,10,NULL,NULL
+Norm Badler,2021,11,NULL,NULL
+Brent Burley,2021,11,NULL,NULL
+Mathieu Desbrun,2021,11,156043509,NULL
+Doug L. James,2021,11,2155930205,NULL
+Karen Liu,2021,11,NULL,NULL
+Barbara Mones,2021,11,NULL,NULL
+William Seaman,2021,11,NULL,NULL
+Kavita Bala,2020,11,2050228312,NULL
+Elizabeth Baron,2020,11,NULL,NULL
+Eugene Fiume,2020,11,2466465998,NULL
+Ming Lin,2020,11,2143233993,NULL
+Hanspeter Pfister,2020,11,2102290556,NULL
+Alla Sheffer,2020,11,2009650199,NULL
+Frederick Brooks,2019,11,2097474894,NULL
+Marie-Paule Cani,2019,11,2024013694,NULL
+Donna Cox,2019,11,NULL,NULL
+Markus Gross,2019,11,2289975239,NULL
+Dinesh Manocha,2019,11,2146473740,NULL
+Ravi Ramamoorthi,2019,11,2146115641,NULL
+Hanan Samet,2019,11,89934235,NULL
+Denis Zorin,2019,11,NULL,NULL
+Ivan E. Sutherland,2018,11,NULL,NULL
+Donald P. Greenberg,2018,11,2086033821,NULL
+Andries van Dam,2018,11,2149961428,NULL
+Ed Catmull,2018,11,NULL,NULL
+José Luis Encarnação,2018,11,NULL,NULL
+James Foley,2018,11,2193907057,NULL
+James F. Blinn,2018,11,723800150,NULL
+Pat Hanrahan,2018,11,2225733586,NULL
+Tomoyuki Nishita,2018,11,2173005782,NULL
+Nelson Max,2018,11,2189376613,NULL
+Robert L. Cook,2018,11,NULL,NULL
+James T. Kajiya,2018,11,NULL,NULL
+Turner Whitted,2018,11,NULL,NULL
+Henry Fuchs,2018,11,2196043388,NULL
+Jessica Hodgins,2018,11,601642093,NULL
+Lynn Hershman Leeson,2018,11,NULL,NULL
+Roman Verostko,2018,11,NULL,NULL
+Yoichiro Kawaguchi,2018,11,2294226407,NULL
+Charles Csuri,2018,11,NULL,NULL
+Jean-Pierre Hébert,2018,11,NULL,NULL
+Manfred Mohr,2018,11,NULL,NULL
+Lillian Schwartz,2018,11,NULL,NULL
+Steina Vasulka,2018,11,NULL,NULL
+Ernest A. Edmonds,2018,11,NULL,NULL
+Monika Fleischmann,2018,11,NULL,NULL
+Loren Carpenter,2018,11,NULL,NULL
+Alan H. Barr,2018,11,NULL,NULL
+John Warnock,2018,11,NULL,NULL
+Alvy Ray Smith,2018,11,NULL,NULL
+Kurt Akeley,2018,11,NULL,NULL
+Marc Levoy,2018,11,2073891704,NULL
+Przemyslaw Prusinkiewicz,2018,11,NULL,NULL
+Michael F. Cohen,2018,11,2156496335,NULL
+Tony DeRose,2018,11,NULL,NULL
+David H. Salesin,2018,11,2054111979,NULL
+David Kirk,2018,11,2432757675,NULL
+Peter Schrӧder,2018,11,NULL,NULL
+Hugues Hoppe,2018,11,2206701583,NULL
+Jos Stam,2018,11,NULL,NULL
+Thomas W. Sederberg,2018,11,NULL,NULL
+Greg Ward,2018,11,2252024104,NULL
+Ken Perlin,2018,11,1124562777,NULL
+Michael Kass,2018,11,NULL,NULL
+Richard Szeliski,2018,11,1989985383,NULL
+Greg Turk,2018,11,2130761626,NULL
+Holly Rushmeier,2018,11,258783921,NULL
+Thomas Funkhouser,2018,11,2136189631,NULL
+Steve Marschner,2018,11,1992278322,NULL
+Fredo Durand,2018,11,NULL,NULL
+Ramesh Raskar,2018,11,2140705446,NULL
+Daniel Cohen-Or,2018,11,9988965,NULL
+Elena Ferrari,2021,12,2170777979,NULL
+Dawn Song,2020,12,2131252044,NULL
+Wenke Lee,2019,12,2155626625,NULL
+N. Asokan,2018,12,NULL,NULL
+Shai Halevi,2017,12,1686185850,NULL
+David A. Wagner,2016,12,2109123731,NULL
+Ross J. Anderson,2015,12,2120643228,NULL
+Moti Yung,2014,12,2097786798,NULL
+Adrian Perrig,2013,12,2213385919,NULL
+Ravi Sandhu,2012,12,1996714504,NULL
+Virgil Gligor,2011,12,2633438792,NULL
+Jan Camenisch,2010,12,2001749418,NULL
+Jonathan Millen,2009,12,NULL,NULL
+Dorothy Denning,2008,12,2357457453,NULL
+Martin Abadi,2007,12,NULL,NULL
+Michael Schroeder,2006,12,NULL,NULL
+Whitfield Diffie,2005,12,NULL,NULL
+Johannes Gehrke,2021,13,2083845045,NULL
+Thorsten Joachims,2020,13,NULL,NULL
+Charu Aggarwal,2019,13,2146335907,NULL
+Bing Liu,2018,13,2244698799,NULL
+Jian Pei,2017,13,2126330539,NULL
+Philip S. Yu,2016,13,2125104194,NULL
+Hans-Peter Kriegel,2015,13,2135052836,NULL
+Pedro Domingos,2014,13,NULL,NULL
+Jon Kleinberg,2013,13,NULL,NULL
+Eamonn Keogh,2021,14,2170070822,NULL
+Joydeep Ghosh,2020,14,2148168557,NULL
+Jure Leskovec,2019,14,1878631932,NULL
+Dacheng Tao,2018,14,2104129307,NULL
+George Karypis,2017,14,219814910,NULL
+Rajeev Rastogi,2016,14,2651564987,NULL
+Charu Aggarwal,2015,14,2146335907,NULL
+Jian Pei,2014,14,2126330539,NULL
+Hans-Peter Kriegel,2013,14,2135052836,NULL
+Jerome H. Friedman,2012,14,NULL,NULL
+Geoff J. McLachlan,2011,14,NULL,NULL
+Heikki Mannila,2009,14,310734946,NULL
+Anil Jain,2008,14,2162010601,NULL
+J. Ross Quinlan,2007,14,NULL,NULL
+Christos Faloutsos,2006,14,2198983026,NULL
+David Hand,2004,14,2175518357,NULL
+Philip S. Yu,2003,14,2125104194,NULL
+Jiawei Han,2002,14,2121939561,NULL
+T.Y. Lin,2001,14,NULL,NULL
+Yvonne Rogers,2022,15,2144042109,NULL
+Scott Hudson,2021,15,2171298838,NULL
+Susan T. Dumais,2020,15,676500258,NULL
+Hiroshi Ishii,2019,15,2096221143,NULL
+Steven K. Feiner,2018,15,252695556,NULL
+Brad A. Myers,2017,15,2117127927,NULL
+Robert E. Kraut,2016,15,1975391153,NULL
+Jim Hollan,2015,15,NULL,NULL
+Steve Whittaker,2014,15,2119343948,NULL
+George G. Robertson,2013,15,2172094290,NULL
+Dan Olsen,2012,15,2148302434,NULL
+Terry Winograd,2011,15,2091637845,NULL
+Lucy Suchman,2010,15,NULL,NULL
+Sara Kiesler,2009,15,729699849,NULL
+Bill Buxton,2008,15,NULL,NULL
+James D. Foley,2007,15,2193907057,NULL
+Judith Olson and Gary Olson,2006,15,2153820154,NULL
+Tom Landauer,2005,15,NULL,NULL
+Tom Moran,2004,15,NULL,NULL
+John M. Carroll,2003,15,2144459651,NULL
+Donald A. Norman,2002,15,2144924319,NULL
+Ben Shneiderman,2001,15,668764113,NULL
+Stuart K. Card,2000,15,614907589,NULL
+Douglas C. Engelbart ,1998,15,NULL,NULL
+Mark Billinghurst,2022,16,2069749540,NULL
+Tanzeem Choudhury,2022,16,2345003782,NULL
+Aniket Kittur,2022,16,NULL,NULL
+Amy J. Ko,2022,16,NULL,NULL
+Norbert A. Streitz,2022,16,2082180277,NULL
+Jaime Teevan,2022,16,1982462162,NULL
+Marilyn Tremaine,2022,16,NULL,NULL
+Roel Vertegaal,2022,16,2051023350,NULL
+Maneesh Agrawala,2021,16,718039462,NULL
+Ann Blandford,2021,16,1784647638,NULL
+Jeffrey Heer,2021,16,2112690490,NULL
+Jonathan Lazar,2021,16,2128029572,NULL
+Fabio Paternò,2021,16,NULL,NULL
+Rosalind W. Picard,2021,16,687641213,NULL
+Fernanda Viégas,2021,16,NULL,NULL
+Allison Woodruff,2021,16,NULL,NULL
+Sunny Consolvo,2020,16,NULL,NULL
+Steven M. Drucker,2020,16,14227721,NULL
+Jean-Daniel Fekete,2020,16,2154968417,NULL
+Jason Hong,2020,16,2141131632,NULL
+Kristina Höök,2020,16,NULL,NULL
+Kasper Hornbæk,2020,16,NULL,NULL
+Meredith Ringel Morris,2020,16,2123314761,NULL
+Peter Wright,2020,16,2138390243,NULL
+George Fitzmaurice,2019,16,1899877228,NULL
+Batya Friedman,2019,16,NULL,NULL
+Takeo Igarashi,2019,16,2152110089,NULL
+Jennifer Mankoff,2019,16,1987134293,NULL
+Nuria Oliver,2019,16,NULL,NULL
+Loren Terveen,2019,16,2308719832,NULL
+Jacob O. Wobbrock,2019,16,318516288,NULL
+John Zimmerman,2019,16,2165294875,NULL
+Amy S. Bruckman,2018,16,NULL,NULL
+Sheelagh Carpendale,2018,16,2076420186,NULL
+Ed H. Chi,2018,16,2237883256,NULL
+Michael Muller,2018,16,2113830967,NULL
+Albrecht Schmidt,2018,16,2688824889,NULL
+Jean Scholtz,2018,16,2688139758,NULL
+Andrew D. Wilson,2018,16,2105571773,NULL
+Volker Wulf,2018,16,656307113,NULL
+Elisabeth André,2017,16,NULL,NULL
+Lorrie Faith Cranor,2017,16,368046975,NULL
+Vicki L. Hanson,2017,16,2114468277,NULL
+Marti A. Hearst,2017,16,NULL,NULL
+Gloria Mark,2017,16,2095721151,NULL
+Philippe Palanque,2017,16,87613993,NULL
+Paul Resnick,2017,16,NULL,NULL
+Thad Eugene Starner,2017,16,2038762803,NULL
+Margaret Burnett,2016,16,2115609526,NULL
+Elizabeth F. Churchill,2016,16,730947879,NULL
+Allison Druin,2016,16,935383222,NULL
+Susan R. Fussell,2016,16,302636038,NULL
+Yves Guiard,2016,16,NULL,NULL
+Leysia Palen,2016,16,NULL,NULL
+Daniel M. Russell,2016,16,NULL,NULL
+John Stasko,2016,16,2087252583,NULL
+Stephen Brewster,2015,16,2157782254,NULL
+Andy Cockburn,2015,16,2101644873,NULL
+Anind K. Dey,2015,16,2111246749,NULL
+Ernest Edmonds,2015,16,2163922885,NULL
+Scott MacKenzie,2015,16,2206355151,NULL
+Sharon Oviatt,2015,16,2669286322,NULL
+Catherine Plaisant,2015,16,216611935,NULL
+Bill Verplank,2015,16,NULL,NULL
+John C. Tang,2014,16,2014998196,NULL
+Jeff A. Johnson,2014,16,NULL,NULL
+Susan Dray,2014,16,1643225831,NULL
+Jodi L. Forlizzi,2014,16,2068668851,NULL
+Keith Edwards,2014,16,2166870691,NULL
+Ken Hinckley,2014,16,1560725665,NULL
+Richard H. R. Harper,2014,16,2122843253,NULL
+Gary Marsden,2014,16,2124313408,NULL
+Patrick Baudisch,2013,16,2009751849,NULL
+Alan Dix,2013,16,2304140017,NULL
+Clarisse de Souza,2013,16,2166724364,NULL
+Victoria Bellotti,2013,16,NULL,NULL
+Bonnie Nardi,2013,16,2015738512,NULL
+Rebecca E. Grinter,2013,16,504046652,NULL
+Thomas S. Tullis,2013,16,NULL,NULL
+Eric Horvitz,2013,16,1970391018,NULL
+Ben Bederson,2012,16,NULL,NULL
+Steve Benford,2012,16,2088024608,NULL
+Hugh Dubberly,2012,16,NULL,NULL
+Carl Gutwin,2012,16,2071700171,NULL
+Joy Mountford,2012,16,NULL,NULL
+Alan Newell,2012,16,2283508340,NULL
+Yvonne Rogers,2012,16,2144042109,NULL
+Ravin Balakrishnan,2011,16,2130130894,NULL
+Steven Feiner,2011,16,NULL,NULL
+Joseph Konstan,2011,16,2002483998,NULL
+James Landay,2011,16,29409133,NULL
+Jenny Preece,2011,16,NULL,NULL
+Abi Sellen,2011,16,NULL,NULL
+Dennis Wixon,2011,16,2634288744,NULL
+Susanne Bødker,2010,16,NULL,NULL
+Mary Czerwinski,2010,16,2071984077,NULL
+Austin Henderson,2010,16,NULL,NULL
+David Kieras,2010,16,528685754,NULL
+Arnie Lund,2010,16,NULL,NULL
+Larry Tesler,2010,16,NULL,NULL
+Shumin Zhai,2010,16,2235212685,NULL
+Mark Ackerman,2009,16,1979641284,NULL
+Bill Gaver,2009,16,NULL,NULL
+Clayton Lewis,2009,16,2137078213,NULL
+Wendy Mackay,2009,16,1925449899,NULL
+Aaron Marcus,2009,16,2151173061,NULL
+Elizabeth Mynatt,2009,16,18171182,NULL
+Tom Rodden,2009,16,1980670276,NULL
+Gregory Abowd,2008,16,620732773,NULL
+Paul Dourish,2008,16,847797360,NULL
+Wendy A. Kellogg,2008,16,2079158144,NULL
+Randy Pausch,2008,16,NULL,NULL
+Mary Beth Rosson,2008,16,151371205,NULL
+Steve Whittaker,2008,16,2119343948,NULL
+Joëlle Coutaz,2007,16,NULL,NULL
+Karen Holtzblatt,2007,16,299548734,NULL
+Gerhard Fischer,2007,16,2176357113,NULL
+Robert J.K. Jacob,2007,16,673017202,NULL
+Jun Rekimoto,2007,16,1994375393,NULL
+Christopher Schmandt,2007,16,NULL,NULL
+Michel Beaudouin-Lafon,2006,16,2674390412,NULL
+Scott Hudson,2006,16,2171298838,NULL
+Hiroshi Ishii,2006,16,2096221143,NULL
+Jakob Nielsen,2006,16,2238716427,NULL
+Peter L. Pirolli,2006,16,NULL,NULL
+George Robertson,2006,16,NULL,NULL
+Ron Baecker,2005,16,NULL,NULL
+Susan Dumais,2005,16,NULL,NULL
+John Gould,2005,16,NULL,NULL
+Saul Greenberg,2005,16,2120666348,NULL
+Bonnie John,2005,16,2120182675,NULL
+Andrew Monk,2005,16,2141456381,NULL
+George Furnas,2004,16,NULL,NULL
+Jonathan Grudin,2004,16,2103856929,NULL
+William Newman,2004,16,NULL,NULL
+Brad Myers,2004,16,NULL,NULL
+Dan Olsen,2004,16,2148302434,NULL
+Brian Shackel,2004,16,NULL,NULL
+Terry Winograd,2004,16,2091637845,NULL
+Thomas Green,2003,16,NULL,NULL
+James D. Hollan,2003,16,400323076,NULL
+Robert E. Kraut,2003,16,1975391153,NULL
+Gary M. Olson,2003,16,NULL,NULL
+Peter G. Polson,2003,16,NULL,NULL
+William A. S. Buxton,2002,16,2326945342,NULL
+John M. Carroll,2002,16,2144459651,NULL
+Douglas C. Engelbart,2002,16,NULL,NULL
+Sara Kiesler,2002,16,729699849,NULL
+Thomas K. Landauer,2002,16,NULL,NULL
+Lucy A. Suchman,2002,16,NULL,NULL
+Stuart K. Card,2001,16,614907589,NULL
+James D. Foley,2001,16,2193907057,NULL
+Morten Kyng,2001,16,NULL,NULL
+Thomas P. Moran,2001,16,2135540066,NULL
+Donald A. Norman,2001,16,2144924319,NULL
+Judith S. Olson,2001,16,NULL,NULL
+Ben Shneiderman,2001,16,668764113,NULL
+Doug L. James,2021,17,2155930205,NULL
+Kavita Bala,2020,17,2050228312,NULL
+Denis Zorin,2019,17,NULL,NULL
+Daniel Cohen-Or,2018,17,9988965,NULL
+Ramesh Raskar,2017,17,2140705446,NULL
+Frédo Durand,2016,17,NULL,NULL
+Steve Marschner,2015,17,1992278322,NULL
+Thomas Funkhouser,2014,17,2136189631,NULL
+Holly Rushmeier,2013,17,258783921,NULL
+Greg Turk,2012,17,2130761626,NULL
+Richard Szeliski,2011,17,1989985383,NULL
+Jessica Hodgins,2010,17,601642093,NULL
+Michael Kass,2009,17,NULL,NULL
+Ken Perlin,2008,17,1124562777,NULL
+Greg Ward,2007,17,2252024104,NULL
+Thomas W. Sederberg,2006,17,NULL,NULL
+Jos Stam,2005,17,NULL,NULL
+Hugues Hoppe,2004,17,2206701583,NULL
+Peter Schröder,2003,17,NULL,NULL
+David Kirk,2002,17,2432757675,NULL
+Andrew Witkin,2001,17,NULL,NULL
+David H. Salesin,2000,17,2054111979,NULL
+Tony DeRose,1999,17,NULL,NULL
+Michael F. Cohen,1998,17,2156496335,NULL
+Przemyslaw Prusinkiewicz,1997,17,NULL,NULL
+Marc Levoy,1996,17,2073891704,NULL
+Kurt Akeley,1995,17,NULL,NULL
+Kenneth E. Torrance,1994,17,NULL,NULL
+Pat Hanrahan,1993,17,2225733586,NULL
+Henry Fuchs,1992,17,2196043388,NULL
+James T. Kajiya,1991,17,NULL,NULL
+Richard Shoup and Alvy Ray Smith,1990,17,NULL,NULL
+John Warnock,1989,17,NULL,NULL
+Alan H. Barr,1988,17,NULL,NULL
+Robert Cook,1987,17,NULL,NULL
+Turner Whitted,1986,17,NULL,NULL
+Loren Carpenter,1985,17,NULL,NULL
+James H. Clark,1984,17,NULL,NULL
+James F. Blinn,1983,17,723800150,NULL
+Robert (Bob) Harper,2021,18,2147215243,NULL
+Hans-J. Boehm,2020,18,NULL,NULL
+Alex Aiken,2019,18,2067453598,NULL
+Thomas W. Reps,2017,18,341386833,NULL
+Simon Peyton Jones,2016,18,2142246817,NULL
+Luca Cardelli,2015,18,331751290,NULL
+Neil Jones,2014,18,2116419005,NULL
+Patrick and Radhia Cousot,2013,18,2148533322,NULL
+Matthias Felleisen,2012,18,113813022,NULL
+Sir Charles Antony Richard Hoare,2011,18,NULL,NULL
+Gordon D. Plotkin,2010,18,2076549375,NULL
+Rod Burstall,2009,18,NULL,NULL
+Barbara Liskov,2008,18,2084056563,NULL
+Niklaus Wirth,2007,18,2327738716,NULL
+Ron Cytron,2006,18,NULL,NULL
+Jeanne Ferrante,2006,18,NULL,NULL
+Barry Rosen,2006,18,NULL,NULL
+Mark Wegman,2006,18,NULL,NULL
+Kenneth Zadeck,2006,18,NULL,NULL
+Erich Gamma,2005,18,NULL,NULL
+Richard Helm,2005,18,NULL,NULL
+Ralph Johnson,2005,18,2159634021,NULL
+John Vlissides,2005,18,NULL,NULL
+John Backus,2004,18,NULL,NULL
+John Reynolds,2003,18,2403193723,NULL
+John McCarthy,2002,18,2121245618,NULL
+Robin Milner,2001,18,2087817183,NULL
+Susan Graham,2000,18,2138159208,NULL
+Ken Kennedy,1999,18,2136496678,NULL
+Fran Allen,1998,18,NULL,NULL
+Guy Steele,1997,18,2501552208,NULL
+Cynthia Dwork,2020,9,208343995,NULL
+Avi Wigderson,2019,9,31335080,NULL
+Johan Håstad,2018,9,NULL,NULL
+Oded Goldreich,2017,9,65538393,NULL
+Noam Nisan,2016,9,NULL,NULL
+László Babai,2015,9,NULL,NULL
+Richard J. Lipton,2014,9,NULL,NULL
+Gary L. Miller,2013,9,NULL,NULL
+Leonid Levin,2012,9,NULL,NULL
+Ravi Kannan,2011,9,NULL,NULL
+David S. Johnson,2010,9,NULL,NULL
+Volker Strassen,2008,9,NULL,NULL
+Nancy Lynch,2007,9,2180706138,NULL
+Mihalis Yannakakis,2005,9,294360276,NULL
+Miklos Ajtai,2003,9,NULL,NULL
+Christos Papadimitriou,2002,9,2220829341,NULL
+Jeffrey D. Ullman,2000,9,2289364316,NULL
+László Lovász,1999,9,NULL,NULL
+Leslie G. Valiant,1997,9,NULL,NULL
+Andrew C.-C. Yao,1996,9,NULL,NULL
+Wilhelm Röntgen,1901,19,NULL,NULL
+Hendrik Lorentz,1902,19,NULL,NULL
+Pieter Zeeman,1902,19,NULL,NULL
+Antoine Henri Becquerel,1903,19,NULL,NULL
+Pierre Curie,1903,19,NULL,NULL
+Marie Skłodowska-Curie,1903,19,NULL,NULL
+John William Strutt 3rd Baron Rayleigh,1904,19,NULL,NULL
+Philipp Eduard Anton von Lenard,1905,19,NULL,NULL
+Joseph John Thomson,1906,19,NULL,NULL
+Albert Abraham Michelson,1907,19,NULL,NULL
+Gabriel Lippmann,1908,19,NULL,NULL
+Guglielmo Marconi,1909,19,NULL,NULL
+Karl Ferdinand Braun,1909,19,NULL,NULL
+Johannes Diderik van der Waals,1910,19,NULL,NULL
+Wilhelm Wien,1911,19,NULL,NULL
+Nils Gustaf Dalén,1912,19,NULL,NULL
+Heike Kamerlingh-Onnes,1913,19,NULL,NULL
+Max von Laue,1914,19,NULL,NULL
+William Henry Bragg,1915,19,NULL,NULL
+William Lawrence Bragg,1915,19,NULL,NULL
+Charles Glover Barkla,1917,19,NULL,NULL
+Max Planck,1918,19,NULL,NULL
+Johannes Stark,1919,19,NULL,NULL
+Charles Édouard Guillaume,1920,19,NULL,NULL
+Albert Einstein,1921,19,NULL,NULL
+Niels Bohr,1922,19,NULL,NULL
+Robert Andrews Millikan,1923,19,NULL,NULL
+Manne Siegbahn,1924,19,NULL,NULL
+James Franck,1925,19,NULL,NULL
+Gustav Ludwig Hertz,1925,19,NULL,NULL
+Jean Baptiste Perrin,1926,19,NULL,NULL
+Arthur Holly Compton,1927,19,NULL,NULL
+Charles Thomson Rees Wilson,1927,19,NULL,NULL
+Owen Willans Richardson,1928,19,NULL,NULL
+Louis Victor Pierre Raymond 7th Duc de Broglie,1929,19,NULL,NULL
+Chandrasekhara Venkata Raman,1930,19,NULL,NULL
+Werner Heisenberg,1932,19,NULL,NULL
+Erwin Schrödinger,1933,19,NULL,NULL
+Paul Dirac,1933,19,NULL,NULL
+James Chadwick,1935,19,NULL,NULL
+Victor Francis Hess,1936,19,NULL,NULL
+Carl David Anderson,1936,19,NULL,NULL
+Clinton Joseph Davisson,1937,19,NULL,NULL
+George Paget Thomson,1937,19,NULL,NULL
+Enrico Fermi,1938,19,NULL,NULL
+Ernest Lawrence,1939,19,NULL,NULL
+Otto Stern,1943,19,NULL,NULL
+Isidor Isaac Rabi,1944,19,NULL,NULL
+Wolfgang Pauli,1945,19,NULL,NULL
+Percy Williams Bridgman,1946,19,NULL,NULL
+Edward Victor Appleton,1947,19,NULL,NULL
+Patrick Maynard Stuart Blackett,1948,19,NULL,NULL
+Hideki Yukawa,1949,19,NULL,NULL
+Cecil Frank Powell,1950,19,NULL,NULL
+John Douglas Cockcroft,1951,19,NULL,NULL
+Ernest Thomas Sinton Walton,1951,19,NULL,NULL
+Felix Bloch,1952,19,NULL,NULL
+Edward Mills Purcell,1952,19,NULL,NULL
+Frits Zernike,1953,19,NULL,NULL
+Max Born,1954,19,NULL,NULL
+Walther Bothe,1954,19,NULL,NULL
+Willis Eugene Lamb,1955,19,NULL,NULL
+Polykarp Kusch,1955,19,NULL,NULL
+John Bardeen,1956,19,NULL,NULL
+Walter Houser Brattain,1956,19,NULL,NULL
+William Bradford Shockley,1956,19,NULL,NULL
+Tsung-Dao Lee,1957,19,NULL,NULL
+Chen-Ning Yang,1957,19,NULL,NULL
+Pavel Alekseyevich Cherenkov,1958,19,NULL,NULL
+Ilya Frank,1958,19,NULL,NULL
+Igor Yevgenyevich Tamm,1958,19,NULL,NULL
+Emilio Gino Segrè,1959,19,NULL,NULL
+Owen Chamberlain,1959,19,NULL,NULL
+Donald Arthur Glaser,1960,19,NULL,NULL
+Robert Hofstadter,1961,19,NULL,NULL
+Rudolf Ludwig Mössbauer,1961,19,NULL,NULL
+Lev Davidovich Landau,1962,19,NULL,NULL
+Eugene Paul Wigner,1963,19,NULL,NULL
+Maria Goeppert-Mayer,1963,19,NULL,NULL
+J. Hans D. Jensen,1963,19,NULL,NULL
+Nicolay Gennadiyevich Basov,1964,19,NULL,NULL
+Alexander Prokhorov,1964,19,NULL,NULL
+Charles Hard Townes,1964,19,NULL,NULL
+Richard Phillips Feynman,1965,19,NULL,NULL
+Julian Schwinger,1965,19,NULL,NULL
+Shin'ichirō Tomonaga,1965,19,NULL,NULL
+Alfred Kastler,1966,19,NULL,NULL
+Hans Albrecht Bethe,1967,19,NULL,NULL
+Luis Walter Alvarez,1968,19,NULL,NULL
+Murray Gell-Mann,1969,19,NULL,NULL
+Hannes Olof Gösta Alfvén,1970,19,NULL,NULL
+Louis Néel,1970,19,NULL,NULL
+Dennis Gabor,1971,19,NULL,NULL
+John Bardeen,1972,19,NULL,NULL
+Leon Neil Cooper,1972,19,NULL,NULL
+John Robert Schrieffer,1972,19,NULL,NULL
+Leo Esaki,1973,19,NULL,NULL
+Ivar Giaever,1973,19,NULL,NULL
+Brian David Josephson,1973,19,NULL,NULL
+Martin Ryle,1974,19,NULL,NULL
+Antony Hewish,1974,19,NULL,NULL
+Aage Bohr,1975,19,NULL,NULL
+Ben Roy Mottelson,1975,19,NULL,NULL
+Leo James Rainwater,1975,19,NULL,NULL
+Samuel Chao Chung Ting,1976,19,NULL,NULL
+Burton Richter,1976,19,NULL,NULL
+Philip Warren Anderson,1977,19,NULL,NULL
+Nevill Francis Mott,1977,19,NULL,NULL
+John Hasbrouck Van Vleck,1977,19,NULL,NULL
+Pyotr Leonidovich Kapitsa,1978,19,NULL,NULL
+Arno Allan Penzias,1978,19,NULL,NULL
+Robert Woodrow Wilson,1978,19,NULL,NULL
+Sheldon Glashow,1979,19,NULL,NULL
+Abdus Salam,1979,19,NULL,NULL
+Steven Weinberg,1979,19,NULL,NULL
+James Watson Cronin,1980,19,NULL,NULL
+Val Logsdon Fitch,1980,19,NULL,NULL
+Nicolaas Bloembergen,1981,19,NULL,NULL
+Arthur Leonard Schawlow,1981,19,NULL,NULL
+Kai Manne Börje Siegbahn,1981,19,NULL,NULL
+Kenneth G. Wilson,1982,19,NULL,NULL
+Subrahmanyan Chandrasekhar,1983,19,NULL,NULL
+William Alfred Fowler,1983,19,NULL,NULL
+Carlo Rubbia,1984,19,NULL,NULL
+Simon van der Meer,1984,19,NULL,NULL
+Klaus von Klitzing,1985,19,NULL,NULL
+Ernst Ruska,1986,19,NULL,NULL
+Gerd Binnig,1986,19,NULL,NULL
+Heinrich Rohrer,1986,19,NULL,NULL
+Johannes Georg Bednorz,1987,19,NULL,NULL
+Karl Alexander Müller,1987,19,NULL,NULL
+Leon Max Lederman,1988,19,NULL,NULL
+Melvin Schwartz,1988,19,NULL,NULL
+Jack Steinberger,1988,19,NULL,NULL
+Norman Foster Ramsey Jr.,1989,19,NULL,NULL
+Hans Georg Dehmelt,1989,19,NULL,NULL
+Wolfgang Paul,1989,19,NULL,NULL
+Jerome Isaac Friedman,1990,19,NULL,NULL
+Henry Way Kendall,1990,19,NULL,NULL
+Richard E. Taylor,1990,19,NULL,NULL
+Pierre-Gilles de Gennes,1991,19,NULL,NULL
+Georges Charpak,1992,19,NULL,NULL
+Russell Alan Hulse,1993,19,NULL,NULL
+Joseph Hooton Taylor Jr.,1993,19,NULL,NULL
+Bertram Brockhouse,1994,19,NULL,NULL
+Clifford Glenwood Shull,1994,19,NULL,NULL
+Martin Lewis Perl,1995,19,NULL,NULL
+Frederick Reines,1995,19,NULL,NULL
+David Morris Lee,1996,19,NULL,NULL
+Douglas D. Osheroff,1996,19,NULL,NULL
+Robert Coleman Richardson,1996,19,NULL,NULL
+Steven Chu,1997,19,NULL,NULL
+Claude Cohen-Tannoudji,1997,19,NULL,NULL
+William Daniel Phillips,1997,19,NULL,NULL
+Robert B. Laughlin,1998,19,NULL,NULL
+Horst Ludwig Störmer,1998,19,NULL,NULL
+Daniel Chee Tsui,1998,19,NULL,NULL
+Gerard 't Hooft,1999,19,NULL,NULL
+Martinus J. G. Veltman,1999,19,NULL,NULL
+Zhores Ivanovich Alferov,2000,19,NULL,NULL
+Herbert Kroemer,2000,19,NULL,NULL
+Jack St. Clair Kilby,2000,19,NULL,NULL
+Eric Allin Cornell,2001,19,NULL,NULL
+Carl Edwin Wieman,2001,19,NULL,NULL
+Wolfgang Ketterle,2001,19,NULL,NULL
+Raymond Davis Jr.,2002,19,NULL,NULL
+Masatoshi Koshiba,2002,19,NULL,NULL
+Riccardo Giacconi,2002,19,NULL,NULL
+Alexei Alexeyevich Abrikosov,2003,19,NULL,NULL
+Vitaly Lazarevich Ginzburg,2003,19,NULL,NULL
+Anthony James Leggett,2003,19,NULL,NULL
+David J. Gross,2004,19,NULL,NULL
+Hugh David Politzer,2004,19,NULL,NULL
+Frank Wilczek,2004,19,NULL,NULL
+Roy J. Glauber,2005,19,NULL,NULL
+John L. Hall,2005,19,NULL,NULL
+Theodor W. Hänsch,2005,19,NULL,NULL
+John C. Mather,2006,19,NULL,NULL
+George F. Smoot,2006,19,NULL,NULL
+Albert Fert,2007,19,NULL,NULL
+Peter Grünberg,2007,19,NULL,NULL
+Makoto Kobayashi,2008,19,NULL,NULL
+Toshihide Maskawa,2008,19,NULL,NULL
+Yoichiro Nambu,2008,19,NULL,NULL
+Charles K. Kao,2009,19,NULL,NULL
+Willard S. Boyle,2009,19,NULL,NULL
+George E. Smith,2009,19,NULL,NULL
+Andre Geim,2010,19,NULL,NULL
+Konstantin Novoselov,2010,19,NULL,NULL
+Saul Perlmutter,2011,19,NULL,NULL
+Brian P. Schmidt,2011,19,NULL,NULL
+Adam G. Riess,2011,19,NULL,NULL
+Serge Haroche,2012,19,NULL,NULL
+David J. Wineland,2012,19,NULL,NULL
+François Englert,2013,19,NULL,NULL
+Peter Higgs,2013,19,NULL,NULL
+Isamu Akasaki,2014,19,NULL,NULL
+Hiroshi Amano,2014,19,NULL,NULL
+Shuji Nakamura,2014,19,NULL,NULL
+Takaaki Kajita,2015,19,NULL,NULL
+Arthur B. McDonald,2015,19,NULL,NULL
+David J. Thouless,2016,19,NULL,NULL
+F. Duncan M. Haldane,2016,19,NULL,NULL
+J. Michael Kosterlitz,2016,19,NULL,NULL
+Rainer Weiss,2017,19,NULL,NULL
+Kip Thorne,2017,19,NULL,NULL
+Barry Barish,2017,19,NULL,NULL
+Arthur Ashkin,2018,19,NULL,NULL
+Gérard Mourou,2018,19,NULL,NULL
+Donna Strickland,2018,19,NULL,NULL
+James Peebles,2019,19,NULL,NULL
+Michel Mayor,2019,19,NULL,NULL
+Didier Queloz,2019,19,NULL,NULL
+Roger Penrose,2020,19,NULL,NULL
+Reinhard Genzel,2020,19,NULL,NULL
+Andrea M. Ghez,2020,19,NULL,NULL
+Syukuro Manabe,2021,19,NULL,NULL
+Klaus Hasselmann,2021,19,NULL,NULL
+Giorgio Parisi,2021,19,NULL,NULL
+Alain Aspect,2022,19,NULL,NULL
+John Clauser,2022,19,NULL,NULL
+Anton Zeilinger,2022,19,NULL,NULL
+Chien-Shiung Wu,1978,20,NULL,NULL
+George Eugene Uhlenbeck,1979,20,NULL,NULL
+Giuseppe Occhialini,1979,20,NULL,NULL
+Michael E. Fisher,1980,20,NULL,NULL
+Leo P. Kadanoff,1980,20,NULL,NULL
+Kenneth G. Wilson,1980,20,NULL,NULL
+Freeman J. Dyson,1981,20,NULL,NULL
+Gerard 't Hooft,1981,20,NULL,NULL
+Victor F. Weisskopf,1981,20,NULL,NULL
+Leon M. Lederman,1982,20,NULL,NULL
+Martin Lewis Perl,1982,20,NULL,NULL
+Erwin Hahn,1982,20,NULL,NULL
+Peter B. Hirsch,1982,20,NULL,NULL
+Theodore H. Maiman,1982,20,NULL,NULL
+Conyers Herring,1985,20,NULL,NULL
+Philippe Nozieres,1985,20,NULL,NULL
+Mitchell J. Feigenbaum,1986,20,NULL,NULL
+Albert J. Libchaber,1986,20,NULL,NULL
+Herbert Friedman,1987,20,NULL,NULL
+Bruno B. Rossi,1987,20,NULL,NULL
+Riccardo Giacconi,1987,20,NULL,NULL
+Pierre-Gilles de Gennes,1990,20,NULL,NULL
+David J. Thouless,1990,20,NULL,NULL
+Maurice Goldhaber,1991,20,NULL,NULL
+Valentine L. Telegdi,1991,20,NULL,NULL
+Joseph H. Taylor Jr.,1992,20,NULL,NULL
+Benoît Mandelbrot,1993,20,NULL,NULL
+Vitaly L. Ginzburg,1993,20,NULL,NULL
+Yoichiro Nambu,1993,20,NULL,NULL
+John Archibald Wheeler,1993,20,NULL,NULL
+Yakir Aharonov,1998,20,NULL,NULL
+Michael V. Berry,1998,20,NULL,NULL
+Dan Shechtman,1999,20,NULL,NULL
+Raymond Davis Jr.,2000,20,NULL,NULL
+Masatoshi Koshiba,2000,20,NULL,NULL
+Bertrand I. Halperin,2000,20,NULL,NULL
+Anthony J. Leggett,2000,20,NULL,NULL
+Daniel Kleppner,2005,20,NULL,NULL
+Albert Fert,2005,20,NULL,NULL
+Peter Grünberg,2005,20,NULL,NULL
+John F. Clauser,2010,20,NULL,NULL
+Alain Aspect,2010,20,NULL,NULL
+Anton Zeilinger,2010,20,NULL,NULL
+Maximilian Haider,2011,20,NULL,NULL
+Harald Rose,2011,20,NULL,NULL
+Knut Urban,2011,20,NULL,NULL
+Jacob D. Bekenstein,2012,20,NULL,NULL
+Peter Zoller,2013,20,NULL,NULL
+Juan Ignacio Cirac Sasturain,2013,20,NULL,NULL
+James D. Bjorken,2015,20,NULL,NULL
+Robert P. Kirshner,2015,20,NULL,NULL
+Yoseph Imry,2016,20,NULL,NULL
+Michel Mayor,2017,20,NULL,NULL
+Didier Queloz,2017,20,NULL,NULL
+Charles H. Bennett,2018,20,NULL,NULL
+Gilles Brassard,2018,20,NULL,NULL
+Rafi Bistritzer,2020,20,NULL,NULL
+Pablo Jarillo-Herrero,2020,20,NULL,NULL
+Allan H. MacDonald,2020,20,NULL,NULL
+Giorgio Parisi,2021,20,NULL,NULL
+Anne L'Huillier,2022,20,NULL,NULL
+Paul Corkum,2022,20,NULL,NULL
+Ferenc Krausz,2022,20,NULL,NULL
+Alan Shaw,1997,1,2692493319,NULL
+Dennis J. Frailey,1996,1,2404044693,NULL
+Eric Weiss,1994,1,2147652615,NULL
+Fernando J. Corbató,1994,1,2048198971,NULL
+Frances E. Allen,1994,1,2102409281,NULL
+Frank Kenneth Zadeck,2011,1,285498487,NULL
+GA Miller,2002,1,2734397793,NULL
+George E. Collins,2004,1,3038043452,NULL
+Glenn Ricart,2021,1,2124822374,NULL
+Harold Joseph Highland,1995,1,2166638240,NULL
+Herbert Alexander Simon,1994,1,3086616668,NULL
+HongJiang Zhang,2007,1,3166861583,NULL
+Ian Munro,2008,1,2657933739,NULL
+J. Daniel Couger,1997,1,2611003565,NULL
+James Morris,2000,1,2150728686,NULL
+Jean-Pierre Hubaux,2010,1,2954918469,NULL
+Jeffrey M. Jaffe,1996,1,2143184352,NULL
+Jeffrey C. Kramer,2001,1,2144537327,NULL
+Joel Moses,2008,1,2155527021,NULL
+John C Klensin,2007,1,2184450726,NULL
+John E. Warnock,1999,1,2420142701,NULL
+Joseph S. B. Mitchell,2011,1,3021214330,NULL
+Joyce Currie Little,1994,1,2099889063,NULL
+Kun Zhou,2020,1,2463834394,NULL
+L. Peter Deutsch,1994,1,1920290726,NULL
+M. Lynn,1994,1,2521678335,NULL
+Michael Dahlin,2010,1,2404867950,NULL
+Michael Saks,2016,1,3186658053,NULL
+Michael W. Blasgen,1994,1,1966255829,NULL
+Nell Dale,2009,1,2167766702,NULL
+Pankaj Agarwal,2002,1,2126467553,NULL
+Paul Geoffrey Lowney,2008,1,2012943884,NULL
+Paul McJones,1994,1,149939345,NULL
+Paul B. Schneck,1997,1,2213386931,NULL
+Peter Elias,1994,1,2525537535,NULL
+Peter S. Magnusson,2011,1,2278545199,NULL
+Philip R. Cohen,2019,1,2145462135,NULL
+Ravinderpal Singh Sandhu,2001,1,2064064607,NULL
+Robert M. Aiken,2001,1,226559003,NULL
+Robert Braden,1999,1,2988868160,NULL
+Robert Taylor,1994,1,2786863363,NULL
+Robin Williams,2000,1,2237720490,NULL
+Ron Graham,1999,1,3107179524,NULL
+S. Lakshmivarahan,1995,1,2279209691,NULL
+Shubu Mukherjee,2011,1,2671450732,NULL
+Simon Peyton-Jones,2004,1,2185166580,NULL
+William Daniel Hillis,1994,1,3067465117,NULL
+Wang Wei,2020,1,2981772981,NULL
+Ahmed E. Hassan,2022,1,2957215686,NULL
+Ahmed E. Hassan,2022,1,2431248006,NULL
+Alan Smith,2001,1,2547122227,NULL
+Albert G. Greenberg,2006,1,3167158249,NULL
+Amit Singhal,2011,1,2299100452,NULL
+Amit Singhal,2011,1,2106879214,NULL
+Amit Singhal,2011,1,2223193798,NULL
+Amit Singhal,2011,1,2255853207,NULL
+Amit Singhal,2011,1,2777199531,NULL
+Amr El Abbadi,2010,1,2716532057,NULL
+Andreas Reuter,2019,1,3037484111,NULL
+Andreas Reuter,2019,1,2894252277,NULL
+Anita Borg,1996,1,2708686174,NULL
+Anita Borg,1996,1,2118304348,NULL
+Anthony Ralston,1994,1,2012410244,NULL
+Antonio Gonzalez,2020,1,2760902967,NULL
+Antonio Gonzalez,2020,1,2915895447,NULL
+Aravind Srinivasan,2014,1,2494725495,NULL
+Aravind Srinivasan,2014,1,2262688869,NULL
+Barbara Simons,1994,1,2129567609,NULL
+Ben Wegbreit,1994,1,2681783298,NULL
+Ben Wegbreit,1994,1,2104628,NULL
+Brian Levine,2020,1,2420686611,NULL
+Bronis R. de Supinski,2022,1,2994330028,NULL
+Burton Smith,1994,1,3113479221,NULL
+C. Dianne Martin,1999,1,2132561488,NULL
+C. Martin,1999,1,2342580881,NULL
+C. Martin,1999,1,2108419330,NULL
+C. G. Bell,1994,1,2723117875,NULL
+C. Liu,1994,1,3052351080,NULL
+C. Liu,1994,1,2636113680,NULL
+Catriel Beeri,2007,1,2607438395,NULL
+Charles P. Thacker,1994,1,2883849627,NULL
+Charles P. Thacker,1994,1,2105549443,NULL
+Chip Elliott,2013,1,2987354950,NULL
+Clarence A. Ellis,1998,1,2991967251,NULL
+Dana S. Scott,1994,1,2569117717,NULL
+Daniel P. Siewiorek,1994,1,3168098306,NULL
+Darrell Whitley,2019,1,2652552312,NULL
+David A. Wood,2005,1,2154799610,NULL
+David DeWitt,1995,1,2110435309,NULL
+David Wheeler,1994,1,2160952237,NULL
+David Wheeler,1994,1,2261203568,NULL
+David S. Johnson,1995,1,3146298031,NULL
+Dieter Rombach,2010,1,2010538101,NULL
+Domenico Ferrari,2001,1,2677094460,NULL
+Donald R. Slutz,1994,1,2981309718,NULL
+Dong Yu,2022,1,2257850466,NULL
+Eliot Moss,2007,1,2973561400,NULL
+Fei-Fei Li,2018,1,2763824303,NULL
+Fei-Fei Li,2018,1,3209234198,NULL
+Fernando Pereira,2010,1,2291088731,NULL
+Fernando Pereira,2010,1,3014480368,NULL
+George Robertson,2001,1,2111751488,NULL
+Gerald L. Engel,1994,1,2619776592,NULL
+Gerald L. Engel,1994,1,2778976760,NULL
+Guang Gao,2007,1,2803905410,NULL
+Hai Li,2021,1,2443283929,NULL
+Hang Li,2022,1,2427739967,NULL
+Herbert Freeman,1997,1,2612431366,NULL
+Herbert Freeman,1997,1,2780251678,NULL
+Hiroshi Ishii,2022,1,2525928629,NULL
+Hiroshi Ishii,2022,1,2397124342,NULL
+Hui Zhang,2005,1,2588683129,NULL
+Hui Zhang,2005,1,2779422269,NULL
+Hui Zhang,2005,1,2520883368,NULL
+Hui Zhang,2005,1,2656010059,NULL
+Hui Zhang,2005,1,3092894772,NULL
+Hui Zhang,2005,1,2657512074,NULL
+Ian Witten,1996,1,3190249923,NULL
+Imrich Chlamtac,1997,1,280834295,NULL
+James R. Goodman,2010,1,2947102538,NULL
+James R. Goodman,2010,1,2098556172,NULL
+James H. Anderson,2013,1,3170347435,NULL
+James Hendler,2016,1,3182884162,NULL
+James J. Horning,1998,1,2678800110,NULL
+James J. Horning,1998,1,2974551433,NULL
+Jean-Loup Baer,1997,1,2659269309,NULL
+Jeffrey Dean,2009,1,2120326143,NULL
+John A. Lee,1994,1,2799054317,NULL
+John Carroll,2003,1,2159247002,NULL
+John Hughes,2018,1,2101652549,NULL
+John R. White,1995,1,2157793723,NULL
+John Rice,1996,1,2143979436,NULL
+Jonathan Turner,2001,1,2158919473,NULL
+Judith S. Olson,2008,1,2993575205,NULL
+Kai Li,1998,1,2166597129,NULL
+Kai Li,1998,1,2606264532,NULL
+Kai Li,1998,1,2274343773,NULL
+Kai Li,1998,1,2096856256,NULL
+Kai Li,1998,1,2602326475,NULL
+Kevin Fall,2015,1,2488480551,NULL
+Larry Constantine,2007,1,2427512706,NULL
+Li Li,2017,1,3088972969,NULL
+Li Li,2017,1,2755670705,NULL
+Li Li,2017,1,2610332512,NULL
+Li Li,2017,1,3131415932,NULL
+Li Li,2017,1,2613175906,NULL
+Li Li,2017,1,2558842103,NULL
+Li Li,2017,1,2603960892,NULL
+Li Li,2017,1,2584774418,NULL
+Li Li,2017,1,2229235791,NULL
+Li Li,2017,1,2607834907,NULL
+Li Li,2017,1,2568039207,NULL
+Li Li,2017,1,2575980733,NULL
+Li Li,2017,1,2420443035,NULL
+Li Li,2017,1,2509378476,NULL
+Li Li,2017,1,2700141640,NULL
+Li Li,2017,1,2306198455,NULL
+Li Li,2017,1,2683045407,NULL
+Li Li,2017,1,2789700921,NULL
+Luiz Andre Barroso,2010,1,3174443237,NULL
+Luiz André Barroso,2010,1,3177348898,NULL
+Madhav V. Marathe,2013,1,3102063486,NULL
+Manish Gupta,2012,1,2114032439,NULL
+Manuel Blum,2020,1,2134576118,NULL
+Marilyn Wolf,2001,1,2787032259,NULL
+Marilyn Wolf,2001,1,2152717533,NULL
+Marilyn Wolf,2001,1,2986561372,NULL
+Mary Jean Harrold,2003,1,2984677931,NULL
+Michael F. Cohen,2007,1,2788002982,NULL
+Michael F. Cohen,2007,1,3210823964,NULL
+Mona Singh,2019,1,2919295634,NULL
+Mona Singh,2019,1,2589300941,NULL
+Paul Young,1995,1,2224048864,NULL
+Paul Young,1995,1,1982560218,NULL
+Peter Hart,2003,1,3127305114,NULL
+Peter Lee,2004,1,2139030624,NULL
+Peter Widmayer,1997,1,2617567972,NULL
+Radia Perlman,2016,1,2142952230,NULL
+Rakesh Agrawal,2003,1,2537924216,NULL
+Rakesh Agrawal,2003,1,2786318080,NULL
+Rakesh Agrawal,2003,1,3171552045,NULL
+Rakesh Agrawal,2003,1,2763544887,NULL
+Ramakrishnan Srikant,2014,1,2787454944,NULL
+Ramanathan V. Guha,2015,1,1481778245,NULL
+Randy Pausch,2007,1,2611034914,NULL
+Ravi Kannan,2016,1,2132709121,NULL
+Ravi Shankar Kumar,2020,1,2142424598,NULL
+Raymond E. Miller,1997,1,2252158045,NULL
+Raymond E. Miller,1997,1,2102912784,NULL
+Richard A. Kemmerer,1997,1,2897311327,NULL
+Richard B. Kieburtz,2001,1,2001821649,NULL
+Richard P. Gabriel,1998,1,2810600611,NULL
+Richard P. Gabriel,1998,1,3101773035,NULL
+Richard R. Burton,1994,1,3154436701,NULL
+Richard R. Burton,1994,1,2193801859,NULL
+Richard W. Hamming,1994,1,2895183167,NULL
+Robert M. Graham,1996,1,2618830504,NULL
+Ronald J. Brachman,1999,1,2764066455,NULL
+Ronald J. Brachman,1999,1,3173615523,NULL
+S. Muthukrishnan,2010,1,2625758662,NULL
+S. Muthukrishnan,2010,1,2190118346,NULL
+Stephen S. Lavenberg,1994,1,2666085688,NULL
+Steven L. Scott,2012,1,2307885469,NULL
+Sven Koenig,2020,1,3175140602,NULL
+Sven Koenig,2020,1,3207833588,NULL
+Tao Jiang,2007,1,2108351611,NULL
+Tao Jiang,2007,1,2619659646,NULL
+Tao Jiang,2007,1,2296240496,NULL
+Tao Jiang,2007,1,2585408866,NULL
+Thomas Moran,2003,1,3133353747,NULL
+Timothy A. Davis,2014,1,2160863694,NULL
+Tse-Yun Feng,1994,1,2651676151,NULL
+Tse-Yun Feng,1994,1,2653598098,NULL
+Venkat Rangan,1998,1,2103423085,NULL
+Venkat Rangan,1998,1,2030576302,NULL
+Wei Wang,2020,1,3046105733,NULL
+Wei Wang,2020,1,3061193940,NULL
+Wei Wang,2020,1,2992016174,NULL
+Wei Wang,2020,1,2496385059,NULL
+Wei Wang,2020,1,2637284984,NULL
+Won Kim,1995,1,2576507526,NULL
+Won Kim,1995,1,3049456435,NULL
+Won Kim,1995,1,2121197712,NULL
+Won Kim,1995,1,2278176956,NULL
+Won Kim,1995,1,2778067945,NULL
+Xiangyang Li,2019,1,2666265735,NULL
+Xiangyang Li,2019,1,2893385050,NULL
+Xiangyang Li,2019,1,2953389528,NULL
+Xiaodong Zhang,2012,1,2575418167,NULL
+Xue Li,2020,1,2239470812,NULL
+Yi Ma,2017,1,2230075732,NULL
+Yuanyuan Zhou,2013,1,2155186186,NULL
+Zvi Galil,1995,1,2947683485,NULL
+Alan C. Kay,2003,10,1974749230,NULL
+Butler W. Lampson,1992,10,2899171642,NULL
+Charles P. Thacker,2009,10,2883849627,NULL
+Charles P. Thacker,2009,10,2105549443,NULL
+David A. Patterson,2017,10,2098984663,NULL
+David A. Patterson,2017,10,2908171940,NULL
+David A. Patterson,2017,10,2097241626,NULL
+David A. Patterson,2017,10,2040897625,NULL
+Donald Ervin Knuth,1974,10,2893873342,NULL
+Donald Ervin Knuth,1974,10,2506557660,NULL
+E. Allen Emerson,2007,10,2115834734,NULL
+Ed Catmull,2019,10,2504194471,NULL
+James Hardy Wilkinson,1970,10,2193746894,NULL
+Jeffrey D. Ullman,2020,10,3152263970,NULL
+John Cocke,1987,10,2671603998,NULL
+John L. Hennessy,2017,10,3189000062,NULL
+John Mccarthy,1971,10,2204564731,NULL
+Ken Thompson,1983,10,2163136642,NULL
+Leonard M. Adleman,2002,10,2667875590,NULL
+Manuel Blum,1995,10,2134576118,NULL
+Michael O. Rabin,1976,10,2775853503,NULL
+Richard Edwin Stearns,1993,10,2102135011,NULL
+Richard W Hamming,1968,10,2244377245,NULL
+Tim Berners-Lee,2016,10,3207969236,NULL
+Whitfield Diffie,2015,10,3161038114,NULL
+Yoshua Bengio,2018,10,2969309771,NULL
+Alan J. Perlis,1966,10,2659867364,NULL
+Andrew Chi-Chih Yao,2000,10,2088166175,NULL
+Robin Milner,1991,10,2087817183,NULL
+Dana Scott,1976,10,2602723040,NULL
+Douglas C. Engelbart,1997,10,2208808115,NULL
+Edmund M. Clarke,2007,10,2129477832,NULL
+Fernando J. Corbató,1990,10,2048198971,NULL
+Frances E. Allen,2006,10,2102409281,NULL
+Frederick P. Brooks,1999,10,2097474894,NULL
+Ivan E. Sutherland,1988,10,1941499373,NULL
+Leslie Lamport,2013,10,2096750770,NULL
+Martin E. Hellman,2015,10,2146312211,NULL
+Niklaus Wirth,1984,10,2327738716,NULL
+Richard M. Karp,1985,10,1964658237,NULL
+Vinton G. Cerf,2004,10,2029905547,NULL
+Björn W. Schuller,2023,1,2079380910,NULL
+Deborah McGuinness,2023,1,236860028,NULL
+Pradeep Dubey,2023,1,2163667412,NULL
+Ramon Caceres,2023,1,2153763345,NULL
+Shrikanth Narayanan,2023,1,2171036777,NULL
+Corina S. Pasareanu,2023,1,2901938786,NULL
+Yingying Chen,2023,1,2428010683,NULL
+A. J. Milner,1994,1,2285125540,NULL
+Aaron Finerman,1994,1,2287940045,NULL
+Adele Goldberg,1994,1,2791155272,NULL
+Adolfo Guzman,2002,1,2663512350,NULL
+Ahmed Elmagarmid,2012,1,3180405814,NULL
+Alan C. Shaw,1997,1,2137025546,NULL
+Alan H. Borning,2001,1,2020136591,NULL
+Alan Newell,2006,1,2919016343,NULL
+Alan Selman,1998,1,1983273066,NULL
+Albert J. Turner,1998,1,2098753782,NULL
+Alexander Szalay,2023,1,2115766258,NULL
+Allen Tucker,1994,1,2768975459,NULL
+Alon Y. Halevy,2006,1,2790218202,NULL
+Amy S. Bruckman,2018,1,254181745,NULL
+Anantha Chandrakasan,2020,1,2795138954,NULL
+Andre M. Dehon,2018,1,2035441203,NULL
+Andre Seznec,2016,1,3167078973,NULL
+Andrea Arpaci-Dusseau,2020,1,2639247048,NULL
+Andreas Reuter,2019,1,2103240375,NULL
+Andrei Broder,2007,1,2908715530,NULL
+Andrew C. Yao,1995,1,2754008427,NULL
+Andrew K. Mccallum,2017,1,2131293038,NULL
+Andrew Kahng,2012,1,2067629764,NULL
+Andrew Myers,2013,1,2112376960,NULL
+Anima Anandkumar,2022,1,3164401859,NULL
+Anita Borg,1996,1,2694610442,NULL
+Anita K. Jones,1996,1,2105257805,NULL
+Anna Karlin,2012,1,2029686818,NULL
+Anthony C. Hearn,2006,1,2780618798,NULL
+Anthony Hey,2016,1,2029136260,NULL
+Anthony Oettinger,1995,1,1496673849,NULL
+Aravinda P. Sistla,2021,1,2685837598,NULL
+Aristides Requicha,2007,1,2575782317,NULL
+Arnold Rosenberg,1996,1,2169735298,NULL
+Arvind Arvind,2006,1,1992863646,NULL
+Axel V. Lamsweerde,2000,1,1227273176,NULL
+Bangalore S. Manjunath,2018,1,2756752163,NULL
+Barbara B. Simons,1994,1,2914278692,NULL
+Ben Wegbreit,1994,1,2268045512,NULL
+Beng C. Ooi,2011,1,2670473375,NULL
+Benjamin Pierce,2012,1,3168590578,NULL
+Benjamin Raphael,2023,1,2143833718,NULL
+Bernard A. Galler,1994,1,2395715331,NULL
+Bertram Herzog,1995,1,2144654957,NULL
+Björn W. Schuller,2023,1,2974677770,NULL
+Bob O. Evans,1994,1,2974422346,NULL
+Bradley G. Calder,2019,1,2224762041,NULL
+Brent T. Hailpern,2003,1,3193016114,NULL
+Bruce Croft,1997,1,2134251575,NULL
+Bruce Davie,2009,1,3192559960,NULL
+Bruce Lindsay,1994,1,2654641794,NULL
+Bryan Preas,1996,1,2609592600,NULL
+Bryant W. York,2006,1,2188516072,NULL
+C. D. Martin,1999,1,3163163256,NULL
+C. G. Bell,1994,1,2606814297,NULL
+C. J. Van Rijsbergen,2003,1,3207907553,NULL
+C. Mohan,2002,1,2421592881,NULL
+C.L. Liu,1994,1,2902375181,NULL
+Calvin C. Gotlieb,1994,1,2673184361,NULL
+Carl Hammer,1994,1,2397557519,NULL
+Carla Brodley,2016,1,1994240001,NULL
+Carla Gomes,2017,1,2237954992,NULL
+Carla S. Ellis,2010,1,2120159945,NULL
+Carlo A. Zaniolo,2019,1,2028117853,NULL
+Carlo H. Sequin,1998,1,2560480687,NULL
+Carlos J. P. De Lucena,2013,1,2182731144,NULL
+Chak-Kuen Wong,1995,1,2348351364,NULL
+Charles H. House,2008,1,2018464261,NULL
+Charles L. Bradshaw,1994,1,5009770635,NULL
+Charles M. Geschke,1999,1,3162208591,NULL
+Charles P. Thacker,1994,1,2100283947,NULL
+Charles W. Gear,1994,1,3077390437,NULL
+Chengxiang Zhai,2017,1,2301198582,NULL
+Cherri M. Pancake,2001,1,396576954,NULL
+Chip Elliott,2013,1,2100498378,NULL
+Christopher I. Kruegel,2023,1,2001160045,NULL
+Christopher Manning,2013,1,2668974136,NULL
+Chung C. Kuo,2022,1,2113036727,NULL
+Chung J. Tan,1999,1,2309016325,NULL
+Corina S. Pasareanu,2023,1,3171822607,NULL
+Craig Knoblock,2017,1,2648882896,NULL
+Dale A. Miller,2021,1,2205595508,NULL
+Dana Nau,2013,1,3123441672,NULL
+Dana S. Scott,1994,1,2619043684,NULL
+Daniel A. Menasce,1997,1,3183536285,NULL
+Daniel Bobrow,1994,1,2656522040,NULL
+Daniel D. McCracken,1994,1,2624621800,NULL
+Daniel Huttenlocher,2007,1,3174785207,NULL
+Daniel S. Bricklin,1994,1,2091174743,NULL
+Daniel Siewiorek,1994,1,2618059360,NULL
+Daniel Weld,2005,1,2964137255,NULL
+David A. Abramson,2010,1,2103408565,NULL
+David Atienza Alonso,2022,1,2583656565,NULL
+David Culler,2002,1,2303882250,NULL
+David DeWitt,1995,1,2331011002,NULL
+David Dill,2005,1,2807160796,NULL
+David H. Brandin,1995,1,252963884,NULL
+David H. Salesin,2002,1,2054111979,NULL
+David J. Farber,2001,1,2029723031,NULL
+David J. Gries,1994,1,1980295760,NULL
+David J. Kasik,2013,1,2067941078,NULL
+David J. Wheeler,1994,1,3191689514,NULL
+David Karger,2009,1,3187487044,NULL
+David L. Parnas,1994,1,88694571,NULL
+David M. Ungar,2010,1,2989058262,NULL
+David Maltz,2020,1,2295060434,NULL
+David P. Grove,2012,1,2135926280,NULL
+David Parkes,2018,1,2123940418,NULL
+David R. Boggs,1994,1,1997797362,NULL
+David R. Kaeli,2021,1,2283028827,NULL
+David S. Notkin,1998,1,477007165,NULL
+Dean Tullsen,2011,1,1971059926,NULL
+Deborah Frincke,2019,1,2974730094,NULL
+Deborah McGuinness,2023,1,2777424551,NULL
+Dennis E. Shasha,2013,1,3016857654,NULL
+Dennis Frailey,1996,1,2610621399,NULL
+Dhiraj Pradhan,1999,1,3167926715,NULL
+Dieter Rombach,2010,1,2924911850,NULL
+Dines Bjorner,2005,1,2275449421,NULL
+Don Norman,2001,1,2941920122,NULL
+Donald Chamberlin,1994,1,2118171802,NULL
+Donald F. Towsley,1997,1,2674163769,NULL
+Donald Greenberg,1995,1,2509021022,NULL
+Donald J. Haderle,2000,1,2228853458,NULL
+Donald R. Slutz,1994,1,2003993865,NULL
+Donn B. Parker,2001,1,2607944759,NULL
+Douglas K. Brotz,1994,1,2399003338,NULL
+Douglas Lea,2013,1,2147954617,NULL
+Edgar F. Codd,1994,1,3081858028,NULL
+Edward A. Taft,1994,1,2087958991,NULL
+Edward Felten,2007,1,3173975208,NULL
+Edward Knightly,2017,1,2649123585,NULL
+Edward Lazowska,1995,1,1988594917,NULL
+Edward McCluskey,1994,1,644833585,NULL
+Edwin Catmull,1995,1,2644444688,NULL
+Elaine Weyuker,1997,1,2282746851,NULL
+Eliot Moss,2007,1,2656542640,NULL
+Emmerich Welzl,1998,1,2793541232,NULL
+Eric A. A. Brewer,2007,1,1975802069,NULL
+Eric A. Weiss,1994,1,2139390771,NULL
+Eric S. Roberts,2007,1,2161460969,NULL
+Eric Xing,2022,1,3170689256,NULL
+Erich L. Kaltofen,2009,1,1971168030,NULL
+Erik Demaine,2016,1,2181591030,NULL
+Erwin Engeler,1995,1,2646945500,NULL
+Eugene Myers,2003,1,2710363610,NULL
+Eva Tardos,1998,1,2887677069,NULL
+Fedor Fomin,2023,1,2705327000,NULL
+Fei-Fei Li,2018,1,2618206500,NULL
+Fernando J. Corbato,1994,1,2680246561,NULL
+Foto Afrati,2014,1,2022488008,NULL
+Frances Allen,1994,1,2691679656,NULL
+Frank K. Zadeck,2011,1,285498487,NULL
+Frank L. Friedman,1994,1,2320903377,NULL
+Frank W. Tompa,2010,1,2271303423,NULL
+Frans Kaashoek,2004,1,3170959525,NULL
+Franz L. Alt,1994,1,2067889092,NULL
+Fred H. Harris,1994,1,2223195988,NULL
+Fred W. Weingarten,1996,1,2198832124,NULL
+Frederick Brooks,1994,1,2655343179,NULL
+Fredo Durand,2016,1,2633265759,NULL
+Geoffrey Fox,2011,1,2167100342,NULL
+Geoffrey Voelker,2017,1,241629895,NULL
+George Dodd,1996,1,2233699575,NULL
+George Furnas,2011,1,2655798439,NULL
+George Robertson,2001,1,2657214824,NULL
+Gerald L. Engel,1994,1,2000462932,NULL
+Gerald Sussman,1994,1,2230211187,NULL
+Giovanni Demicheli,2001,1,2175082470,NULL
+Glenn Ricart,2021,1,2114520006,NULL
+Gopal K. Gupta,1998,1,2685644421,NULL
+Graham R. Cormode,2020,1,2190072679,NULL
+Gregor V. Bochmann,1996,1,2646245592,NULL
+Gregory Hager,2017,1,2312254172,NULL
+Gurudatta Parulkar,2018,1,1264156990,NULL
+Guy Blelloch,2011,1,2682853931,NULL
+H. J. Siegel,1998,1,2643042484,NULL
+H. W. Lawson,1997,1,2226023441,NULL
+Hans Boehm,2012,1,2733645794,NULL
+Hans-Joerg Schek,2001,1,2633003434,NULL
+Harold J. Highland,1995,1,2764765672,NULL
+Harold Stone,1994,1,2640548706,NULL
+Harry D. Huskey,1994,1,2138259483,NULL
+Harvey G. Cragon,1994,1,2499987007,NULL
+Heng T. Shen,2020,1,2116772828,NULL
+Henry A. Kautz,2013,1,2903320334,NULL
+Herbert Freeman,1997,1,2211653101,NULL
+Herbert Maisel,1994,1,2435721980,NULL
+Herbert R. J. Grosch,1995,1,2222293088,NULL
+Holly E. Rushmeier,2016,1,3179100649,NULL
+HongJiang Zhang,2007,1,3169324639,NULL
+Howard J. Karloff,2011,1,2649155535,NULL
+Ht Kung,2023,1,2432086804,NULL
+Ian T. Foster,2009,1,2777024062,NULL
+Ian Witten,1996,1,2481367672,NULL
+Inderjit Dhillon,2014,1,2033403132,NULL
+Ira Pohl,2001,1,2062489320,NULL
+Irene Greif,1997,1,2082509128,NULL
+Irv Traiger,1994,1,2034160607,NULL
+Ivan Sutherland,1994,1,2799185628,NULL
+J. D. Couger,1997,1,2654888728,NULL
+J. N. Hume,1994,1,2100604614,NULL
+J. Nievergelt,1995,1,2974325304,NULL
+J. P. Eckert,1994,1,2629443849,NULL
+J. S. Moore,2006,1,2641091889,NULL
+J. T. Whitted,1995,1,2078225852,NULL
+Jack Davidson,2008,1,3027221701,NULL
+James H. Morris,2000,1,2273684508,NULL
+James Hendler,2016,1,2888773998,NULL
+James Kurose,2001,1,3173185735,NULL
+James Landay,2016,1,2705474410,NULL
+James Larus,2006,1,635023701,NULL
+James M. Adams,1994,1,2677745662,NULL
+Janis A. Bubenko,2004,1,2141300993,NULL
+Janos Pach,2011,1,2094197253,NULL
+Jean E. Sammet,1994,1,651606667,NULL
+Jean-Loup E. E Baer,1997,1,2287748599,NULL
+Jeffrey Jaffe,1996,1,2097083503,NULL
+Jeffrey Kramer,2001,1,2615574778,NULL
+Jeffrey S. Vitter,1996,1,2637697648,NULL
+Joel Moses,2008,1,2165109407,NULL
+Joel Ouaknine,2021,1,2740732341,NULL
+Joel S. Birnbaum,2001,1,2117307204,NULL
+Joerg Henkel,2022,1,2173045853,NULL
+John C. Klensin,2007,1,2617005239,NULL
+John C. Lui,2009,1,2738649176,NULL
+John D. Gannon,1999,1,2712403883,NULL
+John Guttag,2006,1,2251249262,NULL
+John H. Esbin,1994,1,2250256403,NULL
+John M. Pullen,2001,1,2268229408,NULL
+John Sanguinetti,2011,1,2225606827,NULL
+John T. Riedl,2009,1,1986422195,NULL
+John Warnock,1999,1,2680290215,NULL
+Jonathan Turner,2001,1,2123018367,NULL
+Jose A. Blakeley,2009,1,3178790682,NULL
+Jose L. Encarnacao,1996,1,2181422053,NULL
+Jose Meseguer,2020,1,2570189209,NULL
+Joseph F. Jaja,2001,1,2786120985,NULL
+Joseph Halpern,2002,1,2095299432,NULL
+Joseph Traub,1994,1,3173805341,NULL
+Joyce C. Little,1994,1,2293514083,NULL
+K. R. M. Leino,2016,1,2902833641,NULL
+Kang Shin,2001,1,2830735043,NULL
+Kanianthra M. Chandy,2019,1,2511306568,NULL
+Karem Sakallah,2012,1,39739974,NULL
+Karen Duncan,2000,1,2346784001,NULL
+Kathleen McKeown,2003,1,3167077686,NULL
+Kathleen S. Fisher,2010,1,2134374908,NULL
+Katy Borner,2018,1,3173216035,NULL
+Keith N. Snavely,2023,1,2170016124,NULL
+Keith Ross,2012,1,2274287312,NULL
+Ken Birman,1999,1,2807543777,NULL
+Kenneth Clarkson,2008,1,2642943773,NULL
+Kenneth Forbus,2006,1,3169142095,NULL
+Kenneth L. Thompson,2020,1,2795535332,NULL
+Kenneth W. Church,2023,1,3171720785,NULL
+Kenneth W. Kennedy,1995,1,2701307010,NULL
+Keshav K. Pingali,2012,1,651843436,NULL
+Kilian Weinberger,2023,1,2003907699,NULL
+Koji Torii,1999,1,2073670118,NULL
+Krishan K. Sabnani,2001,1,3067490750,NULL
+Krishna Palem,2005,1,2714684604,NULL
+Kurt B. Akeley,1996,1,3192654489,NULL
+L. A. Zadeh,1994,1,2793012974,NULL
+L. P. Deutsch,1994,1,2690818165,NULL
+Larry Druffel,1995,1,3037742721,NULL
+Larry M. Masinter,1999,1,3183919696,NULL
+Larry Snyder,1995,1,2682377913,NULL
+Larry Stockmeyer,1996,1,2617133453,NULL
+Laurie A. Williams,2020,1,2554626101,NULL
+Laurie J. Hendren,2009,1,3151478845,NULL
+Lawrence Bernstein,1995,1,2098202587,NULL
+Lawrence H. Landweber,1996,1,2150766934,NULL
+Laxmikant Kale,2017,1,3152126673,NULL
+Lee Giles,2006,1,3013561534,NULL
+Leonidas Guibas,1999,1,3172795803,NULL
+Leslie B. Lamport,2014,1,2761228157,NULL
+Li E. Li,2017,1,3175456323,NULL
+Linda J. Camp,2021,1,2697051046,NULL
+Linda Petzold,2011,1,2614685570,NULL
+Lionel Briand,2020,1,2669010577,NULL
+Loren C. Carpenter,1995,1,2128081554,NULL
+Lori Clarke,1998,1,2528203673,NULL
+Lorraine Borman,1994,1,1327477391,NULL
+Lorrie F. Cranor,2014,1,368046975,NULL
+Luis H. Ceze,2022,1,2259546344,NULL
+Luiz A. Barroso,2010,1,2143449262,NULL
+Lydia Kavraki,2010,1,2916902583,NULL
+M. S. Lynn,1994,1,2420429265,NULL
+M. T. Ozsu,2006,1,2892780305,NULL
+Madhav Marathe,2013,1,2396513418,NULL
+Maja Mataric,2020,1,2075666580,NULL
+Mani B. Srivastava,2017,1,2188249489,NULL
+Marc Auslander,1999,1,2658859927,NULL
+Maria L. Gini,2019,1,2236789276,NULL
+Marilyn C. Wolf,2001,1,2787032259,NULL
+Mark A. Horowitz,2003,1,3167668734,NULL
+Mark Wegman,1996,1,2778998680,NULL
+Marshall C. Yovits,1996,1,2310189966,NULL
+Martha Pollack,2011,1,2920691311,NULL
+Martha Sloan,1994,1,2516675961,NULL
+Marti Hearst,2013,1,2626955268,NULL
+Martin Abadi,2008,1,2162106674,NULL
+Martin Hellman,2020,1,2642719796,NULL
+Martin Kersten,2016,1,3189836178,NULL
+Martin Wong,2017,1,2713914133,NULL
+Mary Harrold,2003,1,421534652,NULL
+Mary J. Irwin,1996,1,2123342649,NULL
+Mary L. Soffa,1999,1,686913843,NULL
+Mary M. Shaw,1996,1,2281083513,NULL
+Mary P. Czerwinski,2015,1,3175656764,NULL
+Matthew A. Turk,2020,1,2517844234,NULL
+Meenakshi Balakrishnan,2021,1,2755336946,NULL
+Meir Lehman,1994,1,2614290841,NULL
+Meredith R. Morris,2020,1,2123314761,NULL
+Michael D. Dahlin,2010,1,2404867950,NULL
+Michael E. Lesk,1996,1,2989557103,NULL
+Michael E. Saks,2016,1,3185478578,NULL
+Michael G. Luby,2015,1,3131133504,NULL
+Michael Heath,2000,1,3165128128,NULL
+Michael J. Zyda,2020,1,3176020087,NULL
+Michael Littman,2018,1,2717012718,NULL
+Michael R. Garey,1995,1,3176078313,NULL
+Michael W. Blasgen,1994,1,2204003993,NULL
+Michael W. Hicks,2022,1,2565730675,NULL
+Michael Wellman,2005,1,2640829208,NULL
+Mikhail Atallah,2006,1,1984264859,NULL
+Ming C. Lin,2011,1,2801945519,NULL
+Mohammad T. Hajiaghayi,2018,1,2550308973,NULL
+Mohammed Zaki,2021,1,2156708217,NULL
+Moinuddin Qureshi,2022,1,2793005190,NULL
+Monica Lam,2007,1,2105666285,NULL
+Monroe Newborn,1994,1,2973638292,NULL
+Mostafa Ammar,2003,1,2802177006,NULL
+Moustafa A. Youssef,2019,1,2165462502,NULL
+Mubarak A. Shah,2021,1,3175429630,NULL
+Myron Ginsberg,1995,1,2608273757,NULL
+N. Asokan,2018,1,2616513845,NULL
+Nam S. Kim,2020,1,2649897161,NULL
+Nancy Leveson,1995,1,2187457791,NULL
+Natasha Noy,2023,1,1987648574,NULL
+Neil Jones,1998,1,2399769762,NULL
+Nell B. Dale,2009,1,3207207905,NULL
+Nicholas Duffield,2020,1,3170413451,NULL
+Nicholas Higham,2020,1,2568183539,NULL
+Nikil D. Dutt,2014,1,3172523781,NULL
+Niklaus E. Wirth,1994,1,2327738716,NULL
+Nir N. Shavit,2013,1,3180724290,NULL
+Nisheeth Vishnoi,2019,1,2775662907,NULL
+Nitesh Chawla,2022,1,2639100366,NULL
+Norihisa Suzuki,1995,1,2483912910,NULL
+Norman Jouppi,2006,1,2799270878,NULL
+Olga Troyanskaya,2020,1,2738457587,NULL
+Oscar Ibarra,1995,1,2268403478,NULL
+Oyekunle Olukotun,2006,1,2296184848,NULL
+Panganamala Kumar,2013,1,2957197718,NULL
+Pankaj Agarwal,2002,1,2475766745,NULL
+Paolo Zanella,1997,1,2988551270,NULL
+Paul G. Lowney,2008,1,2012943884,NULL
+Paul Mockapetris,2004,1,2687023189,NULL
+Paul R. McJones,1994,1,149939345,NULL
+Paul Schneck,1997,1,2671091995,NULL
+Paul Van Oorschot,2016,1,2901114975,NULL
+Paul W. Abrahams,1995,1,2170602964,NULL
+Paulo Esteves-Verissimo,2009,1,2550687127,NULL
+Pavel Pevzner,2010,1,3168888365,NULL
+Per O. Stenstrom,2008,1,2008392143,NULL
+Perry Cook,2008,1,3047674506,NULL
+Peter A. Freeman,2000,1,2171471317,NULL
+Peter Chen,2010,1,2101505567,NULL
+Peter Haas,2013,1,2018423691,NULL
+Peter Schroeder,2015,1,2415435027,NULL
+Phokion Kolaitis,2005,1,2483871482,NULL
+Prashant J. Shenoy,2019,1,3127080795,NULL
+Premkumar T. Devanbu,2018,1,2677304033,NULL
+R. L. Ashenhurst,1995,1,2973570077,NULL
+RJ Miller,2009,1,2477391030,NULL
+Radia Perlman,2016,1,2618635485,NULL
+Rajeev R. Rastogi,2012,1,2651564987,NULL
+Ramalingam Chellappa,2013,1,2564301742,NULL
+Ramanathan Guha,2015,1,2524355125,NULL
+Ramesh C. Jain,2003,1,2481450613,NULL
+Ramon Caceres,2023,1,2953693780,NULL
+Ravinderpal S. Sandhu,2001,1,1983422165,NULL
+Raymond Mooney,2010,1,2276007323,NULL
+Remzi Arpaci-Dusseau,2020,1,2184405640,NULL
+Rene Vidal,2022,1,2155853947,NULL
+Ricardo A. Baeza-Yates,2009,1,2768368234,NULL
+Richard B. Kieburtz,2001,1,2642109412,NULL
+Richard DeMillo,2003,1,2716436040,NULL
+Richard E. Stearns,1994,1,3008901715,NULL
+Richard G. Canning,1994,1,2135309145,NULL
+Richard H. Austing,1994,1,71666084,NULL
+Richard Karp,1994,1,2625872790,NULL
+Richard Lipton,1997,1,2780681072,NULL
+Richard P. Gabriel,1998,1,2509970008,NULL
+Richard R. Burton,1994,1,2123538064,NULL
+Richard Schantz,2004,1,2493264501,NULL
+Richard Snodgrass,1999,1,699078101,NULL
+Richard W. Hamming,1994,1,2714515456,NULL
+Rick Cattell,2012,1,2225511956,NULL
+Rob Cook,1999,1,2583565672,NULL
+Robbert Van Renesse,2009,1,2655006874,NULL
+Robert Aiken,2001,1,2475573365,NULL
+Robert B. Ross,2021,1,3179692517,NULL
+Robert Constable,1995,1,2708965150,NULL
+Robert M. Frankston,1994,1,2052167495,NULL
+Robert T. Braden,1999,1,2665160549,NULL
+Rodney Downey,2007,1,1127475603,NULL
+Roger R. Bate,1997,1,2983029861,NULL
+Ron Cytron,2010,1,2777978467,NULL
+Ronald L. Graham,1999,1,2156312790,NULL
+Roy F. Rada,1995,1,2148854578,NULL
+Roy Levin,2008,1,2425011781,NULL
+S. E. Robertson,2013,1,2988323256,NULL
+S. Lakshmivarahan,1995,1,2705421162,NULL
+S. Sudarshan,2014,1,3172131581,NULL
+SATOSHI MATSUOKA,2011,1,2164966972,NULL
+SIMON S. LAM,1998,1,2142037325,NULL
+Sally J. Floyd,2001,1,2164767595,NULL
+Sampath K. Kannan,2013,1,2128447696,NULL
+Sarita Adve,2010,1,2346116799,NULL
+Sartaj K. Sahni,1996,1,3167835024,NULL
+Scott J. Aaronson,2019,1,2096229648,NULL
+Scott J. Shenker,2003,1,719828399,NULL
+Scott Smolka,2021,1,2657655191,NULL
+Seffi Naor,2023,1,2116654564,NULL
+Seymour J. Wolfson,1994,1,2409403385,NULL
+Shamkant Navathe,2014,1,2065325028,NULL
+Sheila McIlraith,2019,1,2976502530,NULL
+Shih F. Chang,2017,1,2635506434,NULL
+Shmuel Sagiv,2015,1,2132786051,NULL
+Shrikanth Narayanan,2023,1,3160009964,NULL
+Shubu Mukherjee,2011,1,2973644252,NULL
+Sidney Karin,2002,1,2011098949,NULL
+Simon L. Peyton-Jones,2004,1,2315343181,NULL
+Sriram Rajamani,2015,1,2645619097,NULL
+Stanley Zdonik,2006,1,3174204852,NULL
+Stephen Blackburn,2016,1,2654624397,NULL
+Stephen Dunwell,1994,1,2974297396,NULL
+Stephen J. Whittaker,2014,1,2950390122,NULL
+Stephen Keckler,2011,1,1756148094,NULL
+Stephen S. Lavenberg,1994,1,2278362648,NULL
+Stephen T. Kent,1998,1,2983905372,NULL
+Stephen Trimberger,2010,1,2250545138,NULL
+Steve Seitz,2017,1,2120007816,NULL
+Steven Gribble,2020,1,2044013107,NULL
+Steven M. Hand,2017,1,2140572436,NULL
+Steven Salzberg,2020,1,2484083727,NULL
+Stuart Feldman,1995,1,2120809121,NULL
+Stuart Shieber,2014,1,1985347978,NULL
+Stuart Wecker,1994,1,2913341903,NULL
+Stuart Zweben,1998,1,2144599573,NULL
+Sung M. Kang ,2001,1,2136829028,NULL
+Susan Eggers,2002,1,2649744027,NULL
+Susan H. Nycum,1998,1,2345462565,NULL
+Thomas A. D'Auria,1994,1,2663988010,NULL
+Thomas B. Steel,1994,1,2974291650,NULL
+Thomas D. Erickson,2009,1,3160389730,NULL
+Thomas DeFanti,1994,1,2694047840,NULL
+Thomas E. Kurtz,1994,1,2578958731,NULL
+Thomas L. Dean,2009,1,2662402520,NULL
+Thomas Moran,2003,1,2303271071,NULL
+Timoleon Sellis,2013,1,2473678656,NULL
+Timothy Chan,2019,1,2481708243,NULL
+Timothy Pinkston,2019,1,32065925,NULL
+Tomas Lozano-Perez,2017,1,3175255957,NULL
+Tse-Yun Feng,1994,1,2146783209,NULL
+Ueli M. Maurer,2015,1,2638258438,NULL
+Urs Hoelzle,2009,1,324387074,NULL
+Utpal Banerjee,2007,1,2583758381,NULL
+Vaughn T. Betz,2023,1,2081159056,NULL
+Venkat Rangan,1998,1,2170578350,NULL
+Venkata Padmanabhan,2016,1,3168655865,NULL
+Vicki Hanson,2004,1,2342983586,NULL
+Victor Bahl,2003,1,2146492509,NULL
+Victor Basili,1997,1,2798343160,NULL
+Victor Miller,2015,1,2577367822,NULL
+Vijay P. Bhatkar,2009,1,2071334005,NULL
+Viktor Prasanna,2007,1,2640626445,NULL
+Vinton Cerf,1994,1,2668553662,NULL
+Walter Carlson,1994,1,2400008506,NULL
+Wen-Mei Hwu,2002,1,1183556006,NULL
+Wendi B. Heinzelman,2018,1,2205751461,NULL
+Wesley K. Fuchs,2000,1,2615026269,NULL
+Wil Van Der Aalst,2020,1,2250208250,NULL
+William A. Buxton,2008,1,2985119365,NULL
+William B. Poucher,1994,1,1264697932,NULL
+William D. Gropp,2006,1,2503477627,NULL
+William D. Hillis,1994,1,3129800129,NULL
+William Dally,2002,1,2707588551,NULL
+William F. Atchison,1994,1,2164456969,NULL
+William Freeman,2016,1,2207999269,NULL
+William R. Adrion,1996,1,2704150645,NULL
+William Strecker,1994,1,2138667717,NULL
+Willis H. Ware,1994,1,2127662030,NULL
+Willy E. Zwaenepoel,2000,1,2290999210,NULL
+XiaoFeng Wang,2023,1,5066976667,NULL
+Xiaobo S. Hu,2021,1,2101761700,NULL
+Xin L. Dong,2023,1,2912882229,NULL
+Xuelong LI,2020,1,2643935949,NULL
+Yale Patt,2001,1,2641085848,NULL
+Zachary Ives,2021,1,2770955203,NULL
+Zehra Ozsoyoglu,2011,1,2973668279,NULL
+Zhuoqing Mao,2023,1,2147859731,NULL
+A. J. Milner,1991,10,2285125540,NULL
+A. J. Perlis,1966,10,3085662544,NULL
+Alan Kay,2003,10,2443838674,NULL
+Andrew C. Yao,2000,10,2754008427,NULL
+Dana S. Scott,1976,10,2619043684,NULL
+David Patterson,2017,10,2125303055,NULL
+Douglas Engelbart,1997,10,3043597431,NULL
+E. A. Emerson,2007,10,2610418602,NULL
+Edmund Clarke,2007,10,2462175395,NULL
+Edwin Catmull,2019,10,2644444688,NULL
+Fernando J. Corbato,1990,10,2680246561,NULL
+Frances Allen,2006,10,2691679656,NULL
+Frederick Brooks,1999,10,2655343179,NULL
+Ivan Sutherland,1988,10,2799185628,NULL
+J. H. Wilkinson,1970,10,2424499666,NULL
+Kenneth L. Thompson,1983,10,2795535332,NULL
+Leslie B. Lamport,2013,10,2761228157,NULL
+Martin Hellman,2015,10,2642719796,NULL
+Richard E. Stearns,1993,10,3008901715,NULL
+Richard Karp,1985,10,2625872790,NULL
+Richard W. Hamming,1968,10,2714515456,NULL
+Vinton Cerf,2004,10,2668553662,NULL
+Adi Shamir,2002,10,2201755339,NULL
+Alan Kay,2003,10,1974749230,NULL
+Alfred V. Aho,2020,10,2380581373,NULL
+Allen Newell,1975,10,2126658068,NULL
+Amir Pnueli,1996,10,2171343426,NULL
+Andrew C. Yao,2000,10,2088166175,NULL
+Avi Wigderson,2023,10,31335080,NULL
+Barbara Liskov,2008,10,2084056563,NULL
+Butler W. Lampson,1992,10,1785551945,NULL
+C. A. R. Hoare,1980,10,2052847585,NULL
+Charles P. Thacker,2009,10,2100283947,NULL
+Charles W. Bachman,1973,10,2315463675,NULL
+Dana S. Scott,1976,10,2602723040,NULL
+David Patterson,2017,10,2098984663,NULL
+Dennis M. Ritchie,1983,10,2110203303,NULL
+Donald E. Knuth,1974,10,2137000881,NULL
+Douglas Engelbart,1997,10,2208808115,NULL
+E. A. Emerson,2007,10,2115834734,NULL
+Edgar F. Codd,1981,10,3081858028,NULL
+Edmund Clarke,2007,10,2129477832,NULL
+Edsger W. Dijkstra,1972,10,2137842401,NULL
+Edward A. Feigenbaum,1994,10,2086686599,NULL
+Edwin Catmull,2019,10,2504194471,NULL
+Fernando J. Corbato,1990,10,2048198971,NULL
+Frances Allen,2006,10,2102409281,NULL
+Frederick Brooks,1999,10,2097474894,NULL
+Geoffrey E. Hinton,2018,10,563069026,NULL
+Herbert A. Simon,1975,10,2118103072,NULL
+Ivan Sutherland,1988,10,1941499373,NULL
+Jack Dongarra,2021,10,288512535,NULL
+Jeffrey D. Ullman,2020,10,2289364316,NULL
+Jim Gray,1998,10,2131537204,NULL
+John Backus,1977,10,2058634616,NULL
+John Cocke,1987,10,2161752438,NULL
+John E. Hopcroft,1986,10,2079447303,NULL
+John L. Hennessy,2017,10,1965698830,NULL
+John McCarthy,1971,10,2498471291,NULL
+Joseph Sifakis,2007,10,2105927184,NULL
+Judea Pearl,2011,10,2248165042,NULL
+Juris Hartmanis,1993,10,327575412,NULL
+Kenneth E. Iverson,1979,10,2470509247,NULL
+Kenneth L. Thompson,1983,10,2163136642,NULL
+Kristen Nygaard,2001,10,2096116960,NULL
+Leonard M. Adleman,2002,10,2009176085,NULL
+Leslie B. Lamport,2013,10,2096750770,NULL
+Leslie G. Valiant,2010,10,2000097935,NULL
+Manuel Blum,1995,10,2163096604,NULL
+Martin Hellman,2015,10,2146312211,NULL
+Marvin Minsky,1969,10,1968041664,NULL
+Maurice V. Wilkes,1967,10,2224046207,NULL
+Michael O. Rabin,1976,10,2144633556,NULL
+Michael Stonebraker,2014,10,1998938290,NULL
+Niklaus E. Wirth,1984,10,2327738716,NULL
+Ole-Johan Dahl,2001,10,2141765675,NULL
+Pat Hanrahan,2019,10,2225733586,NULL
+Peter Naur,2005,10,587396187,NULL
+Raj Reddy,1994,10,2149385398,NULL
+Richard E. Stearns,1993,10,2102135011,NULL
+Richard Karp,1985,10,1964658237,NULL
+Richard W. Hamming,1968,10,2244377245,NULL
+Robert E. Kahn,2004,10,2610176178,NULL
+Robert E. Tarjan,1986,10,350567680,NULL
+Robert M. Metcalfe,2022,10,2132855026,NULL
+Robert W. Floyd,1978,10,2011551863,NULL
+Ronald L. Rivest,2002,10,695545146,NULL
+Shafi Goldwasser,2012,10,1728759264,NULL
+Silvio Micali,2012,10,699581604,NULL
+Stephen A. Cook,1982,10,2098910421,NULL
+Tim Berners-Lee,2016,10,2308609296,NULL
+Vinton Cerf,2004,10,2029905547,NULL
+Whitfield Diffie,2015,10,2307656538,NULL
+William Kahan,1989,10,2053339767,NULL
+Yann LeCun,2018,10,2053214915,NULL
+Yoshua Bengio,2018,10,161269817,NULL
+A. J. Milner,1991,10,2087817183,NULL
+A. J. Perlis,1966,10,2659867364,NULL
+J. H. Wilkinson,1970,10,2193746894,NULL
+A. El Abbadi,2010,1,2055247794,NULL
+Aaron Hertzmann,2018,1,1965004193,NULL
+Aarti Gupta,2017,1,2129619966,NULL
+Abhik Roychoudhury,2024,1,2153766775,NULL
+Abigail Sellen,2016,1,1985629368,NULL
+Abraham Kandel,1998,1,2115569417,NULL
+Abraham Silberschatz,1996,1,2251809919,NULL
+Adam Finkelstein,2014,1,2136484952,NULL
+Adam Smith,2020,1,2132461468,NULL
+Adi Shamir,2020,1,2201755339,NULL
+Aditya Akella,2023,1,2286288562,NULL
+Adnan Darwiche,2018,1,457026902,NULL
+Adrian Perrig,2016,1,2213385919,NULL
+Ahmed E. Hassan,2022,1,2110155496,NULL
+Ahmed K. Elmagarmid,2012,1,2057816297,NULL
+Ahmed Sameh,1999,1,1208251994,NULL
+Aidong Zhang,2017,1,2228514421,NULL
+Akinori Yonezawa,1999,1,660900409,NULL
+Alan Borning,2001,1,2020136591,NULL
+Alan Bundy,2014,1,2000084407,NULL
+Alan C. Kay,2008,1,1974749230,NULL
+Alan Edelman,2020,1,2472388376,NULL
+Alan F. Newell,2006,1,2283508340,NULL
+Alan H. Barr,1995,1,1970116039,NULL
+Alan Kay,2008,1,2443838674,NULL
+Alan L. Selman,1998,1,1983273066,NULL
+Alan Smith,2001,1,2139775826,NULL
+Alan W. Biermann,2000,1,727408494,NULL
+Albert G. Greenberg,2006,1,2743143419,NULL
+Albert R. Meyer,2000,1,2250310737,NULL
+Alberto Sangiovanni-Vincentelli,2014,1,681596721,NULL
+Albrecht Schmidt,2023,1,3165213004,NULL
+Alec Wolman,2018,1,2110739081,NULL
+Alex Aiken,2008,1,2067453598,NULL
+Alex C. Snoeren,2018,1,2112598219,NULL
+Alex Pothen,2022,1,1459957267,NULL
+Alexander L. Wolf,2006,1,2115607830,NULL
+Alexander Vardy,2017,1,2115388567,NULL
+Alfons Kemper,2022,1,2244150349,NULL
+Alfred V. Aho,1996,1,2380581373,NULL
+Alfred Z. Spector,2006,1,2105930983,NULL
+Alistair Sinclair,2012,1,2121878995,NULL
+Alla Sheffer,2021,1,2009650199,NULL
+Allan Borodin,2014,1,2130144971,NULL
+Allan Gottlieb,2004,1,2293769500,NULL
+Allen B. Tucker,1994,1,2116005595,NULL
+Allison Druin,2016,1,935383222,NULL
+Alok Choudhary,2009,1,2147783234,NULL
+Alon Halevy,2006,1,2154833104,NULL
+Ambuj Goyal,2002,1,2274593112,NULL
+Amin Vahdat,2011,1,295064773,NULL
+Amir Pnueli,2007,1,2171343426,NULL
+Amit P. Sheth,2020,1,2295682018,NULL
+Amit Sahai,2018,1,2159933393,NULL
+Amit Sheth,2020,1,2893523298,NULL
+Amit Singhal,2011,1,2518821817,NULL
+Amos Fiat,2021,1,1577021311,NULL
+Amr El Abbadi,2010,1,2120785847,NULL
+Amy Bruckman,2018,1,254181745,NULL
+Anand Raghunathan,2023,1,1992871312,NULL
+Anand Sivasubramaniam,2017,1,2167092868,NULL
+Anant Agarwal,2007,1,2282754113,NULL
+Anantha P. Chandrakasan,2020,1,1990504404,NULL
+Anastasia Ailamaki,2015,1,2024002627,NULL
+Andrea C. Arpaci-Dusseau,2020,1,1979388515,NULL
+Andreas Krause,2023,1,2165121431,NULL
+Andreas Moshovos,2017,1,2005108218,NULL
+Andreas Zeller,2010,1,2106620385,NULL
+Andrei Z. Broder,2007,1,1970098533,NULL
+Andrew A. Chien,2004,1,2614356407,NULL
+Andrew B. Kahng,2012,1,2067629764,NULL
+Andrew C. Myers,2013,1,2141746463,NULL
+Andrew Chi-Chih Yao,1995,1,2088166175,NULL
+Andrew D. Gordon,2020,1,2101841271,NULL
+Andrew M. Pitts,2012,1,2165119604,NULL
+Andrew McCallum,2017,1,2131293038,NULL
+Andrew S. Tanenbaum,1996,1,2068854845,NULL
+Andrew Tomkins,2020,1,2130754085,NULL
+Andrew V. Goldberg,2009,1,2129291095,NULL
+Andrew W. Appel,1998,1,2120329599,NULL
+Andries van Dam,1994,1,2149961428,NULL
+André DeHon,2018,1,2035441203,NULL
+André Seznec,2016,1,2202017631,NULL
+Angelos D. Keromytis,2017,1,299775663,NULL
+Anil K. Jain,2003,1,2162010601,NULL
+Anind K. Dey,2021,1,2111246749,NULL
+Anja Feldmann,2023,1,2036301181,NULL
+Anna R. Karlin,2012,1,2029686818,NULL
+Anne Condon,2010,1,227075345,NULL
+Anne-Marie Kermarrec,2016,1,699770294,NULL
+Anthony I. Wasserman,1996,1,2199033490,NULL
+Anthony J. G. Hey,2016,1,2029136260,NULL
+Anthony Ralston,1994,1,2534974593,NULL
+Antonio Gonzalez,2020,1,2479350462,NULL
+Anupam Gupta,2021,1,2158078532,NULL
+Anwar Walid,2024,1,2103862135,NULL
+Aravind K. Joshi,1998,1,2101398122,NULL
+Aravind Srinivasan,2014,1,2128242943,NULL
+Arie E. Kaufman,2009,1,2132849971,NULL
+Arindam Banerjee,2024,1,2037585042,NULL
+Aristides A. G. Requicha,2007,1,2575782317,NULL
+Arnold L. Rosenberg,1996,1,2169735298,NULL
+Arvind Krishnamurthy,2020,1,2088689873,NULL
+Ashish Goel,2024,1,2112067655,NULL
+Ashutosh Sabharwal,2022,1,2240333828,NULL
+Assaf Schuster,2015,1,2135728993,NULL
+Avi Wigderson,2018,1,31335080,NULL
+Avrim Blum,2007,1,2137000917,NULL
+Axel van Lamsweerde,2000,1,1227273176,NULL
+Azad M. Madni,2024,1,2042489223,NULL
+Azriel Rosenfeld,1994,1,2149857775,NULL
+B. Chandrasekaran,1996,1,2236620033,NULL
+Baba C. Vemuri,2009,1,336558674,NULL
+Babak Falsafi,2015,1,117387042,NULL
+Baining Guo,2011,1,2153421060,NULL
+Balaji Prabhakar,2017,1,2108719851,NULL
+Bantwal R. Rau,2002,1,2502988700,NULL
+Barbara G. Ryder,1998,1,2139647612,NULL
+Barbara J. Grosz,2003,1,328532754,NULL
+Barbara Liskov,1996,1,2084056563,NULL
+Barbara Simons,1994,1,2118382796,NULL
+Barry Boehm,1997,1,2068686281,NULL
+Bart Selman,2012,1,1966117383,NULL
+Barton P. Miller,2001,1,2155251401,NULL
+Bashar A. Nuseibeh,2024,1,2207023792,NULL
+Batya Friedman,2021,1,2242179040,NULL
+Bella Bose,2004,1,2047212534,NULL
+Ben Shneiderman,1997,1,668764113,NULL
+Ben Y. Zhao,2021,1,2166435812,NULL
+Beng Chin Ooi,2011,1,2037466936,NULL
+Benjamin C. Pierce,2012,1,1988947184,NULL
+Benjamin G. Zorn,2024,1,2406631840,NULL
+Benjamin J. Raphael,2023,1,2143833718,NULL
+Benjamin W. Wah,2004,1,688151781,NULL
+Bernard Chazelle,1996,1,2076086827,NULL
+Bernhard Nebel,2021,1,1989269690,NULL
+Bernhard Schoelkopf,2017,1,2224599527,NULL
+Bernt Schiele,2021,1,1620943014,NULL
+Bertrand Meyer,2008,1,2161925446,NULL
+Bhavani Thuraisingham,2018,1,2298201484,NULL
+Bill Curtis,2022,1,2289360256,NULL
+Bing Liu,2015,1,2244698799,NULL
+Bjarne Stroustrup,1994,1,179039431,NULL
+Björn Schuller,2023,1,2079380910,NULL
+Boaz Barak,2022,1,2199786071,NULL
+Bonnie Berger,2003,1,2315546843,NULL
+Bonnie J. Dorr,2020,1,2141255014,NULL
+Brad A. Myers,2005,1,2117127927,NULL
+Bradley Gene Calder,2019,1,2309058147,NULL
+Brent Hailpern,2003,1,1993255528,NULL
+Brent Waters,2021,1,2131229705,NULL
+Brian Curless,2024,1,511526681,NULL
+Brian Levine,2020,1,2178752965,NULL
+Brian Neil Levine,2020,1,2157465969,NULL
+Brian Randell,2008,1,2029293694,NULL
+Bronis R. de Supinski,2022,1,302009331,NULL
+Bruce G. Lindsay,1994,1,2020635548,NULL
+Bruce M. Maggs,2018,1,731745793,NULL
+Bruce R. Donald,2009,1,2183038711,NULL
+Bud Mishra,2007,1,2110661079,NULL
+Burton Smith,1994,1,2717655333,NULL
+Butler W. Lampson,1994,1,1785551945,NULL
+C. A. R. Hoare,2020,1,2052847585,NULL
+C. Krishna Mohan,2002,1,2141064722,NULL
+C. Lee Giles,2006,1,2124749556,NULL
+Carl Ebeling,2011,1,2111484020,NULL
+Carl Kesselman,2017,1,2045278166,NULL
+Carla E. Brodley,2016,1,1994240001,NULL
+Carla P. Gomes,2017,1,2108126638,NULL
+Carla Schlatter Ellis,2010,1,2120159945,NULL
+Carlo Ghezzi,1999,1,2233149120,NULL
+Carlo H. Séquin,1998,1,139773092,NULL
+Carlo Tomasi,2016,1,2198144429,NULL
+Carlo Zaniolo,2019,1,2028117853,NULL
+Carlos José Pereira de Lucena,2013,1,2182731144,NULL
+Cathy H. Wu,2020,1,2133227394,NULL
+Catriel Beeri,2007,1,345432764,NULL
+Chandra Chekuri,2023,1,1182808806,NULL
+Chandra Narayanaswami,2020,1,2075027297,NULL
+Chandrajit L. Bajaj,2009,1,2006893438,NULL
+Chandramohan A. Thekkath,2009,1,16313686,NULL
+Charles E. Leiserson,2006,1,2137029746,NULL
+Charles L. Isbell,2018,1,2106580818,NULL
+Charles W. Bachman,2014,1,2315463675,NULL
+Charu C. Aggarwal,2013,1,2146335907,NULL
+ChengXiang Zhai,2017,1,2152766206,NULL
+Chenyang Lu,2020,1,2099764636,NULL
+Chien-Ming Chen,2006,1,2111630871,NULL
+Chih-Jen Lin,2015,1,2168176072,NULL
+Chris S. Wallace,1995,1,2311529153,NULL
+Christian Cachin,2019,1,2250947825,NULL
+Christian Damsgaard Jensen,2011,1,2187435788,NULL
+Christian S. Jensen,2011,1,2159644763,NULL
+Christine L. Borgman,2013,1,2156811675,NULL
+Christophe Diot,2005,1,84450470,NULL
+Christopher D. Manning,2013,1,2149153931,NULL
+Christopher Kruegel,2023,1,2001160045,NULL
+Christos Faloutsos,2010,1,2198983026,NULL
+Christos H. Papadimitriou,2001,1,2220829341,NULL
+Christos Kozyrakis,2016,1,713250648,NULL
+Christos Papadimitriou,2001,1,2644649439,NULL
+Claire Cardie,2019,1,229573375,NULL
+Clarence A. Ellis,1998,1,2163169701,NULL
+Clark Barrett,2024,1,2136212275,NULL
+Claudio T. Silva,2024,1,2150576810,NULL
+Cliff B. Jones,1995,1,2142468959,NULL
+Cliff Lampe,2024,1,2012545385,NULL
+Clifford A. Lynch,2017,1,2281900866,NULL
+Clifford Stein,2012,1,2148836898,NULL
+Constantinos Daskalakis,2022,1,2090235954,NULL
+Cordell Green,1994,1,2237799081,NULL
+Corina S. Păsăreanu,2023,1,2901938786,NULL
+Corinna Cortes,2022,1,2134830209,NULL
+Cormac Flanagan,2020,1,2130341195,NULL
+Craig A. Knoblock,2017,1,1991211814,NULL
+Craig Boutilier,2012,1,2060802895,NULL
+Craig Gotsman,2022,1,2248009761,NULL
+Craig Partridge,2003,1,2108566742,NULL
+Cynthia Dwork,2015,1,208343995,NULL
+Dacheng Tao,2019,1,2104129307,NULL
+Dahlia Malkhi,2011,1,2195039702,NULL
+Dale Miller,2021,1,2144406363,NULL
+Dan Boneh,2016,1,201828038,NULL
+Dan Gusfield,2017,1,108551919,NULL
+Dan Halperin,2018,1,2130285077,NULL
+Dan R. Olsen,2006,1,2148302434,NULL
+Dan Roth,2011,1,2122007671,NULL
+Dan Suciu,2011,1,1986159374,NULL
+Dana Randall,2024,1,2127421764,NULL
+Dana Ron,2023,1,2146939727,NULL
+Dana S. Nau,2013,1,2054248234,NULL
+Daniel A. Menascé,1997,1,2421071093,NULL
+Daniel A. Reed,2003,1,2421208202,NULL
+Daniel A. Spielman,2010,1,1986498546,NULL
+Daniel Cohen-Or,2021,1,9988965,NULL
+Daniel G. Bobrow,1994,1,2087866229,NULL
+Daniel J. Abadi,2020,1,2170206103,NULL
+Daniel J. Rosenkrantz,1995,1,250841333,NULL
+Daniel Jackson,2016,1,2120858950,NULL
+Daniel P. Huttenlocher,2007,1,677134955,NULL
+Daniel P. Siewiorek,1994,1,2233600992,NULL
+Daniel S. Weld,2005,1,560881892,NULL
+Daniela Rus,2014,1,2223948068,NULL
+Danny Dolev,2007,1,1983290808,NULL
+Darrell Whitley,2019,1,2130462956,NULL
+David A. Bader,2021,1,2148365076,NULL
+David A. Maltz,2020,1,2063025135,NULL
+David A. Patterson,1994,1,2098984663,NULL
+David A. Wood,2005,1,2316719408,NULL
+David Abramson,2010,1,2146690213,NULL
+David B. Lomet,2002,1,1983664831,NULL
+David B. Shmoys,2001,1,2150894071,NULL
+David Basin,2018,1,2203547071,NULL
+David Brooks,2020,1,2112153251,NULL
+David C. Parkes,2018,1,2101135606,NULL
+David D. Clark,2001,1,2135387429,NULL
+David E. Culler,2002,1,348251026,NULL
+David Eppstein,2011,1,2002613147,NULL
+David F. Bacon,2009,1,2069733440,NULL
+David Forsyth,2013,1,2003447161,NULL
+David Garlan,2013,1,2256096860,NULL
+David Gries,1994,1,1980295760,NULL
+David Grove,2012,1,2135926280,NULL
+David Harel,1994,1,427806604,NULL
+David Heckerman,2011,1,2021640924,NULL
+David J. DeWitt,1995,1,1979791317,NULL
+David J. Kuck,1994,1,705603598,NULL
+David K. Gifford,2011,1,2222853225,NULL
+David Kaeli,2021,1,2283028827,NULL
+David Kotz,2020,1,2043852209,NULL
+David L. Dill,2005,1,2148325455,NULL
+David L. Mills,1999,1,2112308037,NULL
+David L. Waltz,1999,1,79943208,NULL
+David Lo,2023,1,2132927693,NULL
+David Lorge Parnas,1994,1,88694571,NULL
+David M. Blei,2015,1,2289542319,NULL
+David M. Mount,2022,1,2463054195,NULL
+David M. Nicol,2005,1,2170784007,NULL
+David M. Williamson,2013,1,2277594746,NULL
+David MacQueen,1999,1,2618847259,NULL
+David Maier,1998,1,2064546257,NULL
+David Notkin,1998,1,477007165,NULL
+David P. Dobkin,1997,1,573397282,NULL
+David Padua,2007,1,2123005755,NULL
+David Patterson,1994,1,2125303055,NULL
+David Peleg,2016,1,1903060929,NULL
+David R. Karger,2009,1,2305153757,NULL
+David S. Johnson,1995,1,2120920645,NULL
+David S. Rosenblum,2010,1,2182166124,NULL
+David S. Warren,2000,1,2163362677,NULL
+David S. Wise,2004,1,2128700811,NULL
+David Salesin,2002,1,2054111979,NULL
+David Sankoff,2023,1,2298342406,NULL
+David Ungar,2010,1,2041937263,NULL
+David Wetherall,2011,1,2064270007,NULL
+David Williamson,2013,1,2148783690,NULL
+David Z. Pan,2021,1,2033707519,NULL
+David Zuckerman,2013,1,2169649541,NULL
+Dawn Song,2019,1,2131252044,NULL
+Dean M. Tullsen,2011,1,1971059926,NULL
+Deborah A. Frincke,2019,1,284309202,NULL
+Deborah Estrin,2000,1,2127250160,NULL
+Deborah L. McGuinness,2023,1,236860028,NULL
+Deepak Ganesan,2021,1,1960698960,NULL
+Demetri Terzopoulos,2007,1,668754370,NULL
+Denis Zorin,2022,1,2080123422,NULL
+Dennis Shasha,2013,1,2082974086,NULL
+Der-Tsai Lee,1997,1,2100396847,NULL
+Derek Dreyer,2024,1,2283278728,NULL
+Dexter Kozen,2003,1,2041783100,NULL
+Dhabaleswar K. Panda,2024,1,2126583185,NULL
+Dharma P. Agrawal,1998,1,2166965298,NULL
+Dhiraj K. Pradhan,1999,1,2097985012,NULL
+Diana Marculescu,2019,1,2094557653,NULL
+Diane J. Cook,2024,1,2106796750,NULL
+Diane L. Souvaine,2011,1,145047672,NULL
+Diego Calvanese,2019,1,1987600604,NULL
+Dieter Fox,2020,1,2231782831,NULL
+Dina Katabi,2013,1,194212017,NULL
+Dines Bjørner,2005,1,54991345,NULL
+Dinesh Manocha,2009,1,2146473740,NULL
+Divesh Srivastava,2011,1,2196778472,NULL
+Divyakant Agrawal,2011,1,2169544959,NULL
+Domenico Ferrari,2001,1,2147025125,NULL
+Don Towsley,1997,1,2177075905,NULL
+Donald A. Norman,2001,1,2144924319,NULL
+Donald D. Chamberlin,1994,1,2118171802,NULL
+Donald E. Knuth,1994,1,2137000881,NULL
+Donald E. Thomas,2007,1,2474479974,NULL
+Donald James Haderle,2000,1,2228853458,NULL
+Donald Kossmann,2010,1,2242617642,NULL
+Donald P. Greenberg,1995,1,2086033821,NULL
+Donald W. Loveland,2000,1,290533546,NULL
+Dong Yu,2022,1,2103789662,NULL
+Dorin Comaniciu,2017,1,2054682710,NULL
+Dorothy E. Denning,1995,1,2357457453,NULL
+Douglas B. Terry,2008,1,2307956062,NULL
+Douglas C. Burger,2010,1,2157490056,NULL
+Douglas E. Comer,2000,1,2149828693,NULL
+Dragomir R. Radev,2015,1,678127074,NULL
+Ed H. Chi,2022,1,2237883256,NULL
+Edith Cohen,2017,1,2167811012,NULL
+Edmund Clarke,1998,1,2462175395,NULL
+Edmund M. Clarke,1998,1,2129477832,NULL
+Edouard Bugnion,2017,1,2670407451,NULL
+Edsger W. Dijkstra,1994,1,2137842401,NULL
+Edward A. Feigenbaum,2007,1,2086686599,NULL
+Edward A. Fox,2017,1,2159046469,NULL
+Edward D. Lazowska,1995,1,1988594917,NULL
+Edward J. Delp,2024,1,1983184564,NULL
+Edward J. McCluskey,1994,1,644833585,NULL
+Edward M. Reingold,1996,1,2307951894,NULL
+Edward W. Felten,2007,1,234653941,NULL
+Edward W. Knightly,2017,1,2300379501,NULL
+Edward Y. Chang,2021,1,2419965122,NULL
+Elad Hazan,2021,1,2139423477,NULL
+Elaine J. Weyuker,1997,1,697582,NULL
+Elaine Shi,2023,1,2152052458,NULL
+Elchanan Mossel,2021,1,1735009869,NULL
+Elena Ferrari,2019,1,2170777979,NULL
+Eli Upfal,2005,1,265232414,NULL
+Elisa Bertino,2003,1,717547165,NULL
+Elizabeth Belding,2018,1,176939268,NULL
+Elizabeth D. Mynatt,2015,1,18171182,NULL
+Elizabeth F. Churchill,2019,1,730947879,NULL
+Ellen M. Voorhees,2018,1,2047986224,NULL
+Ellen Zegura,2013,1,2068860363,NULL
+Emery D. Berger,2019,1,2144133257,NULL
+Emmett Witchel,2023,1,2307943801,NULL
+Eric Allender,2006,1,2091164281,NULL
+Eric Brewer,2007,1,1975802069,NULL
+Eric Grimson,2014,1,2311152712,NULL
+Eric Horvitz,2014,1,1970391018,NULL
+Eric P. Xing,2022,1,351197510,NULL
+Eric Roberts,2007,1,2161569699,NULL
+Erich Kaltofen,2009,1,1971168030,NULL
+Erik D. Demaine,2016,1,380982395,NULL
+Erol Gelenbe,2001,1,582660059,NULL
+Eugene H. Spafford,1998,1,171783842,NULL
+Eugene W. Myers,2003,1,2626884451,NULL
+Evgeniy Gabrilovich,2021,1,1804802447,NULL
+Faith Ellen,2014,1,2002204972,NULL
+Falko Dressler,2024,1,2145186790,NULL
+Farinaz Koushanfar,2022,1,270906047,NULL
+Farnam Jahanian,2009,1,2122982230,NULL
+Fatma Ozcan,2024,1,2026396360,NULL
+Feifei Li,2021,1,2472728339,NULL
+Feng Zhao,2024,1,2625852936,NULL
+Fernando Pereira,2010,1,2960994009,NULL
+Filippo Menczer,2020,1,2248192384,NULL
+Foto N. Afrati,2014,1,2022488008,NULL
+Francine Berman,2000,1,2052618510,NULL
+Franco P. Preparata,1995,1,2012531759,NULL
+Frank Mueller,2018,1,2107119837,NULL
+Frank Pfenning,2015,1,114048148,NULL
+Frank Wm. Tompa,2010,1,2271303423,NULL
+Fred B. Schneider,1995,1,2106636992,NULL
+Fred Harris,1994,1,2258722266,NULL
+Frederick P. Brooks,1994,1,2097474894,NULL
+Frédo Durand,2016,1,2130226629,NULL
+Gabriel H. Loh,2017,1,2722433249,NULL
+Gaetano Borriello,2009,1,141796421,NULL
+Gail C. Murphy,2017,1,2100357700,NULL
+Ganesan Ramalingam,2016,1,1961305742,NULL
+Garth A. Gibson,2012,1,2235094860,NULL
+Gary J. Sullivan,2022,1,2156579430,NULL
+Gary L. Miller,2002,1,2155251200,NULL
+Gary M. Olson,2007,1,2153820154,NULL
+Gautam Das,2021,1,2112689123,NULL
+Gene Tsudik,2014,1,465425324,NULL
+Geoffrey C. Fox,2011,1,2165267828,NULL
+Geoffrey E. Hinton,2023,1,563069026,NULL
+Geoffrey M. Voelker,2017,1,241629895,NULL
+Georg Gottlob,2007,1,1873538321,NULL
+George E. Collins,2004,1,2140331667,NULL
+George Fitzmaurice,2023,1,1899877228,NULL
+George G. Robertson,2001,1,2172094290,NULL
+George Varghese,2002,1,2040462121,NULL
+George W. Furnas,2011,1,2019832499,NULL
+Gerald Jay Sussman,1994,1,2074757679,NULL
+Gerald Tesauro,2018,1,278923979,NULL
+Gerard J. Holzmann,2011,1,2028047182,NULL
+Gerard Medioni,2023,1,707607996,NULL
+Gerard Salton,1995,1,2101230262,NULL
+Gerhard Fischer,2009,1,2176357113,NULL
+Gerhard Weikum,2005,1,514836396,NULL
+Gernot Heiser,2014,1,2229929104,NULL
+Gio Wiederhold,1995,1,1988326922,NULL
+Giovanni Vigna,2019,1,2192390985,NULL
+Giuseppe De Giacomo,2015,1,2113802512,NULL
+Gonzalo Navarro,2022,1,3118800607,NULL
+Gopal Gupta,1998,1,2101413274,NULL
+Gordon B. Davis,1997,1,2108307508,NULL
+Gordon Plotkin,2020,1,2076549375,NULL
+Grady Booch,1995,1,64567716,NULL
+Graham Cormode,2020,1,2190072679,NULL
+Greg Morrisett,2013,1,683339272,NULL
+Gregor Kiczales,2012,1,562619066,NULL
+Gregor von Bochmann,1996,1,2093074657,NULL
+Gregory D. Abowd,2008,1,620732773,NULL
+Gregory D. Hager,2017,1,2070051019,NULL
+Gregory R. Andrews,1998,1,2160887871,NULL
+Guang Gao,2007,1,2225363634,NULL
+Guang R. Gao,2007,1,1909978535,NULL
+Gul Agha,2018,1,2161553928,NULL
+Guoliang Li,2024,1,2171804313,NULL
+Guoliang Xing,2024,1,2106799586,NULL
+Gurindar S. Sohi,2003,1,171423152,NULL
+Gurudatta M. Parulkar,2018,1,1264156990,NULL
+Gustavo Alonso,2012,1,2122271048,NULL
+Guy E. Blelloch,2011,1,149058271,NULL
+Guy L. Steele,1994,1,2501552208,NULL
+H. V. Jagadish,2003,1,360112113,NULL
+Haesun Park,2020,1,2913216944,NULL
+Hagit Attiya,2009,1,685665164,NULL
+Hai Li,2021,1,2131148309,NULL
+Haibo Chen,2023,1,2119144303,NULL
+Haitao Zheng,2022,1,2171500837,NULL
+Haixun Wang,2024,1,2777339002,NULL
+Hal Berghel,1998,1,1177580883,NULL
+Hamid Pirahesh,2008,1,2213038480,NULL
+Hanan Samet,1996,1,89934235,NULL
+Hang Li,2022,1,2128739099,NULL
+Hans-Jörg Schek,2001,1,2050071469,NULL
+Hans-Peter Kriegel,2009,1,1919135125,NULL
+Hans-Peter Seidel,2009,1,2135052836,NULL
+Hanspeter Pfister,2019,1,2102290556,NULL
+Hari Balakrishnan,2008,1,1998464616,NULL
+Harold N. Gabow,2002,1,1987182166,NULL
+Harold S. Stone,1994,1,2619011072,NULL
+Hector Garcia-Molina,1997,1,237419955,NULL
+Heng Tao Shen,2020,1,2116772828,NULL
+Henning Schulzrinne,2014,1,2469462003,NULL
+Henry F. Korth,2000,1,665840641,NULL
+Henry Fuchs,1995,1,2196043388,NULL
+Henry Kautz,2013,1,1966271946,NULL
+Henry M. Levy,1996,1,737098973,NULL
+Herbert A. Simon,1994,1,2118103072,NULL
+Heung-Yeung Shum,2006,1,2147729234,NULL
+Hiroshi Ishii,2022,1,2101434678,NULL
+Holger H. Hoos,2020,1,87749410,NULL
+Holly Rushmeier,2016,1,258783921,NULL
+Hong Mei,2022,1,2105324944,NULL
+Howard Jay Siegel,1998,1,2109947164,NULL
+Howard Karloff,2011,1,2065464292,NULL
+Hsinchun Chen,2015,1,2157743775,NULL
+Huan Liu,2018,1,2122391114,NULL
+Hubertus Franke,2021,1,2179606196,NULL
+Hugues Hoppe,2011,1,2206701583,NULL
+Hui Zhang,2005,1,2489504673,NULL
+Ian F. Akyildiz,1997,1,37595673,NULL
+Ian Foster,2009,1,2017222965,NULL
+Ian Goldberg,2023,1,2113410603,NULL
+Ian H. Witten,1996,1,2163446563,NULL
+Ian Munro,2008,1,2207680952,NULL
+Ihab F. Ilyas,2020,1,1982738670,NULL
+Imrich Chlamtac,1997,1,2953271361,NULL
+Inderjit S. Dhillon,2014,1,2033403132,NULL
+Ingemar J. Cox,2013,1,2128956250,NULL
+Insup Lee,2017,1,2168261197,NULL
+Ion Stoica,2012,1,2161479384,NULL
+Irwin King,2024,1,2121363826,NULL
+Ivan E. Sutherland,1994,1,1941499373,NULL
+J. Eliot B. Moss,2007,1,2159697352,NULL
+J. Strother Moore,2006,1,2112233366,NULL
+J. Turner Whitted,1995,1,2078225852,NULL
+J.J. Garcia-Luna-Aceves,2008,1,2236499141,NULL
+Jack B. Dennis,1994,1,2167804309,NULL
+Jack Dennis,1994,1,2146000762,NULL
+Jack Dongarra,2001,1,288512535,NULL
+Jack Minker,1994,1,250356191,NULL
+Jack W. Davidson,2008,1,2138526175,NULL
+Jacob A. Abraham,2001,1,2222350550,NULL
+Jacob Abraham,2001,1,2158249794,NULL
+Jacob O. Wobbrock,2021,1,318516288,NULL
+Jaime Teevan,2022,1,1982462162,NULL
+James A. Landay,2016,1,29409133,NULL
+James Allan,2020,1,2097030689,NULL
+James C. Browne,1998,1,2104477647,NULL
+James D. Foley,1999,1,2193907057,NULL
+James Demmel,1999,1,700277173,NULL
+James Goodman,2010,1,2130693759,NULL
+James Gosling,2013,1,2151583810,NULL
+James H. Anderson,2013,1,3007079295,NULL
+James J. Horning,1998,1,664411623,NULL
+James R. Goodman,2010,1,2170353725,NULL
+James R. Larus,2006,1,635023701,NULL
+Jan Camenisch,2018,1,2001749418,NULL
+Janak H. Patel,2001,1,2129935094,NULL
+Jason Cong,2008,1,2132574706,NULL
+Jason Flinn,2016,1,1992040104,NULL
+Jason Hong,2022,1,2141131632,NULL
+Jason Nieh,2019,1,2241681790,NULL
+Jayadev Misra,1995,1,2105352400,NULL
+Jayant R. Haritsa,2015,1,44170712,NULL
+Jean-Loup Baer,1997,1,2287748599,NULL
+Jean-Pierre Hubaux,2010,1,1495879661,NULL
+Jeanne Ferrante,1996,1,2706396683,NULL
+Jeannette M. Wing,1998,1,1584891692,NULL
+Jeffrey A. Dean,2009,1,2593909138,NULL
+Jeffrey C. Mogul,2001,1,2018433396,NULL
+Jeffrey D. Ullman,1995,1,2289364316,NULL
+Jeffrey Dean,2009,1,2429370538,NULL
+Jeffrey F. Jaffe,1996,1,2097083503,NULL
+Jeffrey F. Naughton,2002,1,2075622585,NULL
+Jeffrey M. Heer,2024,1,2112690490,NULL
+Jeffrey S. Foster,2023,1,2155210674,NULL
+Jeffrey S. Rosenschein,2019,1,345909134,NULL
+Jeffrey Scott Vitter,1996,1,118037170,NULL
+Jennifer Chayes,2010,1,2021736417,NULL
+Jennifer Rexford,2008,1,1998722161,NULL
+Jennifer Widom,2005,1,671527850,NULL
+Jessica K. Hodgins,2018,1,601642093,NULL
+Jian Pei,2015,1,2126330539,NULL
+Jianfeng Gao,2023,1,2104437897,NULL
+Jiawei Han,2003,1,2121939561,NULL
+Jie Tang,2021,1,2158012360,NULL
+Jiebo Luo,2018,1,2059910451,NULL
+Jignesh M. Patel,2014,1,2155925739,NULL
+Jim Gray,1994,1,2131537204,NULL
+Jimmy Lin,2022,1,2163619555,NULL
+Jin-Yi Cai,2001,1,2115541029,NULL
+Jingren Zhou,2024,1,2702077502,NULL
+Jitendra Malik,2008,1,2136556746,NULL
+Jo Little,1994,1,2293514083,NULL
+Joan Feigenbaum,2001,1,2167932487,NULL
+Jodi Forlizzi,2020,1,2068668851,NULL
+Joel Emer,2004,1,2103115969,NULL
+Johan Håstad,2018,1,855633617,NULL
+Johan de Kleer,2001,1,488478412,NULL
+Johannes Gehrke,2014,1,2083845045,NULL
+John A. Lee,1994,1,2123315865,NULL
+John A. Stankovic,1996,1,2030977062,NULL
+John B. Goodenough,1995,1,1950502168,NULL
+John C. Mitchell,2008,1,2125383417,NULL
+John C. Reynolds,2001,1,2403193723,NULL
+John C. S. Lui,2009,1,2045404162,NULL
+John Canny,2020,1,2101610026,NULL
+John E. Hopcroft,1994,1,2079447303,NULL
+John E. Laird,2006,1,2098086841,NULL
+John E. Savage,1996,1,2128411992,NULL
+John H. Reif,1997,1,2051256779,NULL
+John Hershberger,2012,1,2250717697,NULL
+John Hughes,2018,1,2130559414,NULL
+John L. Hennessy,1997,1,1965698830,NULL
+John Launchbury,2010,1,343041661,NULL
+John M. Carroll,2003,1,2144459651,NULL
+John McCarthy,1994,1,2498471291,NULL
+John Mellor-Crummey,2013,1,2249219846,NULL
+John Ousterhout,1994,1,270493864,NULL
+John P. Hayes,2001,1,2146676729,NULL
+John R. Rice,1996,1,2119205101,NULL
+John R. White,1995,1,2112061881,NULL
+John Rice,1996,1,3109076432,NULL
+John Riedl,2009,1,1986422195,NULL
+John Stasko,2022,1,2087252583,NULL
+John T. Richards,1998,1,2113619521,NULL
+John V. Guttag,2006,1,120651226,NULL
+John Wilkes,2002,1,2242421647,NULL
+Jon Crowcroft,2002,1,1970640687,NULL
+Jon Kleinberg,2013,1,2261367123,NULL
+Jonathan Grudin,2012,1,2103856929,NULL
+Jonathan Katz,2021,1,2237101560,NULL
+Jonathan Rose,2008,1,2097064579,NULL
+Joost-Pieter Katoen,2020,1,2036890539,NULL
+Josep Torrellas,2010,1,2154776208,NULL
+Joseph A. Konstan,2008,1,2002483998,NULL
+Joseph B. Lyles,2016,1,2052047046,NULL
+Joseph F. Traub,1994,1,2334622869,NULL
+Joseph JaJa,2001,1,2199665864,NULL
+Joseph M. Hellerstein,2009,1,2063640528,NULL
+Joseph Mitchell,2011,1,2471980986,NULL
+Joseph O'Rourke,2012,1,1995729299,NULL
+Joseph Sifakis,2012,1,2105927184,NULL
+Joseph Y. Halpern,2002,1,716715026,NULL
+Joshua Lederberg,1994,1,20186083,NULL
+José A. Blakeley,2009,1,2651294325,NULL
+José L. Encarnação,1996,1,2153722525,NULL
+José Meseguer,2020,1,2141313922,NULL
+Joël Ouaknine,2021,1,705764827,NULL
+Juan E. Gilbert,2018,1,2133271327,NULL
+Judea Pearl,2015,1,2248165042,NULL
+Judith Gal-Ezer,2021,1,2471044010,NULL
+Judith S. Olson,2008,1,2121613656,NULL
+Julia Hirschberg,2015,1,1983359683,NULL
+Juliana Freire,2014,1,2116519607,NULL
+Juris Hartmanis,1994,1,327575412,NULL
+Justin Zobel,2024,1,2019828590,NULL
+Justine Cassell,2016,1,2245648575,NULL
+János Pach,2011,1,2094197253,NULL
+K. K. Ramakrishnan,2017,1,3175435962,NULL
+K. Rustan M. Leino,2016,1,710865586,NULL
+Kai Li,1998,1,2106693521,NULL
+Kalyanmoy Deb,2022,1,2150011549,NULL
+Kang G. Shin,2001,1,2160067404,NULL
+Karem A. Sakallah,2012,1,39739974,NULL
+Katherine Yelick,2012,1,2062901400,NULL
+Kathleen Fisher,2010,1,2134374908,NULL
+Kathleen R. McKeown,2003,1,613661480,NULL
+Kathryn S. McKinley,2008,1,2115847858,NULL
+Katy Börner,2018,1,2143783256,NULL
+Kavita Bala,2019,1,2050228312,NULL
+Keith Cooper,2005,1,2107276333,NULL
+Keith D. Cooper,2005,1,2155786059,NULL
+Keith Marzullo,2011,1,677445823,NULL
+Keith W. Ross,2012,1,2297273366,NULL
+Ken Kennedy,1995,1,2136496678,NULL
+Ken Thompson,2020,1,2163136642,NULL
+Kenneth C. Sevcik,1997,1,726568899,NULL
+Kenneth D. Forbus,2006,1,2047970220,NULL
+Kenneth E. Batcher,1994,1,2192925305,NULL
+Kenneth R. Koedinger,2023,1,311794911,NULL
+Kenneth Steiglitz,1997,1,235792877,NULL
+Kentaro Toyama,2022,1,2114684898,NULL
+Keshab K. Parhi,2020,1,741769158,NULL
+Keshav Pingali,2012,1,651843436,NULL
+Kevin Fall,2015,1,2086421335,NULL
+Kevin Fu,2022,1,1964944407,NULL
+Kevin Leyton-Brown,2020,1,191979884,NULL
+Kevin Skadron,2015,1,1975721694,NULL
+Kilian Q. Weinberger,2023,1,2003907699,NULL
+Kimberly Keeton,2018,1,1894617025,NULL
+Klara Nahrstedt,2012,1,159144305,NULL
+Krishan Kumar Sabnani,2001,1,2305940735,NULL
+Krishna V. Palem,2005,1,2047392434,NULL
+Krishnendu Chakrabarty,2013,1,2086842834,NULL
+Krithi Ramamritham,2001,1,323797451,NULL
+Krste Asanovic,2018,1,677108321,NULL
+Kui Ren,2020,1,2137211123,NULL
+Kun Zhou,2020,1,2589601894,NULL
+Kurt Akeley,1996,1,1531868385,NULL
+Kurt Mehlhorn,1999,1,512556102,NULL
+Kwan-Liu Ma,2023,1,2122423217,NULL
+Kyu-Young Whang,2009,1,1933211966,NULL
+Kyuseok Shim,2013,1,2161168953,NULL
+L. Jean Camp,2021,1,2113696107,NULL
+Lance Fortnow,2007,1,2276785809,NULL
+Lance J. Hoffman,1995,1,2118800365,NULL
+Larry Constantine,2007,1,704531558,NULL
+Larry J. Stockmeyer,1996,1,2312167908,NULL
+Larry L. Peterson,2000,1,2144500278,NULL
+Larry Masinter,1999,1,1953362800,NULL
+Larry S. Davis,2012,1,2123954037,NULL
+Lars Arge,2012,1,2170557315,NULL
+Lars Birkedal,2017,1,2149590827,NULL
+Laura M. Haas,2006,1,2304639312,NULL
+Laurie Hendren,2009,1,2057929015,NULL
+Laurie Williams,2020,1,2175749388,NULL
+Lawrence A. Rowe,1998,1,2242628833,NULL
+Lawrence C. Paulson,2008,1,2016735973,NULL
+Laxmikant V. Kale,2017,1,2115450241,NULL
+Leandros Tassiulas,2020,1,258781275,NULL
+Lei Chen,2024,1,2318776917,NULL
+Leon J. Osterweil,1998,1,2248607981,NULL
+Leonard Kleinrock,2000,1,253749410,NULL
+Leonard M. Adleman,2021,1,2009176085,NULL
+Leonid Libkin,2012,1,1971151415,NULL
+Leonidas J. Guibas,1999,1,356043702,NULL
+Leslie G. Valiant,2012,1,2000097935,NULL
+Leslie Lamport,2014,1,2096750770,NULL
+Li Erran Li,2017,1,2162413711,NULL
+Li Li,2017,1,2529374982,NULL
+Lidong Zhou,2019,1,2158515488,NULL
+Lieven Eeckhout,2021,1,2264739303,NULL
+Lili Qiu,2018,1,2121935375,NULL
+Lillian Lee,2018,1,2124867291,NULL
+Limsoon Wong,2013,1,2263195242,NULL
+Lin Zhong,2021,1,2111073952,NULL
+Linda R. Petzold,2011,1,2075742177,NULL
+Lionel C. Briand,2020,1,2144557644,NULL
+Lise Getoor,2019,1,1984940772,NULL
+Lixia Zhang,2006,1,2170506047,NULL
+Lixin Gao,2012,1,2251223525,NULL
+Lizy K. John,2020,1,2107445173,NULL
+Lorenzo Alvisi,2010,1,2292936287,NULL
+Lori A. Clarke,1998,1,2106467035,NULL
+Lorrie Faith Cranor,2014,1,368046975,NULL
+Louiqa Raschid,2016,1,285822418,NULL
+Luca Benini,2016,1,2054437942,NULL
+Luca Cardelli,2004,1,331751290,NULL
+Luca Trevisan,2021,1,2115996045,NULL
+Luca de Alfaro,2024,1,2129359981,NULL
+Lui Sha,2005,1,2900035843,NULL
+Luis Ceze,2022,1,2259546344,NULL
+Luiz Andre Barroso,2010,1,2023575095,NULL
+Luiz Barroso,2010,1,2143449262,NULL
+Lydia E. Kavraki,2010,1,1973461405,NULL
+M. Tamer Özsu,2006,1,360895095,NULL
+Maarten de Rijke,2024,1,401833296,NULL
+Madhav V. Marathe,2013,1,2242145496,NULL
+Madhu Sudan,2008,1,466258520,NULL
+Magdalena Balazinska,2019,1,2345141441,NULL
+Mahadev Satyanarayanan,2002,1,416104820,NULL
+Maja J. Matarić,2020,1,2075666580,NULL
+Maneesh Agrawala,2022,1,718039462,NULL
+Mani Srivastava,2017,1,2098642314,NULL
+Manik Varma,2023,1,2130043413,NULL
+Manish Gupta,2012,1,2299189677,NULL
+Manish Parashar,2020,1,2157372337,NULL
+Manuel Blum,2020,1,2163096604,NULL
+Manuel V. Hermenegildo,2022,1,2268913824,NULL
+Manuela Veloso,2016,1,2108671403,NULL
+Marc Alan Auslander,1999,1,2093808517,NULL
+Marc Alexa,2024,1,2241694205,NULL
+Marc Levoy,2007,1,2073891704,NULL
+Marc Najork,2019,1,2027155665,NULL
+Marc Pollefeys,2022,1,2198039525,NULL
+Marc Snir,1999,1,2282086102,NULL
+Marcelo Arenas,2024,1,2117861229,NULL
+Margaret Burnett,2017,1,2115609526,NULL
+Margaret Martonosi,2009,1,1972692845,NULL
+Margo Seltzer,2011,1,2337629383,NULL
+Maria Gini,2019,1,2236789276,NULL
+Maria Klawe,1996,1,720839854,NULL
+Maria-Florina Balcan,2023,1,2169342471,NULL
+Marianne Winslett,2006,1,2078136799,NULL
+Mario Gerla,2018,1,563121846,NULL
+Mark Braverman,2021,1,2068669492,NULL
+Mark Crovella,2010,1,91397146,NULL
+Mark D. Hill,2004,1,2112660313,NULL
+Mark Guzdial,2014,1,195157884,NULL
+Mark Horowitz,2003,1,2113577245,NULL
+Mark N. Wegman,1996,1,2010226721,NULL
+Mark S. Ackerman,2013,1,1979641284,NULL
+Mark S. Squillante,2008,1,2309916366,NULL
+Mark Tehranipoor,2021,1,1976116216,NULL
+Markus Gross,2012,1,2289975239,NULL
+Marsha Chechik,2024,1,2032435099,NULL
+Marta Kwiatkowska,2016,1,2156109015,NULL
+Martha E. Pollack,2011,1,2920691311,NULL
+Marti A. Hearst,2013,1,2169348332,NULL
+Martin D. F. Wong,2017,1,2128862599,NULL
+Martin E. Hellman,2020,1,2146312211,NULL
+Martin Farach-Colton,2021,1,246373776,NULL
+Martin Grohe,2017,1,2300561433,NULL
+Martin L. Kersten,2016,1,2117317669,NULL
+Martin Odersky,2007,1,248131350,NULL
+Martin Rinard,2009,1,343541395,NULL
+Martin Vetterli,2009,1,2545000257,NULL
+Martín Abadi,2008,1,2162106674,NULL
+Mary Beth Rosson,2020,1,151371205,NULL
+Mary Czerwinski,2015,1,2071984077,NULL
+Mary Jane Irwin,1996,1,2123342649,NULL
+Mary Jean Harrold,2003,1,421534652,NULL
+Mary K. Vernon,1996,1,2098205087,NULL
+Mary Lou Soffa,1999,1,686913843,NULL
+Mary Shaw,1996,1,2141334907,NULL
+Masaru Kitsuregawa,2012,1,390930505,NULL
+Massoud Pedram,2023,1,2068449622,NULL
+Mateo Valero,2002,1,2134649964,NULL
+Mathieu Desbrun,2020,1,156043509,NULL
+Matthew B. Dwyer,2019,1,2156583880,NULL
+Matthew Roughan,2018,1,1231305195,NULL
+Matthew T. Mason,2021,1,2154441808,NULL
+Matthew Turk,2020,1,2740893301,NULL
+Matthias Felleisen,2006,1,113813022,NULL
+Matthias Jarke,2013,1,251194211,NULL
+Maurice Herlihy,2005,1,2068258939,NULL
+Maurice V. Wilkes,1994,1,2224046207,NULL
+Maurizio Lenzerini,2009,1,1976298713,NULL
+Meir M. Lehman,1994,1,2614290841,NULL
+Mendel Rosenblum,2008,1,2102969555,NULL
+Meredith Ringel Morris,2020,1,2123314761,NULL
+Micha Sharir,1997,1,2154115838,NULL
+Michael A. Harrison,1996,1,2655339063,NULL
+Michael Backes,2023,1,3112711640,NULL
+Michael Bailey,2024,1,2103269098,NULL
+Michael Cohen,2007,1,2156496335,NULL
+Michael D. Ernst,2014,1,2235702021,NULL
+Michael D. Harrison,1996,1,2304366500,NULL
+Michael D. Schroeder,2004,1,2470914381,NULL
+Michael F. Cohen,2007,1,3049172691,NULL
+Michael Franz,2015,1,2061291788,NULL
+Michael Hicks,2022,1,2130756752,NULL
+Michael I. Jordan,2010,1,2435751034,NULL
+Michael J. Carey,2000,1,2157114695,NULL
+Michael J. Fischer,1996,1,2159593723,NULL
+Michael J. Flynn,1994,1,2439324408,NULL
+Michael J. Franklin,2005,1,2523407221,NULL
+Michael J. Freedman,2019,1,2144033718,NULL
+Michael K. Reiter,2008,1,2260712038,NULL
+Michael Kass,2017,1,2133824905,NULL
+Michael Kearns,2014,1,2118586410,NULL
+Michael L. Littman,2018,1,1075592465,NULL
+Michael Lesk,1996,1,225366896,NULL
+Michael Luby,2015,1,2087233832,NULL
+Michael Mitzenmacher,2014,1,1988080645,NULL
+Michael O. Rabin,2020,1,2144633556,NULL
+Michael P. Wellman,2005,1,2102222802,NULL
+Michael R. Lyu,2015,1,2227744130,NULL
+Michael Randolph Garey,1995,1,2063302323,NULL
+Michael Reiter,2008,1,2115482440,NULL
+Michael Scott,2006,1,2111432008,NULL
+Michael Sipser,2017,1,324740313,NULL
+Michael Stonebraker,1994,1,1998938290,NULL
+Michael T. Goodrich,2009,1,2135853928,NULL
+Michael T. Heath,2000,1,2129730520,NULL
+Michael Wooldridge,2015,1,2345025092,NULL
+Michael Zyda,2020,1,357521830,NULL
+Michal Feldman,2024,1,2158063030,NULL
+Michel Beaudouin-Lafon,2022,1,2674390412,NULL
+Michel Dubois,2005,1,2112744756,NULL
+Michel X. Goemans,2008,1,667657047,NULL
+Mihai Pop,2019,1,2177091684,NULL
+Mihalis Yannakakis,1998,1,294360276,NULL
+Mihir Bellare,2013,1,2052950829,NULL
+Mikhail Belkin,2023,1,2271754566,NULL
+Mikhail J. Atallah,2006,1,1984264859,NULL
+Mikkel Thorup,2005,1,1857373744,NULL
+Milind Tambe,2013,1,2237142500,NULL
+Min Lin,2011,1,2951907343,NULL
+Ming Li,2006,1,2439529108,NULL
+Ming Lin,2011,1,2143233993,NULL
+Ming-Hsuan Yang,2021,1,2112462370,NULL
+Ming-Syan Chen,2006,1,2122365371,NULL
+Minos Garofalakis,2018,1,2089290244,NULL
+Mira Mezini,2024,1,93690356,NULL
+Mitchell Wand,2007,1,2303035752,NULL
+Mohammed J. Zaki,2021,1,2165917828,NULL
+Mohan Kankanhalli,2024,1,2011250649,NULL
+Moinuddin K. Qureshi,2022,1,2793005190,NULL
+Mona Singh,2019,1,2184493679,NULL
+Moni Naor,2020,1,1023361224,NULL
+Monica S. Lam,2007,1,2136170053,NULL
+Monika Henzinger,2016,1,2695385476,NULL
+Mooly Sagiv,2015,1,1345056057,NULL
+Mor Harchol-Balter,2017,1,2101141533,NULL
+Moses Charikar,2020,1,2003165903,NULL
+Moshe Tennenholtz,2019,1,127037394,NULL
+Moshe Y. Vardi,2000,1,1970575723,NULL
+Mostafa H. Ammar,2003,1,2130907696,NULL
+Moti Yung,2013,1,2097786798,NULL
+Moustafa Youssef,2019,1,2165462502,NULL
+Mubarak Shah,2021,1,2171354718,NULL
+Munindar P. Singh,2021,1,2306655439,NULL
+Nachiappan Nagappan,2020,1,2031695674,NULL
+Naehyuck Chang,2015,1,2115359679,NULL
+Nam Kim,2020,1,2152704981,NULL
+Nam Soo Kim,2020,1,2132580745,NULL
+Nam Sung Kim,2020,1,2110497244,NULL
+Nancy G. Leveson,1995,1,2150992688,NULL
+Nancy Lynch,1997,1,2180706138,NULL
+Nancy M. Amato,2015,1,2084418087,NULL
+Naren Ramakrishnan,2024,1,2199255697,NULL
+Narendra Ahuja,1996,1,2129011837,NULL
+Narsingh Deo,1996,1,2070393103,NULL
+Nate Foster,2024,1,2102579274,NULL
+Neil D. Jones,1998,1,2116419005,NULL
+Neil Immerman,2002,1,2036035498,NULL
+Nelson Max,2011,1,2189376613,NULL
+Nicholas Pippenger,1997,1,2094387482,NULL
+Nick Feamster,2016,1,1373210103,NULL
+Nick McKeown,2006,1,218283174,NULL
+Nick Roussopoulos,2001,1,258753967,NULL
+Nicole Immorlica,2023,1,2090441920,NULL
+Nikhil Bansal,2023,1,2145779519,NULL
+Nikil Dutt,2014,1,2186960687,NULL
+Niklas Elmqvist,2024,1,2193023912,NULL
+Niklaus Wirth,1994,1,2327738716,NULL
+Ninghui Li,2021,1,2165412067,NULL
+Nir Shavit,2013,1,2071581749,NULL
+Niraj K. Jha,2003,1,2219120753,NULL
+Nisheeth K. Vishnoi,2019,1,211812777,NULL
+Nitesh V. Chawla,2022,1,1979796846,NULL
+Noga Alon,2016,1,2112574952,NULL
+Norman P. Jouppi,2006,1,2472600557,NULL
+Noshir Contractor,2019,1,2056937161,NULL
+Nuria Oliver,2017,1,2116126005,NULL
+Olga Sorkine-Hornung,2020,1,53636449,NULL
+Omer Reingold,2014,1,109346679,NULL
+Onur Mutlu,2017,1,2160510735,NULL
+Ophir Frieder,2005,1,1975479660,NULL
+Orna Grumberg,2015,1,1993734283,NULL
+Oscar H. Ibarra,1995,1,2268403478,NULL
+Ouri Wolfson,2001,1,2175821055,NULL
+Ozalp Babaoglu,2002,1,182206759,NULL
+P. C. van Oorschot,2016,1,2101866374,NULL
+Pablo Rodriguez,2015,1,2141776277,NULL
+Padhraic Smyth,2013,1,2137074633,NULL
+Pamela Samuelson,1999,1,1657786716,NULL
+Pamela Zave,2001,1,248253975,NULL
+Paola Inverardi,2021,1,2242511651,NULL
+Parthasarathy Ranganathan,2014,1,2408455160,NULL
+Pat Hanrahan,2008,1,2225733586,NULL
+Patricia G. Selinger,2009,1,2045132998,NULL
+Patrick Cousot,2020,1,2148533322,NULL
+Patrick McDaniel,2015,1,2056207806,NULL
+Patrick Suppes,1994,1,599389352,NULL
+Patrick Valduriez,2012,1,2223920688,NULL
+Paul Barford,2016,1,2078767370,NULL
+Paul Barham,2018,1,2296249340,NULL
+Paul Beame,2019,1,2019007185,NULL
+Paul Dourish,2015,1,847797360,NULL
+Paul Hudak,2003,1,2159432867,NULL
+Paul Resnick,2020,1,2020459140,NULL
+Paul Syverson,2014,1,2051205022,NULL
+Paul Young,1995,1,2142498536,NULL
+Per Stenström,2008,1,2008392143,NULL
+Per-Ake Larson,2004,1,2148643341,NULL
+Per-Åke Larson,2004,1,2628783441,NULL
+Perry R. Cook,2008,1,2127663426,NULL
+Peter B. Key,2011,1,2048758777,NULL
+Peter Boncz,2022,1,2081047619,NULL
+Peter Buneman,2000,1,2020138198,NULL
+Peter Elias,1994,1,1986414534,NULL
+Peter Freeman,2000,1,2153265399,NULL
+Peter G. Neumann,1994,1,2129006352,NULL
+Peter Hart,2003,1,3038074963,NULL
+Peter J. Denning,1994,1,2069086639,NULL
+Peter J. Haas,2013,1,2118460571,NULL
+Peter Key,2011,1,2311465718,NULL
+Peter L. Bartlett,2018,1,1849627065,NULL
+Peter Lee,2004,1,2674525774,NULL
+Peter M. Chen,2010,1,2101505567,NULL
+Peter Magnusson,2011,1,2476504478,NULL
+Peter Norvig,2006,1,2686285044,NULL
+Peter P. Chen,1998,1,2120113151,NULL
+Peter Stone,2020,1,2147180669,NULL
+Peter W. O'Hearn,2024,1,188470835,NULL
+Peter W. Shor,2019,1,368308055,NULL
+Peter Wegner,1995,1,2024290158,NULL
+Peter Widmayer,1997,1,70450096,NULL
+Philip A. Bernstein,2001,1,2304774990,NULL
+Philip Heidelberger,1996,1,2244447445,NULL
+Philip M. Lewis,1999,1,2297443377,NULL
+Philip N. Klein,2010,1,2109669342,NULL
+Philip R. Cohen,2019,1,2428396799,NULL
+Philip S. Yu,1997,1,2125104194,NULL
+Philip Wadler,2007,1,2060729710,NULL
+Phillip B. Gibbons,2006,1,2144092273,NULL
+Phoebe Sengers,2023,1,223531715,NULL
+Phokion G. Kolaitis,2005,1,720019886,NULL
+Pierangela Samarati,2021,1,2087987499,NULL
+Pierre Baldi,2012,1,2060797211,NULL
+Piotr Indyk,2015,1,22135093,NULL
+Prabhakar Raghavan,2001,1,2195048431,NULL
+Pradeep Dubey,2023,1,2356469463,NULL
+Prakash Panangaden,2020,1,2216498992,NULL
+Prashant Shenoy,2019,1,2129693715,NULL
+Premkumar Devanbu,2018,1,1481757371,NULL
+Prithviraj Banerjee,2000,1,2004361871,NULL
+Qi Tian,2024,1,2102216805,NULL
+Qiang Yang,2017,1,2109031554,NULL
+Rachid Guerraoui,2012,1,115057321,NULL
+Rada Mihalcea,2019,1,2068190112,NULL
+Radhika Nagpal,2020,1,2151774571,NULL
+Radu Marculescu,2022,1,158891262,NULL
+Rafael Pass,2022,1,2091057165,NULL
+Rafail Ostrovsky,2021,1,1482108584,NULL
+Raghu Ramakrishnan,2001,1,2164040783,NULL
+Raj Jain,1996,1,2157313770,NULL
+Raj Reddy,2012,1,2149385398,NULL
+Rajeev Alur,2007,1,689646243,NULL
+Rajeev Motwani,2007,1,2034912444,NULL
+Rajeev Rastogi,2012,1,2651564987,NULL
+Rajesh Gupta,2016,1,2180675385,NULL
+Rajiv Gupta,2009,1,2104865906,NULL
+Rakesh Agrawal,2003,1,2439481350,NULL
+Ralf Steinmetz,2001,1,2238793978,NULL
+Ram D. Sriram,2023,1,1989250364,NULL
+Ramakrishnan Srikant,2014,1,2069583943,NULL
+Ramanathan V. Guha,2015,1,2302699734,NULL
+Ramesh Govindan,2011,1,2102043890,NULL
+Ramesh Jain,2003,1,2133201272,NULL
+Ramesh K. Sitaraman,2019,1,261571608,NULL
+Ramin Zabih,2012,1,2040103212,NULL
+Ramón Cáceres,2023,1,2153763345,NULL
+Ran Canetti,2020,1,687553606,NULL
+Randal E. Bryant,2000,1,2472051909,NULL
+Randy H. Katz,1996,1,2246122413,NULL
+Randy Pausch,2007,1,2139439197,NULL
+Ranjit Jhala,2021,1,2068611990,NULL
+Ranveer Chandra,2022,1,2128927081,NULL
+Rasmus Pagh,2024,1,1864519460,NULL
+Rastislav Bodik,2018,1,1115548098,NULL
+Ravi Kannan,2016,1,2187777059,NULL
+Ravi Kumar,2020,1,2559411768,NULL
+Ravi Ramamoorthi,2017,1,2146115641,NULL
+Ravi Sandhu,2001,1,1996714504,NULL
+Ravi Sethi,1996,1,2239086285,NULL
+Ravi Shankar Kumar,2020,1,2549007536,NULL
+Ravinderpal Singh Sandhu,2001,1,1983422165,NULL
+Ravishankar Iyer,2001,1,2122615330,NULL
+Ravishankar K. Iyer,2001,1,2115084254,NULL
+Ray Kurzweil,1994,1,2696445795,NULL
+Raymond A. Lorie,2000,1,2255242933,NULL
+Raymond J. Mooney,2010,1,2167433806,NULL
+Raymond Miller,1997,1,2413689514,NULL
+Raymond Reiter,1997,1,2162621422,NULL
+Reinhard Wilhelm,2000,1,2127844901,NULL
+Remzi H. Arpaci-Dusseau,2020,1,74145742,NULL
+René Vidal,2022,1,2155853947,NULL
+Ricardo Baeza-Yates,2009,1,528588921,NULL
+Ricardo Bianchini,2016,1,2169611794,NULL
+Richard A. DeMillo,2003,1,85310976,NULL
+Richard A. Kemmerer,1997,1,233538037,NULL
+Richard D. Schlichting,2001,1,2606028354,NULL
+Richard E. Ladner,1995,1,1505021651,NULL
+Richard E. Nance,1996,1,2136233962,NULL
+Richard E. Schantz,2004,1,217083922,NULL
+Richard F. Lyon,2010,1,2652370983,NULL
+Richard Hull,2007,1,2157269769,NULL
+Richard J. Cole,1998,1,2152729312,NULL
+Richard J. Fateman,1999,1,36891908,NULL
+Richard M. Fujimoto,2017,1,2108052934,NULL
+Richard M. Karp,1994,1,1964658237,NULL
+Richard N. Taylor,1998,1,2113585066,NULL
+Richard P. Brent,1995,1,2136191845,NULL
+Richard R. Muntz,1996,1,2033368653,NULL
+Richard Szeliski,2008,1,1989985383,NULL
+Richard T. Snodgrass,1999,1,699078101,NULL
+Rick Stevens,2020,1,2618893480,NULL
+Rina Dechter,2013,1,294129211,NULL
+Rob A. Rutenbar,2008,1,262909221,NULL
+Robbert van Renesse,2009,1,2109217526,NULL
+Robert A. Kowalski,2001,1,2228449327,NULL
+Robert B. Schnabel,2010,1,2021942052,NULL
+Robert Cartwright,1998,1,2305176596,NULL
+Robert E. Kahn,2001,1,2610176178,NULL
+Robert E. Kraut,2011,1,1975391153,NULL
+Robert E. Tarjan,1994,1,350567680,NULL
+Robert Harper,2005,1,2147215243,NULL
+Robert J. Jacob,2016,1,2431186779,NULL
+Robert J. K. Jacob,2016,1,673017202,NULL
+Robert Jacob,2016,1,2149933350,NULL
+Robert Kleinberg,2021,1,2006104002,NULL
+Robert L. Constable,1995,1,2059506051,NULL
+Robert L. Glass,1999,1,2132308597,NULL
+Robert L. Grossman,2016,1,3167806524,NULL
+Robert M. Graham,1996,1,2111892302,NULL
+Robert Morris,2014,1,2270424441,NULL
+Robert Ross,2021,1,2135752517,NULL
+Robert Schreiber,2012,1,2131448496,NULL
+Robert Sedgewick,1997,1,889684952,NULL
+Robert Todd Constable,1995,1,2089533834,NULL
+Robert W. Floyd,1994,1,2011551863,NULL
+Robert W. Taylor,1994,1,2099649649,NULL
+Robert Wilensky,1997,1,1973589771,NULL
+Roberto Tamassia,2012,1,237969062,NULL
+Robin R. Murphy,2019,1,2117700858,NULL
+Robin Williams,2000,1,2149195424,NULL
+Roch Guerin,2006,1,1992892501,NULL
+Rodney A. Brooks,2005,1,2288122487,NULL
+Rodney G. Downey,2007,1,1127475603,NULL
+Roger B. Dannenberg,2023,1,128335373,NULL
+Roger M. Needham,1994,1,2467977717,NULL
+Rolf Drechsler,2023,1,2132216446,NULL
+Ron Graham,1999,1,2156312790,NULL
+Ron Shamir,2012,1,2100036403,NULL
+Ronald F. Boisvert,2019,1,2232904012,NULL
+Ronald Fagin,2000,1,2103086064,NULL
+Ronald J. Brachman,1999,1,1956695822,NULL
+Ronald L. Rivest,1994,1,695545146,NULL
+Ronald M. Baecker,2011,1,107632699,NULL
+Ronald M. Kaplan,1994,1,2580496752,NULL
+Ronitt Rubinfeld,2014,1,1534604502,NULL
+Rosalind W. Picard,2021,1,687641213,NULL
+Roy Rada,1995,1,2148854578,NULL
+Roy Want,2005,1,2423577896,NULL
+Ruby B. Lee,2001,1,2331811076,NULL
+Rudrapatna K. Shyamasundar,2009,1,2169216096,NULL
+Ruzena Bajcsy,1996,1,1601293841,NULL
+Ryen W. White,2021,1,2096583854,NULL
+S. Muthukrishnan,2010,1,3160061748,NULL
+S. Sitharama Iyengar,2001,1,2326873480,NULL
+Sachin S. Sapatnekar,2016,1,2157196917,NULL
+Salil Vadhan,2018,1,173843361,NULL
+Sally Floyd,2001,1,2164767595,NULL
+Salvatore J. Stolfo,2019,1,2021877992,NULL
+Sam H. Noh,2020,1,2571969136,NULL
+Saman Amarasinghe,2019,1,2083359406,NULL
+Samir Khuller,2022,1,2159856632,NULL
+Sampath Kannan,2013,1,2128447696,NULL
+Samson Abramsky,2014,1,2147258895,NULL
+Samuel Madden,2020,1,2139913828,NULL
+Sandhya Dwarkadas,2018,1,19214967,NULL
+Sandy Irani,2022,1,2100980789,NULL
+Sanjay Ghemawat,2020,1,2575315241,NULL
+Sanjeev Arora,2008,1,2159007752,NULL
+Sanjeev Khanna,2018,1,2242803124,NULL
+Sanjit A. Seshia,2020,1,260128524,NULL
+Santosh Vempala,2015,1,2045140648,NULL
+Sara Kiesler,2010,1,729699849,NULL
+Sarit Kraus,2014,1,2122497617,NULL
+Sarita V. Adve,2010,1,2346116799,NULL
+Sartaj Sahni,1996,1,2097687781,NULL
+Satish Chandra,2024,1,2144137030,NULL
+Satish Rao,2013,1,2108675760,NULL
+Satoshi Matsuoka,2011,1,2164966972,NULL
+Saul Greenberg,2012,1,2120666348,NULL
+Scott A. Smolka,2021,1,2212808945,NULL
+Scott Aaronson,2019,1,2096229648,NULL
+Scott Hudson,2024,1,2171298838,NULL
+Scott Kirkpatrick,2011,1,2178148597,NULL
+Scott Mahlke,2020,1,2171934779,NULL
+Scott Shenker,2003,1,719828399,NULL
+Sebastian Elbaum,2022,1,262280937,NULL
+Serge Abiteboul,2011,1,172400696,NULL
+Sethuraman Panchanathan,2020,1,2055909567,NULL
+Sh Chang,2017,1,2635506434,NULL
+Shafi Goldwasser,2017,1,1728759264,NULL
+Shahid H. Bokhari,2000,1,2310474497,NULL
+Shai Ben-David,2023,1,2151264347,NULL
+Shamkant B. Navathe,2014,1,2065325028,NULL
+Shang-Hua Teng,2009,1,2103844955,NULL
+Sharad Malik,2014,1,2156970971,NULL
+Sharad Mehrotra,2023,1,2201039448,NULL
+Sharon Oviatt,2016,1,2669286322,NULL
+Shaz Qadeer,2021,1,1985363956,NULL
+Sheila A. McIlraith,2019,1,2047359151,NULL
+Shlomo Zilberstein,2021,1,348962114,NULL
+Shmuel Winograd,1994,1,2157771162,NULL
+Shrikanth S. Narayanan,2023,1,2171036777,NULL
+Shuicheng Yan,2020,1,2144833106,NULL
+Shumin Zhai,2010,1,2235212685,NULL
+Shwetak N. Patel,2016,1,2127286128,NULL
+Silvio Micali,2017,1,699581604,NULL
+Simon Jones,2004,1,2142246817,NULL
+Simon S. Lam,1998,1,2142037325,NULL
+Simson L. Garfinkel,2012,1,2583112299,NULL
+Somesh Jha,2016,1,2193269139,NULL
+Songwu Lu,2019,1,2126325751,NULL
+Srdjan Capkun,2019,1,2144410870,NULL
+Srinivas Aluru,2020,1,672311968,NULL
+Srinivas Devadas,2014,1,855547412,NULL
+Srinivasan Keshav,2012,1,2283071955,NULL
+Srinivasan Seshan,2019,1,2093924322,NULL
+Sriram K. Rajamani,2015,1,2083764764,NULL
+Stamatis Vassiliadis,2004,1,1992265184,NULL
+Stanley B. Zdonik,2006,1,431165649,NULL
+Stefan Saroiu,2023,1,2232173907,NULL
+Stefan Savage,2010,1,2171030022,NULL
+Stefano Ceri,2013,1,519054157,NULL
+Stefano Leonardi,2024,1,2155997025,NULL
+Stefano Soatto,2022,1,343589990,NULL
+Steffen Staab,2023,1,1941402522,NULL
+Stephen A. Cook,2008,1,2098910421,NULL
+Stephen Bourne,2005,1,2140034527,NULL
+Stephen M. Blackburn,2016,1,2146610949,NULL
+Stephen M. Trimberger,2010,1,1992393524,NULL
+Stephen Robertson,2013,1,2129454193,NULL
+Stephen W. Keckler,2011,1,1756148094,NULL
+Steve Marschner,2021,1,1992278322,NULL
+Steve Whittaker,2014,1,2119343948,NULL
+Steven D. Gribble,2020,1,2044013107,NULL
+Steven Feiner,2018,1,252695556,NULL
+Steven H. Low,2020,1,2097134209,NULL
+Steven Hand,2017,1,2140572436,NULL
+Steven L. Scott,2012,1,2104578552,NULL
+Steven M. Seitz,2017,1,2134777055,NULL
+Steven Scott,2012,1,2424953512,NULL
+Stuart H. Zweben,1998,1,2144599573,NULL
+Stuart K. Card,2000,1,614907589,NULL
+Stuart M. Shieber,2014,1,1985347978,NULL
+Stuart Russell,2003,1,3174817764,NULL
+Subbarao Kambhampati,2019,1,1354405940,NULL
+Subhash Suri,2010,1,2133221332,NULL
+Subhasish Mitra,2014,1,2118856850,NULL
+Sudip Misra,2024,1,2156828734,NULL
+Sudipta Sengupta,2016,1,2104281610,NULL
+Sudipto Guha,2024,1,2135063632,NULL
+Suman Banerjee,2020,1,3209567881,NULL
+Sumi Helal,2022,1,2052291672,NULL
+Sumit Gulwani,2023,1,310804771,NULL
+Sung Min Kang,2001,1,2136829028,NULL
+Sung-Kyu Kim,2020,1,2121754334,NULL
+Sunita Sarawagi,2021,1,156875573,NULL
+Surajit Chaudhuri,2005,1,2163909284,NULL
+Susan B. Davidson,2001,1,2097328450,NULL
+Susan Dray,2017,1,1643225831,NULL
+Susan J. Eggers,2002,1,2649744027,NULL
+Susan L. Graham,1994,1,2138159208,NULL
+Susan Landau,2011,1,2952127064,NULL
+Susan S. Owicki,1994,1,2019529423,NULL
+Susan T. Dumais,2006,1,676500258,NULL
+Susanne Bodker,2024,1,1855116395,NULL
+Susanne E. Hambrusch,2020,1,2133492747,NULL
+Sushil Jajodia,2021,1,2056441798,NULL
+Sven Koenig,2020,1,2130082723,NULL
+Szymon Rusinkiewicz,2021,1,1936126667,NULL
+T. V. Lakshman,2005,1,2030993420,NULL
+Tajana Rosing,2021,1,1977760478,NULL
+Takao Nishizeki,1996,1,224253159,NULL
+Takeo Kanade,1999,1,2140539176,NULL
+Tal Rabin,2017,1,2131142900,NULL
+Tamal K. Dey,2018,1,2104811583,NULL
+Tamara G. Kolda,2019,1,2139651035,NULL
+Tandy Warnow,2015,1,665054654,NULL
+Tanzeem Choudhury,2021,1,2345003782,NULL
+Tao Jiang,2007,1,2590550580,NULL
+Tao Xie,2021,1,1920070090,NULL
+Tarek Abdelzaher,2019,1,1970017610,NULL
+Tei-Wei Kuo,2015,1,2130848692,NULL
+Terry Winograd,2009,1,2091637845,NULL
+Tetsuo Asano,2001,1,2111668054,NULL
+Thad Starner,2024,1,2038762803,NULL
+Thomas A. DeFanti,1994,1,2034849075,NULL
+Thomas A. Henzinger,2006,1,2707196735,NULL
+Thomas Anderson,2005,1,2148869393,NULL
+Thomas Ball,2011,1,2121300700,NULL
+Thomas Dean,2009,1,2053515084,NULL
+Thomas Eiter,2020,1,420267153,NULL
+Thomas Erickson,2009,1,2183602536,NULL
+Thomas Funkhouser,2018,1,2136189631,NULL
+Thomas G. Dietterich,2002,1,160031478,NULL
+Thomas Lengauer,2021,1,128580411,NULL
+Thomas P. Moran,2003,1,2135540066,NULL
+Thomas Reps,2005,1,341386833,NULL
+Thomas Zimmermann,2021,1,2014339847,NULL
+Thorsten Joachims,2014,1,245171893,NULL
+Tian He,2018,1,2151189342,NULL
+Tie-Yan Liu,2021,1,2108341226,NULL
+Tijs van der Storm,2020,1,621424736,NULL
+Tim Berners-Lee,2023,1,2308609296,NULL
+Tim Finin,2018,1,2066282134,NULL
+Tim J. Menzies,2024,1,2236230523,NULL
+Tim Roughgarden,2023,1,125590419,NULL
+Timothy A. Davis,2014,1,2106676096,NULL
+Timothy C. Y. Chan,2019,1,2264067581,NULL
+Timothy Mark Pinkston,2019,1,32065925,NULL
+Timothy Roscoe,2013,1,1981466420,NULL
+Toby Walsh,2020,1,2156731892,NULL
+Todd C. Mowry,2016,1,40863599,NULL
+Tom Hull,1994,1,2740085907,NULL
+Tom Leighton,2018,1,2128744112,NULL
+Tom Rodden,2014,1,1980670276,NULL
+Tomás Lozano-Pérez,2017,1,187031812,NULL
+Toniann Pitassi,2018,1,672707272,NULL
+Tony Hoare,2020,1,2159147199,NULL
+Torsten Hoefler,2022,1,262156611,NULL
+Toshihide Ibaraki,1999,1,2110223873,NULL
+Tova Milo,2012,1,1983463915,NULL
+Tracy Camp,2012,1,2164180442,NULL
+Trent Jaeger,2023,1,2181741781,NULL
+Trevor Mudge,2016,1,1968937847,NULL
+Tuomas Sandholm,2008,1,2070867630,NULL
+Ueli Maurer,2015,1,2068596995,NULL
+Umesh Vazirani,2005,1,391723092,NULL
+Umeshwar Dayal,2008,1,689294964,NULL
+Uri Weiser,2005,1,668875075,NULL
+Usama M. Fayyad,2006,1,2098423198,NULL
+Uzi Vishkin,1996,1,37726087,NULL
+Val Tannen,2013,1,599151389,NULL
+Valerie King,2014,1,2126031951,NULL
+Valerie Taylor,2016,1,2105362179,NULL
+Vaughan R. Pratt,1997,1,2120476038,NULL
+Vaughn Betz,2023,1,2081159056,NULL
+Venkata N. Padmanabhan,2016,1,2039246148,NULL
+Venkatesan Guruswami,2017,1,148409839,NULL
+Venu Govindaraju,2009,1,2102146905,NULL
+Vern Paxson,2006,1,716133098,NULL
+Vicki L. Hanson,2004,1,2114468277,NULL
+Victor R. Basili,1997,1,2011353662,NULL
+Victor Vianu,2006,1,152493642,NULL
+Vijay V. Vazirani,2005,1,2012704994,NULL
+Vijaykrishnan Narayanan,2014,1,2228173237,NULL
+Vikram Adve,2014,1,1990061224,NULL
+Viktor K. Prasanna,2007,1,2088826626,NULL
+Vincent Conitzer,2019,1,24490792,NULL
+Vineet Bafna,2023,1,2028184273,NULL
+Vinton G. Cerf,1994,1,2029905547,NULL
+Vipin Kumar,2005,1,2161062602,NULL
+Vishal Misra,2018,1,2202840633,NULL
+Vishwani D. Agrawal,2002,1,2146318055,NULL
+Vivek Sarkar,2008,1,2164197688,NULL
+Volker Markl,2020,1,1963964406,NULL
+W. Bruce Croft,1997,1,2127889770,NULL
+Walter F. Tichy,2012,1,2074083528,NULL
+Walter Willinger,2005,1,515099556,NULL
+Wang Yi,2020,1,2124415778,NULL
+Wang-Chiew Tan,2015,1,2175253844,NULL
+Watts S. Humphrey,2008,1,2079950874,NULL
+Wei Chen,2024,1,2585669862,NULL
+Wei Wang,2020,1,2244066162,NULL
+Wei-Ying Ma,2023,1,2134693834,NULL
+Wen Gao,2013,1,2121069363,NULL
+Wen-mei W. Hwu,2002,1,1183556006,NULL
+Wendi Heinzelman,2018,1,2205751461,NULL
+Wendy A. Kellogg,2002,1,2079158144,NULL
+Wendy E. Mackay,2019,1,1925449899,NULL
+Wendy Hall,2010,1,2169720894,NULL
+Wenfei Fan,2012,1,2132396280,NULL
+Wenjing Lou,2023,1,2170816905,NULL
+Wenke Lee,2017,1,2155626625,NULL
+Wenliang Du,2023,1,2159870315,NULL
+Wenping Wang,2021,1,2118099990,NULL
+Wenwu Zhu,2022,1,2111511002,NULL
+Whitfield Diffie,2020,1,2307656538,NULL
+William A. S. Buxton,2008,1,2889300199,NULL
+William A. Wulf,1994,1,2257274423,NULL
+William Buxton,2008,1,2326945342,NULL
+William Gropp,2006,1,293862447,NULL
+William H. Sanders,2003,1,2280265749,NULL
+William J. Dally,2002,1,2037541505,NULL
+William Kahan,1994,1,2053339767,NULL
+William Sanders,2003,1,2123986478,NULL
+William T. Freeman,2016,1,2112716162,NULL
+Willy Zwaenepoel,2000,1,2290999210,NULL
+Witold Litwin,2001,1,1969171325,NULL
+Won Kim,1995,1,2805878597,NULL
+Xavier Leroy,2015,1,2780386900,NULL
+Xia Hu,2021,1,2161448330,NULL
+Xiang-Yang Li,2019,1,2111415347,NULL
+Xiangyang Li,2019,1,2689064213,NULL
+Xiaobo Sharon Hu,2021,1,2101761700,NULL
+Xiaodong Zhang,2012,1,2289224247,NULL
+Xiaotie Deng,2008,1,2134590396,NULL
+Xilin Chen,2019,1,2099541584,NULL
+Xing Xie,2023,1,2125800575,NULL
+Xu Li,2020,1,2597202547,NULL
+Xue Li,2020,1,2643935949,NULL
+Xuedong Huang,2016,1,2153189671,NULL
+Xuelong Li,2020,1,2107070739,NULL
+Yale N. Patt,2001,1,127822908,NULL
+Yan Liu,2021,1,2240541904,NULL
+Yann LeCun,2023,1,2053214915,NULL
+Yannis Ioannidis,2004,1,435837623,NULL
+Yao-Wen Chang,2020,1,2109890010,NULL
+Yi Ma,2017,1,2145586907,NULL
+Yi-Bing Lin,2003,1,2141485328,NULL
+Yi-Hsuan Yang,2021,1,2127109347,NULL
+Yingying Chen,2023,1,2163180513,NULL
+Yiran Chen,2020,1,3175291849,NULL
+Yishay Mansour,2014,1,2078633956,NULL
+Yizhou Yu,2022,1,2343472808,NULL
+Yoav Shoham,2012,1,2112924421,NULL
+Yoelle Maarek,2013,1,262608878,NULL
+Yolanda Gil,2016,1,2145802646,NULL
+Yong Rui,2017,1,2130014478,NULL
+Yorick Wilks,2009,1,2073488377,NULL
+Yoshua Bengio,2023,1,161269817,NULL
+Yossi Matias,2009,1,1874579918,NULL
+Yuan Xie,2019,1,2095844698,NULL
+Yuanyuan Zhou,2013,1,2277525723,NULL
+Yufei Tao,2020,1,2131082813,NULL
+Yuguang Fang,2022,1,2156348848,NULL
+Yunhao Liu,2015,1,2130996983,NULL
+Yuri Breitbart,2001,1,1985207418,NULL
+Yuri Gurevich,1997,1,2154094381,NULL
+Yvonne Rogers,2017,1,2144042109,NULL
+Z. Meral Ozsoyoglu,2011,1,388475989,NULL
+Zachary G. Ives,2021,1,53579654,NULL
+Zhendong Su,2022,1,2102704429,NULL
+Zhengyou Zhang,2013,1,2129474304,NULL
+Zhi-Hua Zhou,2016,1,2286237009,NULL
+Zhu Han,2023,1,2116008403,NULL
+Zohar Manna,1994,1,2146370811,NULL
+Zvi Galil,1995,1,1984842272,NULL
+Zvi M. Kedem,1997,1,2347053213,NULL
+Zygmunt J. Haas,2021,1,2044130634,NULL
+Éva Tardos,1998,1,2009277913,NULL
+Adi Shamir,2002,10,2201755339,NULL
+Alan C. Kay,2003,10,1974749230,NULL
+Alan J. Perlis,1966,10,2659867364,NULL
+Alan Kay,2003,10,2443838674,NULL
+Alfred V. Aho,2020,10,2380581373,NULL
+Allen Newell,1975,10,2126658068,NULL
+Amir Pnueli,1996,10,2171343426,NULL
+Andrew Barto,2024,10,1997216218,NULL
+Andrew Chi-Chih Yao,2000,10,2088166175,NULL
+Avi Wigderson,2023,10,31335080,NULL
+Barbara Liskov,2008,10,2084056563,NULL
+Butler W. Lampson,1992,10,1785551945,NULL
+C. A. R. Hoare,1980,10,2052847585,NULL
+Charles W. Bachman,1973,10,2315463675,NULL
+Dana Scott,1976,10,2602723040,NULL
+David A. Patterson,2017,10,2098984663,NULL
+David Patterson,2017,10,2125303055,NULL
+Dennis M. Ritchie,1983,10,2110203303,NULL
+Donald E. Knuth,1974,10,2137000881,NULL
+Douglas C. Engelbart,1997,10,2208808115,NULL
+E. Allen Emerson,2007,10,2115834734,NULL
+Edmund Clarke,2007,10,2462175395,NULL
+Edmund M. Clarke,2007,10,2129477832,NULL
+Edsger W. Dijkstra,1972,10,2137842401,NULL
+Edward A. Feigenbaum,1994,10,2086686599,NULL
+Frederick P. Brooks,1999,10,2097474894,NULL
+Geoffrey E. Hinton,2018,10,563069026,NULL
+Herbert A. Simon,1975,10,2118103072,NULL
+Ivan E. Sutherland,1988,10,1941499373,NULL
+Jack Dongarra,2021,10,288512535,NULL
+James Hardy Wilkinson,1970,10,2193746894,NULL
+Jeffrey D. Ullman,2020,10,2289364316,NULL
+Jim Gray,1998,10,2131537204,NULL
+John Cocke,1987,10,2161752438,NULL
+John E. Hopcroft,1986,10,2079447303,NULL
+John L. Hennessy,2017,10,1965698830,NULL
+John McCarthy,1971,10,2498471291,NULL
+Joseph Sifakis,2007,10,2105927184,NULL
+Judea Pearl,2011,10,2248165042,NULL
+Juris Hartmanis,1993,10,327575412,NULL
+Ken Thompson,1983,10,2163136642,NULL
+Kenneth E. Iverson,1979,10,2470509247,NULL
+Leonard M. Adleman,2002,10,2009176085,NULL
+Leslie G. Valiant,2010,10,2000097935,NULL
+Leslie Lamport,2013,10,2096750770,NULL
+Manuel Blum,1995,10,2163096604,NULL
+Martin E. Hellman,2015,10,2146312211,NULL
+Marvin Minsky,1969,10,1968041664,NULL
+Maurice V. Wilkes,1967,10,2224046207,NULL
+Michael O. Rabin,1976,10,2144633556,NULL
+Michael Stonebraker,2014,10,1998938290,NULL
+Niklaus Wirth,1984,10,2327738716,NULL
+Pat Hanrahan,2019,10,2225733586,NULL
+Peter Naur,2005,10,587396187,NULL
+Raj Reddy,1994,10,2149385398,NULL
+Richard Edwin Stearns,1993,10,2102135011,NULL
+Richard M. Karp,1985,10,1964658237,NULL
+Richard Sutton,2024,10,2120464764,NULL
+Robert E. Kahn,2004,10,2610176178,NULL
+Robert E. Tarjan,1986,10,350567680,NULL
+Robert W. Floyd,1978,10,2011551863,NULL
+Robin Milner,1991,10,2087817183,NULL
+Ronald L. Rivest,2002,10,695545146,NULL
+Shafi Goldwasser,2012,10,1728759264,NULL
+Silvio Micali,2012,10,699581604,NULL
+Stephen A. Cook,1982,10,2098910421,NULL
+Tim Berners-Lee,2016,10,2308609296,NULL
+Vinton G. Cerf,2004,10,2029905547,NULL
+Whitfield Diffie,2015,10,2307656538,NULL
+William Kahan,1989,10,2053339767,NULL
+Yann LeCun,2018,10,2053214915,NULL
+Yoshua Bengio,2018,10,161269817,NULL

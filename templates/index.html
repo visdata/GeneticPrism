@@ -1,0 +1,816 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FR7K2YVNR"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-9FR7K2YVNR'); </script>
+    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/src/image/favicon.ico" type="image/x-icon"/>
+
+    <link rel='stylesheet' type='text/css' href="/src/css/bootstrap.css">
+    <link rel='stylesheet' type='text/css' href="/src/css/style.css">
+    <link rel='stylesheet' type='text/css' href="/src/css/d3tip.css">
+    <link rel="stylesheet" type='text/css' href="/src/css/layui.css">
+    <link rel="stylesheet" href="/src/css/nouislider.min.css">
+    <!-- <link rel="stylesheet" href="/src/css/all.min.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/exporters/GLTFExporter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gif.js@0.2.0/dist/gif.js"></script>
+        
+    <script src="/src/js/nouislider.min.js"></script>
+    <script src="/src/js/jquery.min.js"></script>
+    <script src="/src/js/bootstrap.js"></script>
+    <script src="/src/js/d3.min.js"></script>
+    <script src="/src/js/d3-tip.js"></script>
+    <script src="/src/js/d3-hsv.min.js"></script>
+    <script src="/src/js/viz-standalone.js"></script>
+    <script src="/src/js/viz-context.js"></script>
+    <script src="/src/js/layui.js" charset="utf-8"></script>
+    <script src="/src/js/echarts.min.js"></script>
+    <script src="/src/js/mygraph.js"></script>
+    <script src="/src/js/download-svg.js"></script>
+    <script src="/src/js/matrix.js"></script>
+    
+    <script src="/src/js/load-data.js"></script>
+    <script src="/src/js/prism.js"></script>
+    <script src="/src/js/index.js"></script>
+    
+    <style>
+        html, body {
+            overflow: hidden;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="screen-size-warning">
+        Please use a larger screen for a better visualization experience (iPad or desktop with width > 800px).
+    </div>
+    
+    <div class="container-fluid">
+        <div class="navigation" style="background-color: #054863; padding-top: 0.5%; padding-bottom: 0.5%; display:flex; align-items: center; justify-content:center;">
+            <div class="logo">
+                <a href="/"><img src="/src/image/logo-G.png" width="63" height="63"></a>
+                <div id="field" style="display: inline-block;"><h1></h1></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <!-- <div class="tool-panel" style="background-color: #f7f7f7; border-bottom-left-radius: 18px; border-bottom-right-radius: 18px;"></div> -->
+        <div class="navigation" style="background-color: #f5fafa; padding: 6px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; z-index: 0;">
+            <form id="update-info">
+                {% csrf_token %}
+                <table class="address" style="width: 100%; padding-top: 0px; color: #777; border-collapse: collapse;">
+                    <tr style="background: #F5FAFA!important;">
+                        <td >visualization type</td>
+                        <td >survey papers</td>
+                        <td >isolated papers</td>
+                        <td style="width: 13%;" id="node-value-label">#papers (nodes) <div class="question">
+                            <img src="/src/image/question.png" alt="Question Icon" width="18px" height="18px">
+                            <span class="question-tip" style="font-size: 16px; opacity: 0.9;">
+                                Node filter: only display core nodes of current author (first author or more likely corresponding author).
+                            </span>
+                        </div></td>
+                        <td style="width: 13%;">#citations (edges) <div class="question">
+                            <img src="/src/image/question.png" alt="Question Icon" width="18px" height="18px">
+                            <span class="question-tip" style="font-size: 16px; opacity: 0.9;">
+                                Edge filter: only display citation edges more likely to indicate research extensions.
+                            </span>
+                        </div></td>
+                        <td style="width: 13%;">topic similarity</td>
+                        <td style="width: 10%;">year grid</td>
+                        <!-- <td style="width: 12%;">focus edge weight</td>
+                        <td >edge bundling</td> -->
+                        <td >node shape</td>
+                    </tr>
+                    <tr style="background: #F5FAFA!important;">
+                        <td>
+                            <select id="vis-type" class="form-select" name="VisType">
+                                <!-- <option value="0">sugiyama</option>
+                                <option value="1">force layout</option> -->
+                                <!-- <option value="prismWebGL" >Prism(WebGL)</option> -->
+                                <option value="prism" selected>GeneticPrism</option>
+                                <option value="GF">GeneticFlow</option>
+                                <option value="matrix">Matrix</option>
+                                <!-- <option value="GForiginal">GF(original)</option> -->
+                                
+                            </select>
+                        </td>
+                        <td>
+                            <select id="remove-survey" class="form-select" name="removeSurvey">
+                                <option value="1">Exclude</option>
+                                <option value="0">Include</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select id="mode" class="form-select" name="mode">
+                                <option value="0">Include</option>
+                                <option value="2">Partial include</option>
+                                <option value="1">Exclude</option>
+                            </select>
+                        </td>
+                        <td>
+                            <!-- <span style="font-size:14px;">no filter</span> -->
+                            <div id="range-node" style="width: 60%; display: inline-block;"></div>
+                            <span id="node-value" style="color: #333; font-size:14px">≥0.5 prob.</span>
+                        </td>
+                        <td>
+                            <!-- <span style="font-size:14px;">no filter</span> -->
+                            <div id="range-edge" style="width: 60%; display: inline-block;"></div>
+                            <span id="edge-value" style="color: #333; font-size:14px">≥0.5 prob.</span>
+                        </td>
+                        <td>
+                            <!-- <span style="font-size:14px;">no filter</span> -->
+                            <div id="range-topic" style="width: 60%; display: inline-block;"></div>
+                            <span id="topic-value" style="color: #333; font-size:14px">≥0.5 prob.</span>
+                        </td>
+                        <td>
+                            <select id="yearGrid" class="form-select" onchange="render()">
+                                <option value="1">1</option>
+                                <option value="2" selected>2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </td>
+                        <!-- <td>
+                            <input type="range" id="alphaSlider" min="1" max="20" value="10" step="1" onchange="render()" style="max-width: 120px;display: inline-block;">
+                            <span id="alphaValue" style="color: #333; font-size:14px;">10</span>
+                        </td>
+                        <td>
+                            <select id="edge-bundling" class="form-select" name="edge-bundling">
+                                <option value="1">Context edges</option>
+                                <option value="2">Focus edges</option>
+                                <option value="3">Respectively</option>
+                                <option value="4">Context edges(F)</option>
+                                <option value="5">Context edges(C)</option>
+                                <option value="6">None</option>
+                                <option value="0">All edges</option>
+                            </select>
+                        </td> -->
+                        <td>
+                            <select id="node-shape" class="form-select" name="node-shape">
+                                <option value="3" selected>hexagon</option>
+                                <option value="0">oval</option>
+                                <option value="1">box</option>
+                                <option value="2" >book</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                
+            </form>
+            <div class="clearfix"></div>
+        </div>
+        <div class="main-panel">
+            <div class="left-column" style="width: 23%; margin-top: -1%;">
+                <div id="basic-info" class="address" style="padding-bottom: 20px; ">
+                    <div style="width: 100%; padding: 36px 16px 16px; background-color: #054863;">
+                        <p style="margin-left: 40px; color: white; font-size: 16px; font-weight: bold;">Scholar Info</p>
+                    </div>
+
+                    <table style="background-color: white; width: 100%;">
+                        <tr>
+                            <th style="width: 25%;">author</th>
+                            <td style="color: #333;">{{ name }}</td>
+                        </tr>
+                        <tr>
+                            <th>h-index</th>
+                            <td style="color: #333;">{{ hIndex }}</td>
+                        </tr>
+                        <tr>
+                            <th>#citations</th>
+                            <td style="color: #333;">{{ citationCount }}</td>
+                        </tr>
+                        <tr>
+                            <th>#papers</th>
+                            <td style="color: #333;">{{ paperCount }}</td>
+                        </tr>
+                        <tr>
+                            <th>#nodes</th>
+                            <td id="node-num" style="color: #333;"></td>
+                        </tr>
+                        <tr>
+                            <th>#edges</th>
+                            <td id="edge-num" style="color: #333;"></td>
+                        </tr>
+                    </table>
+                    
+                </div>
+
+                <ul id="topic-info" class="address">
+                    <li>
+                        <ul class="address-text" style="background-color: #054863; display: flex; justify-content: center;">
+                            <li style="width: 40%; font-size: 16px; padding: 16px;">
+                                <button id="hypertree-button">Chord</button>
+                            </li>
+                            <li style="width: 40%; font-size: 16px; padding: 16px;">
+                                <button id="topic-button">TopicMap</button>
+                            </li>
+                            <!-- <li style="width: 30%; font-size: 16px; padding: 16px;">
+                                <button id="TTM-button">TTM</button>
+                            </li> -->
+                        </ul>
+                    </li>
+                    <script>
+                        $("#topic-map-graph").hide();
+                        $("#TTM-graph").hide();
+                        $("#topic-button").click(function () {
+                            $("#topic-map-graph").show();
+                            $("#chord").hide();
+                            $("#TTM-graph").hide();
+                        })
+                        $("#hypertree-button").click(function () {
+                            $("#chord").show();
+                            $("#topic-map-graph").hide();
+                            $("#TTM-graph").hide();
+                        })
+                        $("#TTM-button").click(function () {
+                            $("#chord").hide();
+                            $("#topic-map-graph").hide();
+                            $("#TTM-graph").show();
+                        })
+                    </script>
+                    <li>
+                        <div id="chord" style="position: relative;">
+                            <button id="toggle-polygen" style="position: absolute; top: 10px; left:20px; padding: 5px 10px;">Polygen View</button>
+                            <!-- <iframe id="hypertreeFrame" src="/hypertree/" width="100%" height="400px"></iframe> -->
+                            <div id="chord-content"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="topic-map-graph" style="padding-bottom:4%">
+                            <div id="topic-distribution"></div>
+                            
+                            <div class="slider-container">
+                                <label for="topic-slider" style="margin-right: 3%;">Size:</label>
+                                <input id="topic-slider" class="topic-slider"  type="range" value="1" min="0" max="2" step="0.01">
+                                <span id="topic-label" style="margin-left: 3%;">0.5</span>
+                            </div>
+                            
+                            <div class="slider-container">
+                                <label for="range-slider" style="margin-right: 3%;">Range:</label>
+                                <!-- <input type="range" id="range-slider" min="0" max="100" value="0" multiple>
+                                 -->
+                                <div id="range-slider" style="width:80%"></div>
+                                <span id="range-label" style="margin-left: 3%;">0-100</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div id="TTM-graph"></div>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="middle-column" style="border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; position: relative; width: 55%;">
+                <div id="tag-tooltip" class="tooltip"></div>
+                <div style="z-index: 9; position: absolute; right: 10px; gap:10px;">
+                    <button id="zoom-in" class="icon-button" data-tooltip="Zoom In"><i class="fa-solid fa-plus icon"></i></button>
+                    <button id="zoom-out" class="icon-button" data-tooltip="Zoom Out"><i class="fa-solid fa-minus icon"></i></button>
+                    <button id="fullscreen" class="icon-button" data-tooltip="Fullscreen"><i class="fa-solid fa-maximize icon"></i></button>
+                    <button id="save" class="icon-button" data-tooltip="Download Page"><i class="fa-solid fa-circle-down"></i></button>
+                    <button id="info" class="icon-button" data-tooltip="Download User Manual"><i class="fa-solid fa-circle-info"></i></button>
+                    <button id="toggle-hide" class="icon-button" data-tooltip="More Tools"><i class="fa-solid fa-chevron-down"></i></button>
+                    <span id="info-text">Visualization Guide</span>
+                </div>
+                
+                <div id="toolbox" style="z-index: 9; position: absolute; top: 40px; right: 0px; display: flex; flex-direction: column; padding: 10px; gap:10px;">
+                    <button id="restore" class="icon-button" data-tooltip="Refresh"><i class="fa-solid fa-rotate-right icon"></i></button>
+                    <button id="showtag" class="icon-button" data-tooltip="Show Tag"><i class="fa-solid fa-tag"></i></button>
+                    <button id="regular" class="icon-button" data-tooltip="Regular Node Shape"><i class="fa-solid fa-circle"></i></button>
+                    <button id="hide-background" class="icon-button" data-tooltip="Hide FlowMap"><i class="fa-solid fa-eye-slash"></i></button>
+                    <button id="collapse" class="icon-button" data-tooltip="Collapse"><i class="fa-solid fa-equals"></i></button>
+                    <button id="fullsize" class="icon-button" data-tooltip="Full Size"><i class="fa-solid fa-expand"></i></button>
+                    <button id="enlarge" class="icon-button" data-tooltip="Enlarge Node"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button id="showtagcloud" class="icon-button" data-tooltip="Show Tag Cloud"><i class="fa-solid fa-tags"></i></button>
+                    <button id="saveall" class="icon-button" data-tooltip="Download SVG"><i class="fa-solid fa-download icon"></i></button>
+                    <button id="showglobalstream" class="icon-button" data-tooltip="Show Global Stream"><i class="fa-brands fa-red-river"></i></button>
+                    <button id="switchtagcloud" class="icon-button" data-tooltip="Switch Tag Cloud"><i class="fa-solid fa-repeat"></i></button>
+                </div>
+                
+
+                <!-- <div id="overlay"></div> -->
+
+                <div id="description" style="display:none; margin-top: 10%; margin-bottom: 10%;"></div>
+                
+                <div id="draw-area" style="display: grid; height: 100%; position: relative;">
+                    <div id="mainsvg" style="height: 100%"></div>
+                    <div id="matrixsvg" style="display:none; height: 100%"></div>
+                    <div id="yearSlider" class="noUi-target vertical-slider" style="display: none; margin-left:80%; position: absolute; right: 0; top: 0; height: 100%; width: 15%;"></div>
+                    <div id="globalstream" style="position: absolute; height: 100%; width: 15%; left: 0px;"></div>
+                    <div id="TopicPrism" style="display: none; height: 100%">
+                        <div id="prism-container" style="width: 100%; height: 100%">
+                            <div id="prism">
+                                <div class="center-marker"></div>
+                            </div>
+                        </div>
+                        <div id="prism-detail" style="height: 100%; width: 100%;"></div>
+                    </div>
+                    <!-- <div id="prismWebGL" style="height: 100%">
+                    </div> -->
+
+                    <div id="tagcloud" style="position: absolute; height: 20%; width: 100%; bottom: 0px;"></div>
+                </div>
+                
+                
+                <!--img src="data:image/png;base64,">
+                <svg id="mainsvg" style="background-color: white; border-width: 0px;" width="900" height="560" viewBox="0 0 0 0"></svg>
+                <div id="svg">
+                    <svg id="mainsvg" style="background-color: white; border-width: 0px;" width="850" height="560" viewBox="0 0 0 0"></svg>
+                </div>
+                <canvas width="850" height="560" style="display:none"></canvas-->
+            </div>
+
+            <div class="right-column" style="width: 22%; margin-top: -1%;">
+                <div id="paper-list" style="background-color: white;">
+                    <div id="paper-list-title" style="width: 100%; padding: 36px 16px 16px; background-color: #054863; ">
+                        <p style="margin-left: 40px; color: white; font-size: 16px; font-weight: bold;">Paper List</p>
+                    </div>
+                    <div id="timeline" style="overflow: auto; background-color: #f5fafa; color: #333; padding-top: 3%; padding-left: 6%; "></div>
+
+                </div>
+                
+                <!-- <ul id="selector" class="address">
+                    <li>
+                        <ul class="address-text" style="background-color: #054863; display: flex; justify-content: center;">
+                            <li style="width: 35%; font-size: 16px; margin-top: 4%; margin-bottom: 3%; padding-left: 5%; display: inline-block;">
+                                <button id="paper-info">Paper Info</button>
+                            </li>
+                            <li style="width: 28%; font-size: 16px; margin-top: 4%; margin-bottom: 3%; padding-left: 0%; display: inline-block;">
+                                <button id="references">References</button>
+                            </li>
+                            <li style="width: 28%; font-size: 16px; margin-top: 4%; margin-bottom: 3%; padding-left: 5%; display: inline-block;">
+                                <button id="citations">Citations</button>
+                            </li>
+                            <script>
+                                $("#selector, #node-info, #node-info-blank, #up-line, #down-line, #edge-info").hide();
+                                $("#paper-info").click(function () {
+                                    $("#edge-info, #up-line, #down-line").hide();
+                                    $("#node-info, #node-info-blank").show();
+                                });
+                                $("#references").click(function () {
+                                    $("#edge-info, #node-info, #node-info-blank, #down-line").hide();
+                                    $("#up-line").show();
+                                });
+                                $("#citations").click(function () {
+                                    $("#edge-info, #node-info, #node-info-blank, #up-line").hide();
+                                    $("#down-line").show();
+                                });
+                            </script>
+                        </ul>
+                    </li>
+                </ul> -->
+                
+                <div id="node-info" style="overflow-y: auto; display: none;">
+                    <div id="node-title" style="width: 100%; background-color: #054863;">
+                        <p style="margin-left: 40px; color: white; font-size: 16px; font-weight: bold; padding:  36px 16px 16px">Paper Info</p>
+                    </div>
+                    <!-- 表格部分 -->
+                    <table  style="background-color: white; border-top-left-radius: 0%; border-top-right-radius: 0%; width: 100%;
+                        ">
+                        <tr>
+                            <th style="width: 25%;">paperID</th>
+                            <td id="paper-id" style="color: #333;"></td>
+                        </tr>
+                        <tr>
+                            <th>title</th>
+                            <td id="paper-name" style="color: #333;"></td>
+                        </tr>
+                        <tr>
+                            <th>authors</th>
+                            <td id="paper-authors" style="color: #333;"></td>
+                        </tr>
+                        <tr>
+                            <th>core paper prob.</th>
+                            <td id="paper-prob" style="color: #333;"></td>
+                        </tr>
+                        <tr>
+                            <th>venue</th>
+                            <td id="paper-venue" style="color: #333;"></td>
+                        </tr>
+                        <tr>
+                            <th>year</th>
+                            <td id="paper-year" style="color: #333;"></td>
+                        </tr>
+                        <tr>
+                            <th>#citation</th>
+                            <td id="paper-citation" style="color: #333;"></td>
+                        </tr>
+                        <tr>
+                            <th>topic</th>
+                            <td id="paper-field" style="color: #333;"></td>
+                        </tr>
+                        <tr>
+                            <th>Abstract</th>
+                            <!-- 这个单元格别居中 -->
+                            <td id="abstract" style="color: #333;text-align: left;"></td>
+                        </tr>
+                    </table>
+                </div>
+                
+
+                <div id="edge-info" class="address" style="display: none;">
+                    <div id="edge-title" style="width: 100%; background-color: #054863;">
+                        <p style="margin-left: 40px; color: white; font-size: 16px;padding: 36px 16px 16px; font-weight: bold;">Citation Relationship</p>
+                    </div>
+                    <div style="background-color: white; overflow-y: auto; ">
+                        <table style="width: 100%; border-collapse: collapse;" border="1">
+                            <tr>
+                                <th style="width: 20%;">extend prob.</th>
+                                <td id="extend-prob" colspan="2" style="color: #333;"></td>
+                            </tr>
+                            <tr>
+                                <th rowspan="4">cited paper</th>
+                                <td style="color: #333; width: 20%;">title</td>
+                                <td id="source-paper" style="color: #333;"></td>
+                            </tr>
+                            <tr>
+                                <td style="color: #333;">year</td>
+                                <td id="source-paper-year" style="color: #333;"></td>
+                            </tr>
+                            <tr>
+                                <td style="color: #333;">venu</td>
+                                <td id="source-paper-venu" style="color: #333;"></td>
+                            </tr>
+                            <tr>
+                                <td style="color: #333;">#citation</td>
+                                <td id="source-paper-citation" style="color: #333;"></td>
+                            </tr>
+                            <tr>
+                                <th rowspan="4">citing paper</th>
+                                <td style="color: #333;">title</td>
+                                <td id="target-paper" style="color: #333;"></td>
+                            </tr>
+                            <tr>
+                                <td style="color: #333;">year</td>
+                                <td id="target-paper-year" style="color: #333;"></td>
+                            </tr>
+                            <tr>
+                                <td style="color: #333;">venu</td>
+                                <td id="target-paper-venu" style="color: #333;"></td>
+                            </tr>
+                            <tr>
+                                <td style="color: #333;">#citation</td>
+                                <td id="target-paper-citation" style="color: #333;"></td>
+                            </tr>
+                            <tr>
+                                <th>citation context</th>
+                                <td colspan="2" id="citation-context" style="color: #333;"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    
+    
+<script type="text/javascript">
+    // text1 paperLabel; text2 paperCount; text3 year; text4 field
+
+function buildPathDFromPoints(points) {
+    // 检查points数组是否有效
+    if (!points || points.length === 0) {
+        return '';
+    }
+
+    // 使用第一个点作为起点，初始化'd'属性
+    let d = `M${points[0].x},${points[0].y}`;
+
+    // 连接所有后续的点
+    for (let i = 1; i < points.length; i++) {
+        d += ` L${points[i].x},${points[i].y}`;
+    }
+
+    return d;
+}
+
+function buildCurvedPath(points) {
+    // build curved path from points using d3.line and d3.curveBasis
+    if (!points || points.length === 0) {
+        return '';
+    }
+
+    let line = d3.line()
+        .x(d => d.x)
+        .y(d => d.y)
+        .curve(d3.curveBasis);
+    return line(points);
+}
+
+$(function () {
+    /* 系统说明图片状态：0为前端没有图片，1为前端有且正在展示图片 */
+    image_status = false;
+    image_data = "";
+    authorID = "{{ authorID }}";
+    name = "{{ name }}";
+    fields = {{ fields|safe }};
+    fieldType = "{{ fieldType }}";
+    paperCount = "{{ paperCount }}";
+    authorName = "{{ name }}";
+
+    
+    let fields_dic = {}
+    fields.forEach(d => {
+        fields_dic[d[0]] = d
+    });
+    fields = fields_dic;
+    // $("#field-level option[value='1']").remove();
+    // $("#field-level option[value='2']").text(1);
+    $("#topic-map-graph").hide();
+    $("#TTM-graph").hide();
+    $('#prism-detail').hide();
+    
+    d3.json(`/src/config.json`).then(data => {
+        let help_link = data['default']['help_link'];
+        $("#info").click(function() {
+            window.open(help_link);
+        });
+        config =  data['default'];
+        let fieldName = fieldType == 'domain'? authorID: fieldType;
+        if (fieldName in data) {
+            Object.assign(config, data[fieldName])
+        }
+        const fieldlabel = data[fieldName].name;
+        imgHeight = $("img").css("height");
+        $("#field").css("height", imgHeight);
+        $("#field").css("line-height", imgHeight);
+        $("#field h1").append(`<span>GeneticFlow - ${fieldlabel.replace('FellowV3', 'Turing Award Winners')}</span>`);
+        
+        rangeLabel = document.getElementById('range-label');
+        rangeSlider = document.getElementById("range-slider");
+        nodeSlider = document.getElementById('range-node');
+        edgeSlider = document.getElementById('range-edge');
+        topicSlider = document.getElementById('range-topic');
+        noUiSlider.create(rangeSlider, {
+            start: [1, 100], // 初始值
+            connect: true,   // 连接两个滑块
+            range: {'min': 1,'max': 100},
+            step: 1
+        });
+        if (config.hasOwnProperty('log2_citationCount')){
+            noUiSlider.create(nodeSlider, {
+                start: config["log2_citationCount"],
+                behaviour: 'tap',
+                connect: [false, true],
+                step: 0.1,
+                range: {'min': 0,'max': 15}
+            });
+            // $("#node-value").text("≥" + config["log2_citationCount"]);
+            $("#node-value-label").text("log2(citationCount)");
+        } else if (config.hasOwnProperty('node_prob')) {
+            noUiSlider.create(nodeSlider, {
+                start: config["node_prob"],
+                behaviour: 'tap',
+                connect: [false, true],
+                step: 0.01,
+                range: {'min': 0,'max': 1.0}
+            });
+            // $("#node-value").text("≥" + config["node_prob"]); //  + " prob."
+        } 
+        
+        noUiSlider.create(edgeSlider, {
+            start: config["edge_prob"],
+            behaviour: 'tap',
+            connect: [false, true],
+            step: 0.01,
+            range: {'min': 0,'max': 1.0}
+        });
+        // $("#edge-value").text("≥" + config["edge_prob"]);
+        noUiSlider.create(topicSlider, {
+            start: config["topic_prob"],
+            behaviour: 'tap',
+            connect: [false, true],
+            step: 0.01,
+            range: {'min': 0,'max': 1.0}
+        });
+        $("#topic-value").text("≥" + config["topic_prob"]);
+        $('#remove-survey').value = config['remove_survey'];
+        $('#mode').value = config['remove_isolated'];
+
+        Viz.instance().then(function(v) {
+            VizContext.instance().then(function(vc) {
+                viz = v;
+                vizContext = vc;
+                d3.json(`/src/json/${fieldType}/${authorID}.json`).then(data => {
+                    authorData = data;
+                    // console.log('authorData', JSON.parse(JSON.stringify(authorData)));
+                    // $("#node-num").text(data['nodes'].length);
+                    // $("#edge-num").text(data['edges'].length);
+                    visType = $("#vis-type").val();
+                    
+                    checkScreenSize();
+                    $("#selector, #node-info, #node-info-blank, #up-line, #down-line, #edge-info").hide();
+                    drawYears();
+                    loadAndRender();
+                    drawTTM();
+                    visual_topics();
+                    updateSider();
+
+                    $("#overall-topic-map").hide();
+                    $("#paper-topic-map").show();
+                    $('#toolbox').hide();
+                    // sugiyama(years, nodes, edges);
+                    addAllListeners();
+                });
+            });
+        })
+    })
+});
+
+$("#mode, #node-width, #remove-survey").on('change', d=>loadAndRender());
+$("#edge-filter").on('change', function() {
+    const value = this.value;
+    if (value == 0) {
+        d3.selectAll('.link').style('display', 'block');
+    } else if (value == 1) {
+        d3.selectAll('.link').style('display', 'none');
+        d3.selectAll('.link_true').style('display', 'block');
+    } else if (value == 2) {
+        d3.selectAll('.link').style('display', 'none');
+        d3.selectAll('.link_false').style('display', 'block');
+    } else if (value == 3) {
+        d3.selectAll('.link').style('display', 'none');
+    }
+});
+// Preload the image
+var preloadedImage = new Image();
+preloadedImage.src = '/src/image/overview.png';
+preloadedImage.style.width = '100%'; // Set width to 100% of the parent container
+preloadedImage.style.height = 'auto';
+$("#description").append(preloadedImage); // Assuming there's a div with id 'imageContainer' to hold the image
+
+// $("#info").click(function() {
+//     if (!image_status) {
+//         // Display the preloaded image
+//         $("#draw-area").hide();
+//         $("#description").show();
+//     } else {
+//         $("#draw-area").show();
+//         $("#description").hide(); // Hide the image
+//     }
+//     image_status = !image_status;
+// });
+
+$("#collapse").click(function() {
+    isCollapse = !isCollapse;
+    render();
+})
+
+$("#hide-background").click(function() {
+    hideBackground = !hideBackground;
+    render();
+})
+
+$("#regular").click(function() {
+    regular = !regular;
+    render();
+})
+
+$("#fullsize").click(function() {
+    fullsize = !fullsize;
+    render();
+})
+
+$("#enlarge").click(function() {
+    enlarge += 1;
+    render();
+})
+
+$("#edge-bundling").on('change', function() {
+    edgeBundling = parseInt(this.value);
+    render();
+})
+
+$("#node-shape").on('change', function() {
+    nodeShape = parseInt(this.value);
+    render();
+})
+
+$('#toggle-hide').click(function() {
+    console.log('toggle-hide');
+    if (toolboxHidden) {
+        $('#toggle-hide').html('<i class="fa-solid fa-chevron-up"></i>');
+        $('#toolbox').show();
+    } else {
+        $('#toggle-hide').html('<i class="fa-solid fa-chevron-down"></i>');
+        $('#toolbox').hide();
+    }
+    toolboxHidden = !toolboxHidden;
+})
+
+$('#showtag').click(function() {
+    showtag = !showtag;
+    if (showtag) {
+        d3.selectAll('.text1').style('display', 'block');
+    } else {
+        d3.selectAll('.text1').style('display', 'none');
+    }
+})
+
+$('#showtagcloud').click(function() {
+    showtagcloud = !showtagcloud;
+    if (showtagcloud) {
+        $('#tagcloud').show();
+    } else {
+        $('#tagcloud').hide();
+    }
+})
+
+function drawGlobalStream() {
+    let context = {};
+    let graph = topic2graph[null];
+    init_graph(graph);
+    var years = d3.range(minYear, maxYear + 1);
+    graph['nodes'].forEach(d=>{
+        if (context[d.topic] == undefined) {
+            context[d.topic] = {"total": 0};
+            for (let year of years) context[d.topic][year] = [];
+        }
+        context[d.topic][d.year].push(d);
+        context[d.topic]["total"] += 1;
+    })
+    let ele = d3.select("#globalstream")
+    let matrixg = ele.append("svg").attr("width", "100%").attr("height", "100%").append("g");
+    let id2attr = graph['id2attr'];
+    console.log('[drawGlobalStream]', maxYear, ele.node().getBoundingClientRect().height * 10);
+    let minY = id2attr['year' + minYear].y, maxY = id2attr['year' + maxYear].y;
+    var y = d3.scaleOrdinal()
+            .domain(d3.range(minYear, maxYear + yearGrid))
+            .range(d3.range(minYear, maxYear + yearGrid).map(year => (id2attr['year' + year].y - minY) / 
+            (maxY - minY) * ele.node().getBoundingClientRect().height));
+        
+    drawStreamgraph(matrixg, context, y, [0, ele.node().getBoundingClientRect().width], 'm');
+}
+
+$('#showglobalstream').click(function() {
+    showglobalstream = !showglobalstream;
+    if (showglobalstream) {
+        $('#globalstream').show();
+        if ($('#globalstream').children().length == 0) drawGlobalStream();
+    } else {
+        $('#globalstream').hide();
+    }
+})
+
+$('#switchtagcloud').click(function() {
+    switchtagcloud = !switchtagcloud;
+    draw_tagcloud();
+})
+
+
+function getCurrentScale(g) {
+    const transform = g.attr("transform");  // 获取 transform 属性
+    if (!transform) return 1;
+    const scaleMatch = transform.match(/scale\(([^)]+)\)/);  // 匹配 scale
+    return scaleMatch ? parseFloat(scaleMatch[1]) : 1;  // 如果有匹配，返回 scale 值，否则返回 1
+}
+
+function getCurrentTranslate(g) {
+    const transform = g.attr("transform");  // 获取 transform 属性
+    if (!transform) return [0, 0]; 
+    const translateMatch = transform.match(/translate\(([^,]+),\s*([^)]+)\)/);  // 匹配 translate
+    return translateMatch ? [parseFloat(translateMatch[1]), parseFloat(translateMatch[2])] : [0, 0];
+}
+
+function updateTransform(g, newScale) {
+    const [translateX, translateY] = getCurrentTranslate(g);  // 获取当前的平移
+    const newTransform = `translate(${translateX}, ${translateY}) scale(${newScale})`;  // 构造新的 transform
+    g.attr("transform", newTransform);  // 更新 g 的 transform 属性
+}
+
+function zoom(topic, scale) {
+    let g = topic2graph[topic].g;
+    const currentScale = getCurrentScale(g);  // 读取当前 scale
+    const newScale = currentScale * scale;  // 放大 1.2 倍
+    updateTransform(g, newScale);
+}
+
+$("#zoom-in").click(function() {
+    if (visType == 'prism'  && STopic === null) {
+        prismScale = prismScale * 0.5 ** (-0.1);
+    } else {
+        zoom(STopic, 1.1);
+    }
+    
+});
+$("#zoom-out").click(function() {
+    if (visType == 'prism' && STopic === null) {
+        prismScale = prismScale * 0.5 ** 0.1;
+    } else {
+        zoom(STopic, 0.9);
+    }
+});
+
+window.onload = checkScreenSize;
+
+</script>
+</body>
+</html>

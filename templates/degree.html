@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FR7K2YVNR"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-9FR7K2YVNR'); </script>
+    <title>Degree Distribution</title>
+    <link rel="icon" href="/src/image/favicon.ico" type="image/x-icon"/>
+    <link href="/src/css/style.css" rel='stylesheet' type='text/css' />
+    <script src="https://cdn.jsdelivr.net/npm/simple-statistics@7.7.0/dist/simple-statistics.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
+    <script src="/src/js/jquery.min.js"></script>
+
+    <style>
+        body {
+            font-size: 14px;
+        }
+        #container {
+            display: flex;
+        }
+
+        /* 滚动槽 */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            border-radius: 3px;
+            background: rgba(0,0,0,0.06);
+            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.08);
+        }
+        ::-webkit-scrollbar-thumb {
+            border-radius: 3px;
+            background: rgba(0,0,0,0.12);
+            -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        #authorTable {
+            width: 34%;
+            border-collapse: collapse;
+        }
+
+        #authorTable thead, #authorTable tbody {
+            display: block;
+        }
+
+        #authorTable thead tr, #authorTable tbody tr {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        #authorTable tbody {
+            max-height: 1100px;  /* Adjust this value as per your requirement */
+            overflow-y: auto;
+        }
+
+        #authorTable th, #authorTable td {
+            font-size: 14px !important;
+        }
+
+        #authorTable tr:hover {
+            background-color: #e8e8e8;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /* 设置每列的宽度比例 */
+        #authorTable th:nth-child(1), #authorTable td:nth-child(1) {
+            width: 10%;
+        }
+        #authorTable th:nth-child(2), #authorTable td:nth-child(2) {
+            width: 20%;
+        }
+        #authorTable th:nth-child(3), #authorTable td:nth-child(3) {
+            width: 35%;
+        }
+        #authorTable th:nth-child(4), #authorTable td:nth-child(4) {
+            width: 13%;
+        }
+        #authorTable th:nth-child(5), #authorTable td:nth-child(5) {
+            width: 13%;
+        }
+        #authorTable th:nth-child(6), #authorTable td:nth-child(6) { 
+            width: 20%;
+        }
+
+        #graphs, #graphs-r {
+            width: 32%;
+            margin-left: 2%;
+        }
+
+        #indegree, #outdegree, #alldegree {
+            width: 100%;
+            height: 300px;
+        }
+
+        #indegree-r, #outdegree-r, #alldegree-r {
+            width: 100%;
+            height: 300px;
+        }
+
+        .loading-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(255, 255, 255, 0.8); /* White background with opacity */
+            z-index: 1000; /* Ensure it's on top of other content */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .spinner {
+            border: 16px solid #f3f3f3; /* Light grey */
+            border-top: 16px solid #3498db; /* Blue */
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 2s linear infinite;
+        }
+
+        .filters {
+            margin-bottom: 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .tooltip {
+            position: absolute;
+            text-align: left;
+            max-width: 300px;
+            padding: 10px;
+            font: 14px sans-serif;
+            line-height: 20px;
+            background: black;
+            border: 0px;
+            border-radius: 8px;
+            pointer-events: none;  
+            opacity: 0;  
+        }
+
+        .info {
+            background-color: aliceblue;
+            box-shadow: #3498db 0px 0px 5px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding: 10px;
+            line-height: 24px;
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+<div id="loadingIndicator" class="loading-overlay">
+    <div class="spinner"></div>
+</div>
+<div id="container">
+    <table id="authorTable">
+        <thead>
+            <tr>
+                <th></th>
+                <th>ID</th>
+                <th>name</th>
+                <th>#paper</th>
+                <th class="asc">hIndex</th>
+                <th>fellow</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be populated using D3.js -->
+        </tbody>
+    </table>
+
+    <div id="graphs">
+        <!-- Add filters for node_prob and edge_prob -->
+        <div class="filters">
+            Node Prob: <input type="range" id="nodeProbSlider" value="0.5" step="0.01" min="0" max="1" oninput="updateValue('nodeProbValue', this.value)">
+            <span id="nodeProbValue" style="margin-right: 10px;">0.5</span>
+            Edge Prob: <input type="range" id="edgeProbSlider" value="0.3" step="0.01" min="0" max="1" oninput="updateValue('edgeProbValue', this.value)">
+            <span id="edgeProbValue">0.3</span>
+        </div>
+        <div class="filters">
+            Fellow Filter (by regex): <input type="text" id="fellowInput" value="^1:|,1:">
+            <button onclick="filterByFellow()">Display</button>
+        </div>
+        <div class="filters">
+            Remove isolated: <input type="checkbox" id="removeIsolated" onchange="updateCheck()">
+            Remove survey: <input type="checkbox" id="removeSurvey"checked onchange="updateCheck()">
+            <!-- Edge on filtered nodes: <input type="checkbox" id="edgeOnFilteredNodes" checked onchange="updateCheck()"> -->
+        </div>
+
+        <div id="selectedAuthorsInfo" class="info"></div>
+
+        <!-- Add divs for your D3 visualizations -->
+        <div id="indegree"></div>
+        <div id="outdegree"></div>
+        <div id="alldegree"></div>
+    
+        <!-- ... (rest of the divs for the charts) ... -->
+    </div>
+
+    <div id="graphs-r">
+        <!-- Add filters for node_prob and edge_prob -->
+        <div class="filters">
+            Top hIndex: <input type="range" id="tophIndexSlider" value="200" step="10" min="0" max="1000" oninput="updateTop('tophIndexValue', this.value)">
+            <span id="tophIndexValue" style="margin-right: 10px;">200</span>
+            X-Axis Start: <input type="range" id="xAxisSlider" value="0" step="1" min="0" max="10" oninput="updateXAxis('xAxisValue', this.value)">
+            <span id="xAxisValue">0</span>
+        </div>
+        <div class="filters">
+            Fitted Distribution:
+            <select id="distributionSelector">
+                <option value="exponential" selected>Exponential</option>
+                <option value="power">Power-law</option>
+                <option value="none">None</option>
+            </select>
+            Power-law shift: <input type="range" id="powerLawShiftSlider" value="0" step="1" min="0" max="50" 
+            style="width: 150px;"    
+            oninput="updateValue('powerLawShiftValue', this.value, false)">
+            <span id="powerLawShiftValue">auto</span>
+        </div>
+        <div class="filters">
+            Log-Log Plot: <input type="checkbox" id="logLogPlot" onchange="toggleLogLog(this.checked)">
+            Draw Para Distribution: 
+            <select id="paraDistributionSelector">
+                <option value="None" selected>None</option>
+                <option value="m">m</option>
+                <option value="b">b</option>
+                <option value="m,b">m,b</option>
+                <!-- <option value="r2">r2</option> -->
+            </select>
+        </div>
+        <div id="otherAuthorsInfo" class="info"></div>
+
+        <!-- Add divs for your D3 visualizations -->
+        <div id="indegree-r"></div>
+        <div id="outdegree-r"></div>
+        <div id="alldegree-r"></div>
+    
+        <!-- ... (rest of the divs for the charts) ... -->
+    </div>
+</div>
+
+
+<script>
+
+let authorsData = [];
+let authorIDs_global = [];
+let selectedAuthors = [];
+let topAuthors = {};
+let nodeProbFilter = 0.5;
+let edgeProbFilter = 0.3;
+let frequency_global = {};
+let allAuthorsFrequency = {};
+let xAxisValue = 0;
+let fittedDistribution = 'exponential';
+let field = "{{ field }}";
+let topN = parseInt("{{ topN }}");
+let edgeOnFilteredNodes = true;
+let removeIsolated = false;
+let removeSurvey = true;
+let logLogPlot = false;
+let AverageLog = false;
+let powerLawShiftValue = 0;
+authorsData = {{ authorsData|safe }};
+
+$('table').on('click', 'th', function () {
+    var index = $(this).index();
+    if (index != 0) {
+        var thClass = $(this).hasClass('asc') ? 'desc' : 'asc';
+        console.log('sort', index, thClass)
+        authorsData.sort(compare(index-1, thClass));
+        
+        $('table th').removeClass('asc desc');
+        $(this).addClass(thClass);
+        renderAuthorTable();
+        filterByFellow();
+    }
+});
+
+startLoading()
+
+async function startLoading() {
+    // document.getElementById("loadingIndicator").style.display = "none";
+    console.log('start loading')
+    $("#tophIndexValue").text(topN);
+    $("#tophIndexSlider").val(topN);
+
+    let data = await d3.json(`/src/config.json`);
+    let config = data['default'];
+    if (field in data) {
+        Object.assign(config, data[field])
+    }
+    // removeIsolated = config['remove_isolated'];
+    removeIsolated = false;
+    removeSurvey = config['remove_survey'];
+    nodeProbFilter = config['node_prob'];
+    edgeProbFilter = config['edge_prob'];
+
+    $("#nodeProbValue").text(nodeProbFilter);
+    $("#nodeProbSlider").val(nodeProbFilter);
+    $("#edgeProbValue").text(edgeProbFilter);
+    $("#edgeProbSlider").val(edgeProbFilter);
+    $("#removeIsolated").prop('checked', removeIsolated);
+    $("#removeSurvey").prop('checked', removeSurvey);
+    $("#logLogPlot").prop('checked', logLogPlot);
+    $('#paraDistributionSelector').prop('disabled', false);
+
+    console.log(authorsData, topN, field);
+    authorIDs_global = authorsData.map(d=>d[0]);
+    await loadAuthorsData();
+    renderAuthorTable();
+    filterByFellow();
+}
+
+function compare(index, sortType) {
+    return function(row1, row2) {
+        var aValue = row1[index];
+            bValue = row2[index];
+        if (index == 1 || index == 4) {
+            if (sortType == 'asc') return aValue > bValue ? 1 : aValue < bValue ? -1 : 0;
+            else return aValue > bValue ? -1 : aValue < bValue ? 1 : 0;
+        }
+        else {
+            aValue = parseInt(aValue);
+            bValue = parseInt(bValue);
+            return sortType == 'desc' ? aValue - bValue : bValue - aValue;
+        }
+    }
+}
+
+// Function to calculate the sum of corresponding values
+function calculateSum(inputStrings) {
+    // console.log('sum', inputStrings)
+    const sumObject = {};
+    inputStrings.forEach(inputString => {
+        const parts = inputString.split(' / ');
+        parts.forEach(part => {
+            const match = part.match(/(\d+)\(([\w+ ]+)\)/);
+            if (match) {
+                const [, number, letter] = match;
+                const key = letter;
+                sumObject[key] = (sumObject[key] || 0) + parseInt(number, 10);
+            }
+        });
+    });
+    
+    const sumString = Object.entries(sumObject)
+        .map(([key, value]) => `${value}(${key})`)
+        .join(' / ');
+    return sumString;
+}
+
+function updateTitle() {
+    let la = selectedAuthors.length;
+    let otherAuthors = authorIDs_global.filter(id => !selectedAuthors.includes(id));
+    let lb = otherAuthors.length;
+    let sn = calculateSum(selectedAuthors.map(id => allAuthorsFrequency[id].node));
+    let se = calculateSum(selectedAuthors.map(id => allAuthorsFrequency[id].edge));
+    let tn = calculateSum(otherAuthors.map(id => allAuthorsFrequency[id].node));
+    let te = calculateSum(otherAuthors.map(id => allAuthorsFrequency[id].edge));
+
+    document.getElementById("selectedAuthorsInfo").innerText = (
+        `Selected Authors: ${la}
+        #nodes: ${sn}
+        #edges: ${se}
+        ave(degree)=${la? String(se.split('(')[0]) + '/' + String(sn.split(' / ')[removeIsolated?0:1].split('(')[0]): ''}`
+    );
+
+    document.getElementById("otherAuthorsInfo").innerText = (
+        `Other Authors: ${lb}
+        #nodes: ${tn}
+        #edges: ${te}
+        ave(degree)=${lb? String(te.split('(')[0]) + '/' + String(tn.split(' / ')[removeIsolated?0:1].split('(')[0]): ''}`
+    );
+}
+
+// Average (Ave), standard deviation (SD) and percent coefficient of variation (CV)
+function printDegree(degree, verbose=true) {
+    let arr = [];
+    let sum = 0, sum_k = 0;
+    let str = ''
+    for (let k in degree) {
+        v = degree[k];
+        k = parseInt(k);
+        arr.push([k, v]);
+        sum += k * v;
+        sum_k += v;
+        str += k + ':' + v + ', ';
+    }
+    str = str.slice(0, -2) + ' ';
+    let ave = (sum/sum_k).toFixed(4)
+
+    // 计算均方差（SD）
+    let sd = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sd += Math.pow(arr[i][0] - ave, 2) * arr[i][1];
+    }
+    sd = Math.sqrt(sd / sum_k).toFixed(4);
+
+    // 计算变异系数（Coefficient of Variation，CV）
+    let cv = (sd / ave).toFixed(4);
+    let para= calculateLogLogPara(degree);
+
+    let ret = '(ave: ' + ave + ', SD: ' + sd + ', CV: ' + cv + ', gamma: '+ (-para.m).toFixed(3) + ')';
+    return verbose? str + ret: ret;
+}
+
+function renderAuthorTable() {
+    console.log('rendering author table', authorsData)
+
+    let table = d3.select("#authorTable").select("tbody");
+    table.selectAll("tr").remove();
+    let rows = table.selectAll("tr")
+        .data(authorsData)
+        .enter().append("tr")
+        .on("click", function(d) {
+            let checkbox = d3.select(this).select("input").node();
+            checkbox.checked = !checkbox.checked;
+            rowClicked(d[0], checkbox.checked);
+        });
+
+    rows.append("td")
+        .append("input")
+        .attr("type", "checkbox");
+
+    rows.selectAll("td.data")
+        .data(function(d) {
+            return [d[0], d[1], d[2], d[3], d[4]];
+        })
+        .enter().append("td")
+        .attr("class", "data")
+        .text(function(d) {
+            return d;
+        })
+
+    // 添加悬浮提示
+    let tooltip = d3.select("body").append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
+
+    rows.on("mouseover", function(d) {
+        tooltip.transition()
+            .duration(200)
+            .style("opacity", .9);
+        tooltip.html('<span class="question-tip" style="font-size: 12px; color: #fff">' 
+                    + "author: " + d[0] + " (" + d[1] + ")"
+                    + "<br/>fellow: " + d[4]
+                    + "<br/>#node: " + allAuthorsFrequency[d[0]].node
+                    + "<br/>#edge: " + allAuthorsFrequency[d[0]].edge
+                    + "<br/>degree: " + printDegree(allAuthorsFrequency[d[0]].alldegree)
+                    + "<br/>indegree: " + printDegree(allAuthorsFrequency[d[0]].indegree)
+                    + "<br/>outdegree: " + printDegree(allAuthorsFrequency[d[0]].outdegree)
+                    + '</span>'
+                    )
+            .style("left", (event.pageX) + "px")
+            .style("top", (event.pageY - 28) + "px");
+    })
+    .on("mouseout", function(d) {
+        tooltip.transition()
+            .duration(500)
+            .style("opacity", 0);
+    });
+    
+    let authorIDs = authorsData.map(d=>d[0]);
+    console.log('all authors', authorIDs)
+    authorIDs_global = authorIDs;
+    updateTitle();
+}
+
+
+function filterByFellow() {
+    let fellowFilter = document.getElementById("fellowInput").value;
+    let regex = new RegExp(fellowFilter);
+    // author[4].includes(fellowFilter)
+    selectedAuthors = authorsData.filter(author => regex.test(author[4])).map(author => author[0]);
+    console.log('filter value:', fellowFilter)
+    updateTitle();
+
+    // Highlight the rows in the table that match the filter
+    d3.select("#authorTable").selectAll("tr").each(function(d) {
+        if (!d) return;
+        // console.log(d)
+        let row = d3.select(this);
+        let checkbox = row.select("input").node();
+        if (selectedAuthors.includes(d[0])) {
+            checkbox.checked = true;
+            row.style.backgroundColor = "#e0e0e0";  // Highlight color
+        } else {
+            checkbox.checked = false;
+            row.style.backgroundColor = "";  // Reset color
+        }
+    });
+
+    drawDistribution(selectedAuthors);
+}
+
+async function updateTop(spanId, value) {
+    document.getElementById(spanId).textContent = value;
+    topN = parseInt(document.getElementById("tophIndexSlider").value);
+    // 构建新的URL
+    let newUrl = `/degree?topN=${topN}&field=${field}`;
+    // 重定向到新的URL
+    window.location.href = newUrl;
+}
+
+async function updateValue(spanId, value, reload=true) {
+    if (spanId == 'powerLawShiftValue') {
+        document.getElementById(spanId).textContent = value == 0? 'auto': value;
+    } else {
+        document.getElementById(spanId).textContent = value;
+    }
+    nodeProbFilter = parseFloat(document.getElementById("nodeProbSlider").value);
+    edgeProbFilter = parseFloat(document.getElementById("edgeProbSlider").value);
+    powerLawShiftValue = parseInt(document.getElementById("powerLawShiftSlider").value);
+    // console.log('powerLawShiftValue', powerLawShiftValue)
+    await loadAuthorsData();
+    drawDistribution(selectedAuthors);
+}
+
+async function updateCheck() {
+    // edgeOnFilteredNodes = document.getElementById("edgeOnFilteredNodes").checked;
+    removeIsolated = document.getElementById("removeIsolated").checked;
+    removeSurvey = document.getElementById("removeSurvey").checked;
+    await loadAuthorsData();
+    drawDistribution(selectedAuthors);
+}
+
+async function toggleLogLog(checked) {
+    logLogPlot = checked;
+    $('#xAxisSlider').prop('disabled', checked);
+    $('#powerLawShiftSlider').prop('disabled', checked);
+    $('#distributionSelector').prop('disabled', checked);
+    $('#paraDistributionSelector').prop('disabled', !checked);
+    await loadAuthorsData();
+    drawDistribution(selectedAuthors);
+}
+
+function updateXAxis(spanId, value) {
+    document.getElementById(spanId).textContent = value;
+    xAxisValue = parseInt(document.getElementById("xAxisSlider").value);
+    drawDistribution(selectedAuthors);
+}
+
+document.getElementById("distributionSelector").addEventListener("change", function(event) {
+    fittedDistribution = event.target.value;
+    // 根据选择的分布重新计算和绘制图表
+    drawDistribution(selectedAuthors);
+});
+
+function valid(v) {
+    return v !== null && v !== undefined && !isNaN(v);
+}
+echarts.registerTransform(ecStat.transform.histogram);
+
+function drawParaDistribution(elementID, authors, paraName) {
+    let values = []
+    authors.forEach(authorID => {
+        let frequency = allAuthorsFrequency[authorID][elementID.split('-')[0]];
+        // console.log('frequency', frequency)
+        if (frequency !== undefined && Object.keys(frequency).length > 0) {        
+            let total = Object.values(frequency).reduce((sum, value) => sum + value, 0);
+            let percentageFrequency = {};
+            for (let key in frequency) {
+                fq = parseFloat((frequency[key] / total).toFixed(5));  // 保留两位小数并添加%符号
+                if (fq > 0) {
+                    percentageFrequency[key] = fq
+                }
+            }
+            // console.log('percentageFrequency', percentageFrequency)
+            let para = calculateLogLogPara(percentageFrequency);
+            if (valid(para.m)) values.push([para.m, para.b]);
+        }
+    });
+    let count = values.length;
+    let title = `${elementID} ${paraName} (count: ${count})`
+    let option;
+    // Specify configurations and data for the chart
+    if (paraName == 'm,b') {
+        option = {
+            title: {
+                text: title
+            },
+            dataset: [
+                {
+                source: values
+                },
+                {
+                transform: {
+                    type: 'ecStat:histogram',
+                    config: {}
+                }
+                },
+                {
+                transform: {
+                    type: 'ecStat:histogram',
+                    // print: true,
+                    config: { dimensions: [1] }
+                }
+                }
+            ],
+            tooltip: {},
+            grid: [
+                {
+                top: '50%',
+                right: '50%'
+                },
+                {
+                bottom: '52%',
+                right: '50%'
+                },
+                {
+                top: '50%',
+                left: '52%'
+                }
+            ],
+            xAxis: [
+                {
+                scale: true,
+                gridIndex: 0
+                },
+                {
+                type: 'category',
+                scale: true,
+                axisTick: { show: false },
+                axisLabel: { show: false },
+                axisLine: { show: false },
+                gridIndex: 1
+                },
+                {
+                scale: true,
+                gridIndex: 2
+                }
+            ],
+            yAxis: [
+                {
+                gridIndex: 0
+                },
+                {
+                gridIndex: 1
+                },
+                {
+                type: 'category',
+                axisTick: { show: false },
+                axisLabel: { show: false },
+                axisLine: { show: false },
+                gridIndex: 2
+                }
+            ],
+            series: [
+                {
+                name: 'origianl scatter',
+                type: 'scatter',
+                xAxisIndex: 0,
+                yAxisIndex: 0,
+                encode: { tooltip: [0, 1] },
+                datasetIndex: 0
+                },
+                {
+                name: 'histogram',
+                type: 'bar',
+                xAxisIndex: 1,
+                yAxisIndex: 1,
+                barWidth: '99.3%',
+                label: {
+                    show: true,
+                    position: 'top'
+                },
+                encode: { x: 0, y: 1, itemName: 4 },
+                datasetIndex: 1
+                },
+                {
+                name: 'histogram',
+                type: 'bar',
+                xAxisIndex: 2,
+                yAxisIndex: 2,
+                barWidth: '99.3%',
+                label: {
+                    show: true,
+                    position: 'right'
+                },
+                encode: { x: 1, y: 0, itemName: 4 },
+                datasetIndex: 2
+                }
+            ]
+            };
+    } else{
+        values = paraName == 'm'? values.map(v => v[0]): values.map(v => v[1]);
+        title = `${elementID} ${paraName} (count: ${count}, mean: ${ss.mean(values).toFixed(3)}, sd: ${ss.standardDeviation(values).toFixed(3)})`
+        option = {
+            title: {
+                text: title
+            },
+            dataset: [
+                {
+                source:  values.map(v => [v, v])
+                },
+                {
+                transform: {
+                    type: 'ecStat:histogram',
+                    config: {}
+                }
+                }
+            ],
+            grid: [
+                {
+                top: '20%',
+                right: '0%'
+                },
+            ],
+            xAxis: [
+                {
+                type: 'category',
+                scale: true,
+                // axisTick: { show: false },
+                // axisLabel: { show: false },
+                // axisLine: { show: false },
+                }
+            ],
+            yAxis: [
+                {
+                gridIndex: 0
+                },
+            ],
+            series: [
+                {
+                name: 'histogram',
+                type: 'bar',
+                barWidth: '99.3%',
+                label: {
+                    show: true,
+                    position: 'top'
+                },
+                encode: { x: 0, y: 1, itemName: 4 },
+                datasetIndex: 1
+                },
+            ]
+        };
+    }    
+    
+    
+
+    // 清除之前的数据并设置新的选项
+    var chartDom = document.getElementById(elementID);
+
+    // 如果已经有一个实例，先销毁它
+    if (echarts.getInstanceByDom(chartDom)) {
+        echarts.dispose(chartDom);
+    }
+
+    // 然后创建一个新的实例
+    let chart = echarts.init(chartDom);
+    chart.setOption(option);
+}
+
+document.getElementById("paraDistributionSelector").addEventListener("change", function(event) {
+    let paraName = event.target.value;
+    // 根据选择的分布重新计算和绘制图表
+    if (paraName == 'None') {
+        drawDistribution(selectedAuthors);
+        return;
+    }
+    let otherAuthors = authorIDs_global.filter(id => !selectedAuthors.includes(id));
+
+    drawParaDistribution('indegree', selectedAuthors, paraName);
+    drawParaDistribution('indegree-r', otherAuthors, paraName);
+    drawParaDistribution('outdegree', selectedAuthors, paraName);
+    drawParaDistribution('outdegree-r', otherAuthors, paraName);
+    drawParaDistribution('alldegree', selectedAuthors, paraName);
+    drawParaDistribution('alldegree-r', otherAuthors, paraName);
+});
+
+
+function rowClicked(authorID, isChecked) {
+    if (isChecked) {
+        selectedAuthors.push(authorID);
+    } else {
+        const index = selectedAuthors.indexOf(authorID);
+        if (index > -1) {
+            selectedAuthors.splice(index, 1);
+        }
+    }
+    drawDistribution(selectedAuthors);
+}
+
+function computeFrequency(data) {
+    let frequency = {};
+    data.forEach(value => {
+        if (frequency[value]) {
+            frequency[value]++;
+        } else {
+            frequency[value] = 1;
+        }
+    });
+    return frequency;
+}
+
+function linearRegression(points) {
+    let sumX = 0, sumY = 0, sumXY = 0, sumXX = 0, sumYY = 0;
+    let n = points[0].length;
+
+    for (let i = 0; i < n; i++) {
+        sumX += points[0][i];
+        sumY += points[1][i];
+        sumXY += points[0][i] * points[1][i];
+        sumXX += points[0][i] * points[0][i];
+        sumYY += points[1][i] * points[1][i];
+    }
+
+    let m = (n * sumXY - sumX * sumY) / (n * sumXX - sumX * sumX);
+    let b = (sumY - m * sumX) / n;
+
+    // 计算R^2
+    let ssTot = sumYY - (sumY * sumY) / n;
+    let ssRes = sumYY - m * sumXY - b * sumY;
+    let r2 = 1 - ssRes / ssTot;
+
+    return { m: m, b: b, r2: r2 };
+}
+
+function computePowerRegression(data, k) {
+    // 拟合形如 y = a(x+k)^-b 的幂律分布
+    let x = Object.keys(data).map(Number);
+    let y = Object.values(data).map(Number);
+
+    let firstZeroIndex = y.indexOf(0);
+    if (firstZeroIndex !== -1) {
+        x = x.slice(0, firstZeroIndex);
+        y = y.slice(0, firstZeroIndex);
+    }
+    // console.log('computePowerRegression', 'x', x, 'y', y)
+
+    // 对y进行对数变换
+    let logY = y.map(val => Math.log(val));
+    // 对x进行变换，并处理x+k<=0的情况
+    let transformedX = x.map(val =>  val + k > 0? Math.log(val + k): 0);
+
+    // console.log('computePowerRegression', 'x', transformedX, 'y', logY)
+    // 线性回归
+    let para = linearRegression([transformedX, logY]);
+
+    // console.log(para)
+
+    // 将线性回归的结果转换回原始参数
+    return { a: Math.exp(para.b), b: -para.m, k: k };
+}
+
+function computeExponentialRegression(data) {
+    let x = Object.keys(data).map(Number);
+    let y = Object.values(data).map(Number);
+
+    let firstZeroIndex = y.indexOf(0);
+    x = x.slice(0, firstZeroIndex);
+    y = y.slice(0, firstZeroIndex);
+
+    // 对y进行对数变换
+    let logY = y.map(val => Math.log(val));
+
+    // 线性回归
+    let regression = linearRegression([x, logY]);
+    return regression;
+}
+
+function calculateR2(yAxisData, fittedY) {
+    // console.log('yAxisData', yAxisData, 'fittedY', fittedY)
+    // 将yAxisData中null改成0
+    for (let i = 0; i < yAxisData.length; i++) {
+        if (yAxisData[i] == null) {
+            yAxisData[i] = 0;
+        }
+    }
+    // 计算y的平均值
+    const yMean = yAxisData.reduce((acc, val) => acc + val, 0) / yAxisData.length;
+
+    // 计算总平方和SST
+    const SST = yAxisData.reduce((acc, val) => acc + (val - yMean) ** 2, 0);
+
+    // 计算残差平方和SSE
+    const SSE = yAxisData.reduce((acc, val, idx) => acc + (val - fittedY[idx]) ** 2, 0);
+
+    // 计算R²
+    return 1 - (SSE / SST);
+}
+
+function calculateLogLogPara(frequency) {
+    let percentageFrequency = {};
+    let total = Object.values(frequency).reduce((sum, value) => sum + value, 0);
+    for (let key in frequency) {
+        percentageFrequency[key] = (frequency[key] / total).toFixed(5);  // 保留两位小数并添加%符号
+        percentageFrequency[key] = parseFloat(percentageFrequency[key]);
+    }
+
+    let data = [];
+    for (let x in percentageFrequency) {
+        let xVal = parseFloat(x);
+        if (xVal > 0) {
+            data.push([Math.log(xVal), Math.log(percentageFrequency[x])]);
+        }
+    }
+
+    // 计算线性拟合
+    let para = linearRegression([data.map(point => point[0]), data.map(point => point[1])]);
+    return para;
+}
+
+function drawLogLogDistribution(elementID, frequency) {
+    let percentageFrequency = {};
+    let total = Object.values(frequency).reduce((sum, value) => sum + value, 0);
+    for (let key in frequency) {
+        percentageFrequency[key] = (frequency[key] / total).toFixed(5);  // 保留两位小数并添加%符号
+        percentageFrequency[key] = parseFloat(percentageFrequency[key]);
+    }
+
+    let data = [];
+    for (let x in percentageFrequency) {
+        let xVal = parseFloat(x);
+        if (xVal > 0) {
+            data.push([Math.log(xVal), Math.log(percentageFrequency[x])]);
+        }
+    }
+
+    // 计算线性拟合
+    let para = linearRegression([data.map(point => point[0]), data.map(point => point[1])]);
+    let lineData = data.map(d => [d[0], para.m * d[0] + para.b]); // 拟合线的数据
+    let r2 = calculateR2(data.map(d => d[1]), lineData.map(d => d[1])).toFixed(4);   // para.r2.toFixed(3)
+    let func = `y = ${para.m.toFixed(3)}x${(para.b.toFixed(3)>0? '+':'') + para.b.toFixed(3) } (r2=${r2})`;
+
+    // ECharts选项
+    let option = {
+        title: {
+            text: elementID + printDegree(frequency, false)
+        },
+        tooltip: {
+            trigger: 'item',
+            formatter: function(params) {
+                let originalX = Math.round(Math.exp(params.value[0]));
+                return `${params.marker}${params.value[0].toFixed(3)}\t${params.value[1].toFixed(3)}<br/>degree: ${originalX}<br/>#node: ${frequency[originalX]}<br/> prob: ${percentageFrequency[originalX]}`;
+            }
+        },
+        xAxis: {
+            name: 'log k',
+            type: 'value'
+        },
+        yAxis: {
+            name: 'log P(k)',
+            type: 'value'
+        },
+        series: [
+            {
+                name: 'PDF',
+                type: 'scatter',
+                data: data
+            },
+            {
+                name: 'Linear Fit',
+                type: 'line',
+                data: lineData
+            }
+        ],
+        toolbox: {
+            feature: {
+                saveAsImage: { show: true, title: 'save as image' },
+                dataView: {show: true},
+                restore: {show:true}
+            }
+        },
+        graphic: {
+            type: 'text',
+            left: '62%',  // 调整位置
+            top: '28%',   // 调整位置
+            style: {
+                text: func,  // 显示拟合的函数公式
+                fill: '#666',
+                fontSize: 15
+            }
+        }
+    };
+
+    // 清除之前的数据并设置新的选项
+    let chart = echarts.init(document.getElementById(elementID));
+    chart.clear();
+    chart.setOption(option);
+}
+
+
+function drawSingleDistribution(elementID, frequency, lastKey=null) {
+    // 1. Fill in the gaps in the frequency data
+    // change values of frequency to float
+    let maxKey = Math.max(...Object.keys(frequency).map(Number));
+    for (let i = 0; i <= maxKey; i++) {
+        if (!frequency[i]) {
+            frequency[i] = 0;
+        }
+    }
+    for (let i =0; i< xAxisValue; i++) {
+        delete frequency[i];
+    }
+
+    let total = Object.values(frequency).reduce((sum, value) => sum + value, 0);
+    let percentageFrequency = {};
+    for (let key in frequency) {
+        percentageFrequency[key] = (frequency[key] / total * 100).toFixed(4);  // 保留两位小数并添加%符号
+        percentageFrequency[key] = parseFloat(percentageFrequency[key]);
+    }
+
+    // console.log(elementID, percentageFrequency);
+    // 2. Find the last non-1 value and slice the data
+    if (lastKey == null) {
+        lastKey = Object.keys(percentageFrequency).reverse().find(key => percentageFrequency[key] > 0.1);
+    }
+    let slicedFrequency = {};
+    for (let i = xAxisValue; i <= lastKey; i++) {
+        slicedFrequency[i] = percentageFrequency[i] > 0? percentageFrequency[i]: 0;
+    }
+
+    let xAxisData = Object.keys(slicedFrequency);
+    let yAxisData = Object.values(slicedFrequency);
+
+    let cdfData = [];
+    let cumulativeValue = 0;
+    for (let i = 0; i < yAxisData.length; i++) {
+        cumulativeValue += parseFloat(yAxisData[i]);  // 假设yAxisData中的值是字符串形式的百分比
+        if (cumulativeValue>100) {
+            cumulativeValue = 100;
+        }
+        cdfData.push(cumulativeValue.toFixed(3));  // 保留两位小数
+    }
+
+    console.log('slicedFrequency', slicedFrequency, powerLawShiftValue)
+    // console.log(elementID, frequency)
+    let fittedY=[], para=null, func='';
+    if (slicedFrequency.length == 0 || slicedFrequency[0] == 0) {
+        // pass
+    } else if (fittedDistribution == 'power') {
+        if (powerLawShiftValue == 0) {
+            let best_k = 0, best_r2 = -10, best_para = null, decrease_times = 0;
+            
+            for (let k=1; k<=parseInt($('#powerLawShiftSlider').attr('max')); k++) {
+                para = computePowerRegression(slicedFrequency, k);
+                fittedY = xAxisData.map(x => para.a * Math.pow((parseInt(x) + para.k), -para.b));
+                let r2 = calculateR2(yAxisData, fittedY);
+                if (r2 > best_r2 + 0.0002) {
+                    best_r2 = r2;
+                    best_k = k;
+                    best_para = para;
+                    decrease_times = 0;
+                } else {
+                    decrease_times += 1;
+                }
+                if (decrease_times >= 3) break;
+            }
+            para = best_para;
+        } else {
+            para = computePowerRegression(slicedFrequency, powerLawShiftValue);
+        }
+        // para is null
+        fittedY = xAxisData.map(x => para.a * Math.pow((parseInt(x) + para.k), -para.b));
+        let r2 = calculateR2(yAxisData, fittedY).toFixed(4);   // para.r2.toFixed(3)
+        if (para.k == 0) {
+            func = `y = ${para.a.toFixed(3)}\n\nx^${-para.b.toFixed(3)} (r2=${r2})`;
+        } else {
+            func = `y = ${para.a.toFixed(3)}\n\n(x+${para.k})^${-para.b.toFixed(3)} (r2=${r2})`;
+        }
+        
+    } else if(fittedDistribution == 'exponential') {
+        para = computeExponentialRegression(slicedFrequency);
+        fittedY = xAxisData.map(x => Math.exp(para.b) * Math.exp(para.m * x));
+        let r2 = calculateR2(yAxisData, fittedY).toFixed(4);   // para.r2.toFixed(3)
+        func = `y = ${Math.exp(para.b).toFixed(3)}e^${(para.m).toFixed(3)}x\n\n(r2=${r2})`;
+    }
+    console.log('para...', para)
+    if (para === null) {
+        fittedY = [];
+        func = 'Not available: y(0)=0'
+    }
+
+    let option = {
+        title: {
+            text: elementID + printDegree(frequency, false)
+        },
+        tooltip: {
+            trigger: 'item',
+            formatter: function(params) {
+                return `${params.marker}${params.name}\t${params.value}%<br/>count: ${frequency[params.name]}`;
+            }
+        },
+        xAxis: {
+            name: 'Degree',
+            type: 'category',
+            data: xAxisData
+        },
+        yAxis: [{
+            name: 'Node Percent(%)'
+        }, {
+            name: 'CDF (%)',
+            position: 'right'
+        }],
+        series: [{
+            name: 'PDF',
+            type: 'bar',
+            data: yAxisData
+        }, {
+            name: 'CDF',
+            type: 'line',
+            data: cdfData,
+            smooth: true,  // 使曲线更加平滑
+            yAxisIndex: 1  // 使用第二个y轴
+        }, 
+        {
+            name: 'Fitted Curve' + fittedDistribution,
+            type: 'line',
+            data: fittedY,
+            smooth: true,
+            lineStyle: {
+                color: 'red',  // 或其他颜色
+                type: 'dashed'  // 虚线样式
+            }
+        }
+    ],
+        toolbox: {
+            // 如果 toolbox 支持 tooltip，可以在这里添加
+            feature: {
+                saveAsImage: { show: true, title: 'save as image' },
+                magicType: {
+                    type: ['line', 'bar', 'stack']
+                },
+                dataView: {show: true},
+                restore: {show:true}
+            }
+        },
+        graphic: {
+            type: 'text',
+            left: '62%',  // 调整位置
+            top: '62%',   // 调整位置
+            style: {
+                text: func,  // 显示拟合的函数公式
+                fill: '#666',
+                fontSize: 15
+            }
+        }
+    };
+
+    let chart = echarts.init(document.getElementById(elementID));
+    chart.setOption(option);
+    return lastKey;
+}
+
+function drawDistributionChart(elementID, frequency) {
+    console.log('drawDistributionChart', logLogPlot, elementID, frequency)
+    // let frequency = computeFrequency(data);
+    let chart_r = echarts.init(document.getElementById(elementID + '-r'));
+    let frequency_r = JSON.parse(JSON.stringify(frequency_global[elementID]));
+    for (let key in frequency) {
+        frequency_r[key] -= frequency[key];
+        if (frequency_r[key] == 0) {
+            delete frequency_r[key];
+        }
+    }
+    if (logLogPlot) {
+        drawLogLogDistribution(elementID, frequency);
+        drawLogLogDistribution(elementID + '-r', frequency_r);
+        return;
+    }
+
+    let lastKey_r = drawSingleDistribution(elementID + '-r', frequency_r)
+    let lastKey = drawSingleDistribution(elementID, frequency);
+
+    if (lastKey_r > lastKey) {
+        drawSingleDistribution(elementID, frequency, lastKey_r);
+    } else {
+        drawSingleDistribution(elementID + '-r', frequency_r, lastKey);
+    }
+}
+
+
+// 一定要用异步加载！！！ 比同步快得多
+async function loadAuthorsData() {
+    console.log('start Loading Author Data', authorIDs_global)
+    // let promises = authorIDs_global.map(id => d3.json(`out/scigene_acl_anthology/graph/${id}.json`));
+    document.getElementById("loadingIndicator").style.display = "flex";
+    allAuthorsFrequency = {};
+
+    let promises = authorIDs_global.map(id => d3.json(`/src/json/${field}/${id}.json`).then(data => {
+        // Filter nodes and edges based on given probabilities
+        let filteredNodes = data.nodes.filter(node => node.isKeyPaper >= nodeProbFilter);
+        let filteredEdges = data.edges.filter(edge => edge.extends_prob >= edgeProbFilter);
+        let ln = filteredNodes.length;
+        let le = filteredEdges.length;
+        if (removeSurvey) filteredNodes = filteredNodes.filter(node => !node.survey);
+        // Compute indegree, outdegree, and total degree
+        let indegree = {}, outdegree = {}, alldegree = {};
+        // set other nodes in filteredNodes outdegree/indegree =0
+        filteredNodes.forEach(node => {
+            outdegree[node.id] = 0;
+            indegree[node.id] = 0;
+            alldegree[node.id] = 0;
+        })
+        let nodeSet = new Set(filteredNodes.map(node => node.id));
+        
+        let edgeCount = 0;
+        let connectedEdges = [];
+        filteredEdges.forEach(edge => {
+            src = String(edge.source);
+            tgt = String(edge.target);
+            if (nodeSet.has(src) && nodeSet.has(tgt)) {
+                outdegree[src] += 1;
+                indegree[tgt] += 1;
+                alldegree[src] += 1;
+                alldegree[tgt] += 1;
+                connectedEdges.push(edge);
+            }
+        });
+        // filteredEdges = connectedEdges;
+
+        let connectedNodes = filteredNodes.filter(node => alldegree[node.id] > 0);
+        if (removeIsolated) {
+            
+            for (let node of filteredNodes) {
+                let id = node.id;
+                if (alldegree[id] === 0 || alldegree[id] === undefined) {
+                    delete outdegree[id];
+                    delete indegree[id];
+                    delete alldegree[id];
+                }
+            }
+        }
+
+        // Visualize using ECharts
+        let indegreeData = computeFrequency(Object.values(indegree));
+        let outdegreeData = computeFrequency(Object.values(outdegree));
+        let alldegreeData = computeFrequency(Object.values(alldegree));
+
+        allAuthorsFrequency[id] = {
+            'indegree': indegreeData,
+            'outdegree': outdegreeData,
+            'alldegree': alldegreeData,
+            'node': String(connectedNodes.length) + '(rm isolated) / ' + (removeSurvey? String(filteredNodes.length) + '(rm survey) / ' : '')
+                     + ln + '(filter) / ' + String(data.nodes.length) + '(all)',
+            'edge': String(connectedEdges.length) + '(rm edges on invalid node) / '
+                     + le + '(filter) / ' + String(data.edges.length) + '(all)'
+        }
+        // console.log(id, filteredNodes, filteredEdges, outdegree)
+    }))
+
+    await Promise.all(promises);
+
+    console.log('allAuthorsFrequency', allAuthorsFrequency);
+    frequency_global = combineAllMaps(allAuthorsFrequency);
+    console.log('frequency_global', frequency_global);
+
+    // combine all the Map together (accumulate) to frequency_global
+    document.getElementById("loadingIndicator").style.display = "none";
+}
+
+
+function combineAllMaps(maps) { 
+    let result = {
+        "indegree": {},
+        "outdegree": {},
+        "alldegree": {}
+    };
+
+    for (let key in maps) {
+        for (let subKey in result) {
+            for (let degreeKey in maps[key][subKey]) {
+                if (!result[subKey][degreeKey]) {
+                    result[subKey][degreeKey] = 0;
+                }
+                result[subKey][degreeKey] += maps[key][subKey][degreeKey];
+            }
+        }
+    }
+    return result
+}
+
+
+function drawDistribution(authorIDs) {
+    console.log('selected', authorIDs)
+    let subMap = new Map()
+
+    authorIDs.forEach(key=>{
+        subMap[key] = allAuthorsFrequency[key]
+    })
+    combinedMap = combineAllMaps(subMap)
+    console.log('combined subMap', combinedMap)
+
+    drawDistributionChart('indegree', combinedMap['indegree']);
+    drawDistributionChart('outdegree', combinedMap['outdegree']);
+    drawDistributionChart('alldegree', combinedMap['alldegree']);
+    updateTitle();
+}
+</script>
+</script>
+</body>
+</html>

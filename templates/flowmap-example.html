@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flow Map</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        svg { border: 1px solid black; }
+    </style>
+</head>
+<body>
+    <svg width="1000" height="1000"></svg>
+    <script>
+        const data = {
+            source: 'n1',
+            target: { n2: 1, n3: 2, n4: 4, n5: 2 }
+        };
+
+        const id2attr = {
+            n1: { x: 731, y: 98, rx: 43.685, ry: 31.0 },
+            n2: { x: 500, y: 300, rx: 20, ry: 15 },
+            n3: { x: 600, y: 400, rx: 30, ry: 20 },
+            n4: { x: 800, y: 500, rx: 25, ry: 18 },
+            n5: { x: 900, y: 350, rx: 35, ry: 25 }
+        };
+
+        const svg = d3.select("svg");
+
+        // 定义箭头标记
+        svg.append("defs").append("marker")
+            .attr("id", "arrow")
+            .attr("viewBox", "0 0 10 10")
+            .attr("refX", 10)
+            .attr("refY", 5)
+            .attr("markerWidth", 6)
+            .attr("markerHeight", 6)
+            .attr("orient", "auto")
+            .append("path")
+            .attr("d", "M 0 0 L 10 5 L 0 10 z")
+            .attr("fill", "black");
+
+        const source = id2attr[data.source];
+        
+        // 绘制源节点
+        svg.append("ellipse")
+            .attr("cx", source.x)
+            .attr("cy", source.y)
+            .attr("rx", source.rx)
+            .attr("ry", source.ry)
+            .attr("fill", "blue");
+
+        // 布局算法，计算分叉点
+        function computeIntermediatePoints(source, target, weight) {
+            const points = [];
+            const midX = (source.x + target.x) / 2;
+            const midY = (source.y + target.y) / 2;
+
+            // 根据权重稍微偏移中间点以避免重叠
+            const offsetX = (target.x - source.x) / weight;
+            const offsetY = (target.y - source.y) / weight;
+
+            points.push({ x: midX - offsetX, y: midY - offsetY });
+            points.push({ x: midX + offsetX, y: midY + offsetY });
+
+            return points;
+        }
+
+        // 绘制目标节点和连接线
+        Object.entries(data.target).forEach(([targetId, weight]) => {
+            const target = id2attr[targetId];
+
+            // 绘制目标节点
+            svg.append("ellipse")
+                .attr("cx", target.x)
+                .attr("cy", target.y)
+                .attr("rx", target.rx)
+                .attr("ry", target.ry)
+                .attr("fill", "red");
+
+            // 计算分叉点
+            const intermediatePoints = computeIntermediatePoints(source, target, weight);
+
+            // 绘制连接线，从源节点到第一个分叉点
+            svg.append("line")
+                .attr("x1", source.x)
+                .attr("y1", source.y)
+                .attr("x2", intermediatePoints[0].x)
+                .attr("y2", intermediatePoints[0].y)
+                .attr("stroke", "black")
+                .attr("stroke-width", weight)
+                .attr("marker-end", "url(#arrow)");
+
+            // 从第一个分叉点到第二个分叉点
+            svg.append("line")
+                .attr("x1", intermediatePoints[0].x)
+                .attr("y1", intermediatePoints[0].y)
+                .attr("x2", intermediatePoints[1].x)
+                .attr("y2", intermediatePoints[1].y)
+                .attr("stroke", "black")
+                .attr("stroke-width", weight)
+                .attr("marker-end", "url(#arrow)");
+
+            // 从第二个分叉点到目标节点
+            svg.append("line")
+                .attr("x1", intermediatePoints[1].x)
+                .attr("y1", intermediatePoints[1].y)
+                .attr("x2", target.x)
+                .attr("y2", target.y)
+                .attr("stroke", "black")
+                .attr("stroke-width", weight)
+                .attr("marker-end", "url(#arrow)");
+        });
+    </script>
+</body>
+</html>

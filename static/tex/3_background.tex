@@ -1,0 +1,205 @@
+\section{Scientific Impact Evolution}
+
+\begin{figure*}[tb]
+  \centering
+  \includegraphics[width=\textwidth]{figs/PreprocessingV7.png}
+  \caption{GeneticPrism pipeline over MAG to illustrate scientific impact evolution: (a) data pre-processing; (b) GF analytics to build citation influence graph; (c) topic modeling for multifaceted analysis; (d) visualization designs.\shil{Should annotate subfigure abcd, scientific officers => academic administrators.}
+  }
+  \label{fig:Pipeline}
+\end{figure*}
+
+The proposed pipeline to illustrate scientific impact evolution is shown in \rfig{Pipeline}. The raw academic data after preprocessing is first modeled by GF analytics into citation influence graphs, or GF graphs in short. A new topic modeling stage is introduced to assemble multiple topic facets on each GF graph. GeneticPrism and other visual metaphors are then designed for the multi-view visualization.
+
+\subsection{Academic Data Source and Pre-processing}
+
+% Has removed the below full table
+\iffalse
+\begin{table}[tb]
+  \caption{%
+    GF graph statistic for 10 CS subfields, 2 award recipients, and one venue category. This table details each type's name, number of authors, topics, papers, and links, providing essential data for analyzing evolution trends of different scholars and domains.%
+  }
+  \label{tab:graph_static}
+  \scriptsize%
+  \centering%
+  \renewcommand{\arraystretch}{1.2}
+    \begin{tabu} to 0.5\textwidth {%
+          X[0.8,l]%
+          X[2.0,l]%
+          X[0.6,c]%
+          X[0.5,c]%
+          X[0.6,c]%
+          X[0.6,c]%
+        }
+    \toprule
+    \textbf{Type} & \textbf{Name} & \textbf{\#Scholars} & \textbf{\#Topic} & \textbf{\#Papers} & \textbf{\#Links} \\
+    \midrule
+    \multirow{10}{*}{\parbox{1.5cm}{domain\\-specific\\top scholars}} & Graphics & 6744 & 76 & 109058 & 130650 \\
+    & Graphics \& Visualization & 6109 & 81 & 113597 & 130650 \\
+    & Database \& Data Science & 6350 & 83 & 157334 & 136688 \\
+    & Visualization & 5942 & 101 & 80017 & 80026 \\
+    & Software \& Programming Language & 11144 & 96 & 236711 & 346424 \\
+    & Human-Computer Interaction & 6265 & 86 & 131650 & 149321 \\
+    & Networking \& Parallel Computing & 20307 & 149 & 878492 & 1128046 \\
+    & Artificial Intelligence at Large & 54876 & 384 & 3881366 & 3665282 \\
+    & Computer Architecture & 22138 & 125 & 543558 & 646885 \\
+    & Computer Security & 10532 & 91 & 172497 & 173608 \\
+    \midrule
+    \multirow{2}{*}{\parbox{1.5cm}{award\\ recipients}} & ACM Fellows & 1306 & 490 & 336475 & 683003 \\
+    & Turing Award Winners & 76 & 490 & 15575 & 30614 \\
+    \midrule
+    \multirow{1}{*}{venue} & International Symposium on Graph Drawing (GD) & 2120 & 28 & 1703 & 3128 \\
+    \bottomrule
+    \end{tabu}
+\end{table}
+\fi
+
+\begin{table}[t]
+\centering
+  \caption{
+     Graph statistics for award recipients, top scholars in CS sub-fields, and individual academic venues.\shil{Please correct the format of below table. Also double check the table. The \# of topics should be those used in the case study, 490 for ACM seems larger than I was told. \# papers/links should be all papers not core papers, and all self-citation links, not extended ones.}
+  }
+  \label{tab:graph_statistics}
+  \scriptsize
+    \begin{tabu} to 0.5\textwidth {%
+          X[1.2,l]%
+          X[2.0,l]%
+          X[0.6,c]%
+          X[0.5,c]%
+          X[0.6,c]%
+          X[0.6,c]%
+        }
+    \toprule
+    \textbf{Category} & \textbf{Name} & \textbf{\#Authors} & \textbf{\#Topic} & \textbf{\#Papers} & \textbf{\#Links} \\
+    \midrule
+    \multirow{2}{*}{\parbox{1.5cm}{Award\\Recipients}} & ACM Fellows & 993 & 119 & 259526 & 571419 \\
+    & Turing Award Winners & 76 & 490 & 15575 & 30614 \\
+    \midrule
+    \multirow{2}{*}{\parbox{2cm}{Top Scholars in\\11 CS Sub-fields}}
+    & Graphics \& Visualization & 6109 & 81 & 113597 & 130650 \\
+    & $\cdots\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ \\
+    \midrule
+    \multirow{1}{*}{Academic Venues} & {International Symposium on Graph Drawing} & N/A & 28 & 1703 & 3128 \\
+    \bottomrule
+\end{tabu}
+\end{table}
+
+Our primary data source is MAG \cite{microsoft_academic_graph}, the largest open academic database nowadays, with over 237 million papers, 240 million authors, and 1.63 billion citations from all research disciplines till Sept. 2021. As shown in \rtab{graph_statistics}, the raw MAG data is pre-processed into the citation graph of academic entities in three categories: award recipients including Turing award winners and ACM fellows, top scholars in 11 CS sub-fields, and an academic venue of GD.
+
+For award recipients, their scholar lists are collected from the Internet; for top scholars in a sub-field, their scholar lists are ranked by h-index defined in MAG over all papers in each sub-field (e.g., the 6109 scholars in graphics\&visualization with a h-index above 5). Scholar name matching and disambiguation are conducted to ensure that the correct recipient/scholar is detected from our dataset and all their papers in MAG are extracted. For the GD venue, we simply discover its venue ID in MAG and retrieve all the papers linked to that ID. After the paper list for each recipient/scholar/venue is obtained, we further fetch all citation links among each list of papers.
+
+\iffalse
+\begin{itemize}
+    \item \emph{GF graph for domain-specific top scholars:} We first manually defined representative MAG fields and venues for a specific domain and constructed a list as input. We then matched the corresponding fields and venues in the MAG database and extracted papers from these matched fields and venues, along with their authors and citation information, to construct a domain database. To avoid multiple author entities for the same scholar in the MAG database, we compared author names pairwise, merging non-Chinese names with an edit distance ratio less than a specific threshold (default 0.1) and name similarity above a specific threshold (default 0.96), accurately representing scholarly contributions. For the defined domain, we selected authors with an h-index above a certain value (default 5, adjustable per field) and built self-citation graphs for each scholar. After constructing the graph, we performed node profiling and edge profiling to complete the analysis, identifying core papers and citation relationships. The modeled and filtered core self-citation graph constitutes the GF graph for domain-specific top scholars.
+    \item \emph{GF Graph for award recipients:} We started by downloading the author lists of relevant awards (e.g., ACM Fellows or Turing Award recipients) from official websites. We matched these scholars' names with the authors in the MAG database. To avoid issues like name duplication or incomplete databases causing unrecognized authors, we applied criteria such as having more than a certain number of publications (default 10 papers) and total citations (default 200 citations). Given that award recipients should primarily focus on computer science, we required that the proportion of their papers in the Computer Science domain exceed a specific threshold (default 0.9). We then extracted datasets for these scholars to gather their relevant publications and citations, subsequently building self-citation graphs for these award-winning scholars. Using the same GF Analysis steps, we modeled the GF graph for the award recipients.
+    \item \emph{GF Graph for venue:} To construct the evolution graph for the graph visualization domain, we first matched specific venues (e.g., "International Symposium on Graph Drawing (GD)") in the MAG database. We extracted papers from these venues to form the core dataset and built citation networks to analyze development trends within the domain. Using the same GF Analysis steps, we modeled the GF graph for the venue. When conducting node profiling, because it is challenging to define core papers for a venue unlike for a scholar, we used regularized reference counts as core paper probabilities instead of author contributions.
+\end{itemize}
+\fi
+
+\subsection{GeneticFlow Graph Model}
+
+As shown in \rfig{Pipeline}(b), the pre-processed academic data is modeled by GF analytics \cite{luo2023impact} to compute a GF graph for each recipient/scholar/venue. %The GF model mainly consists of three steps: node profiling to detect core papers of a scholar as the nodes of GF graph, edge profiling to detect the set of reversed, extend-type citation links as the edges of GF graph, and the final graph building.
+The GF graph is designed to represent the evolution of a scholar/venue's scientific impact and contribution. Formally, take the GF analytics of a scholar \( s \) as example. His/her full GF graph is defined by \( G = \{V, E\} \), where \( V \) denotes the set of \( n \) paper nodes authored by \( s \) and \( E \) denotes the set of \( m \) reversed self-citation edges among \( V \) indicating citation influence links. Each node \( v_i \) is further associated with a timestamp \( t \) (publication year by default), an ordered list of paper co-authors \( A = \{a_1, a_2, \ldots\} \), and an extra set of paper attributes \( \Phi \). Each edge \( e_{ij} = (v_i, v_j) \) is derived from a citation from paper \( v_j \) to \( v_i \).
+
+To represent the main component of a scholar's citation impact evolution, the concept of core GF graph is proposed, which is a subgraph \( G^* \) of \( G \) that best represents the impact of scholar \( s \). The core GF graph profiling problem is decomposed into two sub-problems: node profiling and edge profiling.
+
+\textbf{Node profiling} involves detecting the set of core papers \( V^* \subseteq V \) published by the scholar \( s \). The exact algorithm is based on two assumptions: a paper's contribution is unequally credited to all authors by author order unless the paper is alphabetically ordered, and an author's contribution to the paper is also credited to his/her advisor if only (a) the advisor is a co-author of the paper, and (b) the advisor-advisee relationship is active at the publication date of the paper.
+
+With these assumptions, the probability that the \( k \)-th author \( a_k \) significantly contributes to a paper can be computed by
+\begin{equation}
+p_{\text{cont}}(a_k) = \max \left(\frac{1}{k}, \max_{\forall l \neq k} \frac{p_{AA}(a_k, a_l, t)}{l}\right)
+\label{eq:author}
+\end{equation}
+
+Here the popular harmonic credit allocation scheme \cite{} is adopted
+in that the \(k\)th author takes credit of \( 1/k \). \( p_{adr}(a_k, a_l, t) \) denotes the probability of \( a_k \) being the advisor of  \( a_l \) at time \( t \).
+
+To detect the advisor-advisee relationship, an unsupervised, human-interpretable algorithm is introduced, which calculates the advisor-advisee probability between \( a_k \) and \( a_l \) by
+\begin{equation}
+\begin{aligned}
+p_{adr}(a_k, a_l, t) &= \frac{N_{a_k}(0, t) - N_{a_k, a_l}(0, t)}{N_{a_k, a_l}(0, t)} \\
+p_{ade}(a_k, a_l, t) &= \max_{\substack{t_0 \leq t \leq t_1 \\ t_1 - t_0 \geq S_0 \\ \text{numerator} \geq S_{\text{adr}}}} \frac{\sum_{t_0 \leq t \leq t_1} \hat{N}_{a_k, a_l}(t)}{\hat{N}_{a_l}(t_0, t_1)} \\
+p_{AA}(a_k, a_l, t) &= \min(1.0, p_{adr}(a_k, a_l, t)) \times \min(1.0, p_{ade}(a_k, a_l, t))
+\end{aligned}
+\label{eq:relationship}
+\end{equation}
+
+where \( N_{a_k}(0, t) \) is the number of papers published by \( a_k \) until time \( t \), and \( N_{a_k, a_l}(0, t) \) is the number of papers co-authored by \( a_k \) and \( a_l \) until time \( t \), \( \hat{N}_{a_k, a_l}(t) \) is the number of major papers co-authored by \( a_k \) and \( a_l \) at time \( t \), and \( \hat{N}_{a_l}(t_0, t_1) \) is the number of major papers by \( a_l \) in the period \([t_0, t_1]\).
+
+% \shil{Is the below commented paragraph useful?}
+
+% \sunye{Realization steps, can be removed.}
+
+% Steps for node profiling include calculating the co-authored paper count, detecting significant advising relationships using \( p_{adr} \) and \( p_{ade} \), and applying the harmonic credit allocation scheme to determine each author's contribution to the paper using \( p_{\text{cont}} \).
+
+\textbf{Edge profiling} involves detecting the set of core citation edges \( E^* \subseteq E \) that represent the evolution of the scholar's scientific contribution. The approach focuses on classifying self-citation links according to an established taxomony and then extract the class of extend-type citations. To achieve this goal, a supervised learning algorithm is applied on a labeled dataset to classify citation types. Twenty features are selected and input to an Extra-Tree model. The model achieves an F1 score of 0.646 with 10-fold cross-validation. The features used in classification include metadata of cited and citing papers, citation network features, temporal correlation measures, and content and lexical patterns extracted from the citation context and full text. More details can be found in the original paper \cite{luo2023impact}.
+
+% \shil{Is the below commented paragraph useful?}
+
+% \sunye{Realization steps, can be removed.}
+
+%Steps for edge profiling include measuring the similarity between citing and cited papers using features such as cosine similarity, collecting features relevant to citation context, including citation count, shared authors, and publication year difference, and using an optimized classifier to compute the probability of each edge being an extend-type citation.
+
+\subsection{Topic Modeling}
+
+% Topic modeling purpose
+
+To resolve the scalability issue in visualizing very large GF graphs, we propose to slice a scholar's GF graph into multiple sub-graphs by using topic modeling methods. It is observed that the citation influence graph inside each topic is normally much smaller yet more interpretable, as shown by the case studies in \rsec{Case}. The missing interactions among topic-based GF sub-graphs can be displayed by elaborate visualization designs in \rsec{Vis}.
+
+% Topic modeling method (BERTopic) and implementation details
+
+The latest neural topic modeling method BERTopic \cite{BERTopic} is applied. The BERTopic pipeline includes BERT embedding to represent each document with a dense, high-dimensional vector, UMAP projection \cite{UMAP} to map all document vectors within the same low-dimensional space, and finally HDBSCAN clustering \cite{HDBSCAN} to detect topics from the document set. A list of keywords and an embedding vector is computed for each detected topic. As a single GF graph only contains hundreds of papers and the resulting topics can be sparse, we apply BERTopic to the set of papers corresponding to one row in \rtab{graph_statistics}. For each paper, the title, abstract, and index words are aggregated to one document for topic modeling. Both unigram and bigram schemes are allowed in learning topic keywords.
+
+% interdisciplinary papers
+% GF graph slicing into topic-based facets
+
+The default BERTopic implementation does not support overlapping topics in that each paper is assigned to only one topic cluster. To be able to identify interdisciplinary research, we introduce a customized topic assignment scheme so that one paper can belongs to multiple topics. In more detail, the topic assignment is based on the cosine similarity between each paper's embedding vector and the detected topic embedding vector. By imposing a lower-bound similarity threshold adjustable in the visualization interface, each paper is assigned to all the topics with a similarity above that threshold. The topic assignment helps to slice one GF graph into multiple topic-based sub-graphs in that all papers belonging to a topic and their citation links in between will form a topic GF sub-graph. Note that the number of paper nodes in all topic sub-graphs of a scholar will be larger than that in the original GF graph.
+
+%By segmenting the GF graph by topics, we achieve overlapping topic representation: each paper can belong to multiple topics, with overlapping topics displayed through different topic-specific GF graphs. Each topic graph shows all relevant papers for that topic, rather than just a few representative ones, ensuring that the extension relationships between papers are not overlooked and the evolution pattern is more complete. Another advantage of this topic segmentation is that by selecting only one subgraph, we can avoid visualizing the entire, often unwieldy GF graph, where the extensive interconnections and dense nodes can obscure citation patterns. A subgraph of a single topic with fewer than 100 nodes can be visualized neatly, maintaining clarity.
+
+\iffalse
+\begin{table}[tb]
+  \caption{%
+    Top 10 Topics in Graph Drawing Venue. Topic modeling captures the complexity of the research area. For example, topics such as "force directed, stress force" and "orthogonal drawings, orthogonal bend, planar algorithm" reflect well-known themes in the domain.%
+  }
+  \label{tab:graph_drawing_topics}
+  \scriptsize%
+  \centering%
+  \renewcommand{\arraystretch}{1.3}
+  \begin{tabu} to 0.5\textwidth {%
+        X[0.3,c]%
+        X[2.7,l]%
+      }
+    \toprule
+    \textbf{Size} & \textbf{Name} \\
+    \midrule
+    165 & force-directed, stress force, layout algorithm, draw, fast graph base \\
+    122 & orthogonal-drawings, orthogonal bend, planar algorithm, degree \\
+    106 & planar, face tree, monotone graph, match, orthogonal-surfaces, planar-graphs \\
+    106 & cluster, clustered-graphs, large network, visualize large-graphs, visualizing-large, fisheye \\
+    40 & vertex thrackles, edge geometric, graph cross, curve topological \\
+    40 & crossing-minimization, cross problem, minimization-problem, layer, line-crossing, level, metro \\
+    37 & grid, grid-drawings, height straight, line straight-line, plane width, plane-graphs \\
+    30 & edge-bundling, bundling, bundle, new edge-routing, compatibility \\
+    25 & rectangle-influence, triangulation, rectilinear-drawing, transversal, rectilinear influence-drawings, transversal-structures \\
+    24 & simultaneous-embedding, embeddings, embeddability, geometric, simultaneous-embeddings, planar, simultaneous-geometric, set \\
+    \bottomrule
+  \end{tabu}
+\end{table}
+\fi
+
+
+\subsection{User and Task Characterization}
+
+Building over faceted GF graphs, GeneticPrism visualizations are designed to effectively illustrate the scientific impact evolution of key scholars and academic venues. Our technique targets two types of users:
+\begin{itemize}
+\item \textbf{Researchers} who aim to analyze the academic development of themselves and other scholars from a data-driven perspective. The lessons learned and patterns detected can potentially assist them in future topic planning, collaboration building, and research frontier understanding;
+\item \textbf{Academic administrators} with regular responsibility for reviewer recruitment, tenure evaluation, award/project selection, or even agenda-setting for a research field. The quantitative approach by GeneticPrism serves as a nice complement to the traditional way of subjective peer reviews.     
+\end{itemize}
+
+To fulfill the requirements of these users, GeneticPrism supports the following tasks:
+\begin{itemize}
+\item \textbf{T1: temporal and topical overview of a scholar's scientific impact.} On the first hand, most users will need an overall understanding of a scholar's research impact, including the research contribution across topics and over time. The design should allow a macroscopic view with time dimension that can juxtapose and compare the scholar's impact evolution on multiple topics.
+\item \textbf{T2: detailed analysis of a scholar's impact evolution on a single research topic.} For any specific topic, e.g. the one that the user is currently working on or the administrator is overseeing, s/he will need to drill down to details to complete their job. The low-level tasks include but not limited to identifying key papers, understanding research threads/clusters, and predicting topical/statistical trends.
+\item \textbf{T3: discover influence and interaction patterns among multiple research topics of a scholar.} For topic planning and research outlook, users will need to figure out the causal relationship among multiple research topics of a scholar. This can be achieved through the visual analysis of citation influence patterns among papers belonging to these topics.
+\item \textbf{T4: identifying key interdisciplinary papers and their influence patterns.} During topic transitions of a scholar, it is normally not a clear-cut pattern between old and new topics. It is important for our users to identify these key papers that conduct interdisciplinary research between topics under transition. The context of these researches can help to explain the reasoning and process of scientific evolution.
+\end{itemize}
