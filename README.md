@@ -19,12 +19,12 @@ This work introduces:
 
 ## Dataset  
 Processed from the open-source **Academic Graph**:  
-- **v1** (up to Sept. 2022): Based on [Microsoft Academic Graph (MAG)](https://github.com/sunieee/MAGProcessing)  
-- **v2** (up to Oct. 2024): MAG fused with **[OpenAlex](https://openalex.org)** (KDD’23 paper: [MAGProcessing](https://dl.acm.org/doi/abs/10.1145/3580305.3599845))  
+- **v1** (up to Sept. 2022): process Microsoft Academic Graph (MAG) to construct [GF Graph](https://github.com/sunieee/MAGProcessing)  (from [KDD’23 paper](https://dl.acm.org/doi/abs/10.1145/3580305.3599845))  
+- **v2** (up to Oct. 2024): MAG fused with **[OpenAlex](https://openalex.org)** 
 
 🔗 **Download v2 dataset**: [Hugging Face](https://huggingface.co/datasets/yesun/GeneticPrism)​. Due to the dataset's size, it is divided into two compressed archives.
-- The ​csv archive​ contains CSV files covering all research fields ​except Artificial Intelligence (AI)​. After extraction, place these CSV files directly in your ​project root directory. 
-- The ​AI archive​ contains ​only AI-related data​ – extract its CSV files into the project's ​`csv/`.
+- The ​`csv.tar.gz`​ contains CSV files covering all research fields ​except Artificial Intelligence (AI)​. After extraction, place these CSV files directly in your ​project root directory. 
+- The ​`AI.tar.gz`​ contains ​only AI-related data​ – extract its CSV files into the project's ​`csv/`.
 
 The system remains fully functional if only one archive (either AI or Non-AI) is installed, enabling flexible data management based on research needs.
 
