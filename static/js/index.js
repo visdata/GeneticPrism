@@ -2252,7 +2252,7 @@ function drawTopicPrism() {
             .attr("width", width)
             .attr("height", prismHeight - prismUpperMargin)
             .attr("viewBox", graph['viewBox']) // 设置 viewBox
-            .attr("transform", graph['transform'])
+            // .attr("transform", graph['transform'])
             .attr('id', `nestedSvg-${topic.id}`); // 设置 transform
 
         // 将 svgElement 的子元素移动到嵌套的 svg 元素中
