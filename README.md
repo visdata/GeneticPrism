@@ -36,10 +36,6 @@ Place the extracted CSV files in the project root directory.
 ### Step 2: Install Dependencies  
 ```bash
 pip install -r requirements.txt
-
-# Install Graphviz (choose OS-specific command):
-sudo apt-get install graphviz graphviz-dev     # Ubuntu/Debian
-sudo yum install graphviz graphviz-devel       # CentOS/RHEL
 ```
 
 ### Step 3: Run the Server  
@@ -89,7 +85,7 @@ Upon entering the GeneticScroll view, the central area displays the GF sub-graph
 
 To emphasize the interdisciplinary nature of research, the system assigns a unique hexagonal icon to each node (Figure e).The concentric layers of the hexagon, from outer to inner, represent: the subject area influencing the current paper, the current topic, and the topic influenced by the paper.The size of the hexagon scales with the number of citations the paper has received.This design allows users to quickly identify high-impact papers and key nodes in interdisciplinary research.  
 
-The flow graphs on the left and right sides (Figure b) provide additional context on topic interactions.Theleft flow graph shows how other topics influence the current topic, while the right flow graphillustrates how the current topic influences external topics.These flow graphs use a layered design, with each layer representing a related topic.The height of each layer corresponds to the strength of citation influence.Horizontal bars at the top and bottom (Figure a)summarize the overall citation dynamics between the current topic and external topics, helping users quickly grasp the broader relationships.For example, by examining the inflow graph of the "DNN"topic, it becomes clear that it was primarily influenced by the "unlabeled" topic from 2004 to 2008, while the "language" topic became a more significant source of citations from 20o9 to 2014.  
+The flow graphs on the left and right sides (Figure b) provide additional context on topic interactions.Theleft flow graph shows how other topics influence the current topic, while the right flow graphillustrates how the current topic influences external topics.These flow graphs use a layered design, with each layer representing a related topic.The height of each layer corresponds to the strength of citation influence.Horizontal bars at the top and bottom (Figure a)summarize the overall citation dynamics between the current topic and external topics, helping users quickly grasp the broader relationships.For example, by examining the inflow graph of the "DNN"topic, it becomes clear that it was primarily influenced by the "unlabeled" topic from 2004 to 2008, while the "language" topic became a more significant source of citations from 2009 to 2014.  
 
 To highlight the details of citation influence, the flow graphs and the central GF sub-graph are connected by a blue citation influence flow(Figure c).Eachline in this flow represents a cross-topic citation relationship, with its width indicating the strength of the citation.To avoid visual clutter, this information is aggregated at an annual level rather than displaying every individual citation. This approach alows users to trace the origins and destinations of citations clearly, enabling a deeper understanding of the interaction patterns between topics.  
 
