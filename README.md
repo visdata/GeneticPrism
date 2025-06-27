@@ -3,24 +3,26 @@
 ![logo-search](https://github.com/user-attachments/assets/1793b109-d9bb-44c9-b72d-58958219b3ef)
 
 ## Introduction  
-This repository hosts the code for the TVCG paper:  
+This repository hosts the code for the paper:  
 **[GeneticPrism: Multifaceted Visualization of Citation-based Scholarly Research Evolution](https://arxiv.org/abs/2408.08912)**  
 
 🔗 **Online System**: https://genetic-flow.com  
+
+🎞️ **Demo Video**: https://n.genetic-flow.com/gallery/GeneticPrismV5.mp4
 
 ### Abstract  
 Understanding the evolution of scholarly research is essential for academic decision-making (e.g., research planning and frontier exploration). Existing platforms like Google Scholar rely on abstract numerical indicators lacking contextual depth, while visualization approaches rarely leverage curated self-citation data to depict individual scholars’ evolution.  
 
 This work introduces:  
-- A **novel 3D prism metaphor** visualizing scholars’ research profiles  
-- Structured topic evolution via **streamgraphs** and **inter-topic flow maps**  
+- A **3D prism metaphor** visualizing scholars’ research profiles  
+- A **scroll metaphor** visualizing structured topic evolution via **streamgraphs** and **inter-topic flow maps**  
 - **Six-degree-impact glyphs** highlighting interdisciplinary breakthroughs  
 - Evaluations through case studies (Turing Award laureates, visualization venues) and user studies  
 
 ## Dataset  
 Processed from the open-source **Academic Graph**:  
-- **v1** (up to Sept. 2022): process Microsoft Academic Graph (MAG) to construct [GF Graph](https://github.com/sunieee/MAGProcessing)  (from [KDD’23 paper](https://dl.acm.org/doi/abs/10.1145/3580305.3599845))  
-- **v2** (up to Oct. 2024): MAG fused with **[OpenAlex](https://openalex.org)** 
+- **v1** (up to Sept. 2022): process Microsoft Academic Graph (MAG) to construct GF Graph  (from [KDD’23 paper](https://dl.acm.org/doi/abs/10.1145/3580305.3599845), [github repo](https://github.com/sunieee/MAGProcessing))
+- **v2** (up to Oct. 2024): MAG fused with [OpenAlex](https://openalex.org)
 
 🔗 **Download v2 dataset**: [Hugging Face](https://huggingface.co/datasets/yesun/GeneticPrism)​. Due to the dataset's size, it is divided into two compressed archives.
 - The ​`csv.tar.gz`​ contains CSV files covering all research fields ​except Artificial Intelligence (AI)​. After extraction, place these CSV files directly in your ​project root directory. 
