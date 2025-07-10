@@ -76,7 +76,7 @@ function init_svg(width, height, topic) {
         .attr("width", width)
         .attr("height", height - 50)
         .attr("viewBox", graph['viewBox'])
-        .attr("transform", graph['transform']);
+        // .attr("transform", graph['transform']);
 
     Array.from(graph['svg'].childNodes).forEach(node => {
         svg.node().appendChild(node.cloneNode(true));
