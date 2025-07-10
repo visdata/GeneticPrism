@@ -1,14 +1,14 @@
 # GeneticPrism: Scholarly Research Evolution Visualization
 
-<!-- ![logo-search](https://github.com/user-attachments/assets/1793b109-d9bb-44c9-b72d-58958219b3ef) -->
-<iframe width="640" height="360" src="https://www.youtube.com/embed/zVbM7lgA6Ig?si=88rPV1VWNe4iAXc9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+![logo-search](https://github.com/user-attachments/assets/1793b109-d9bb-44c9-b72d-58958219b3ef)
 
 ## Introduction  
 This repository hosts the code for the paper:  
 **[GeneticPrism: Multifaceted Visualization of Citation-based Scholarly Research Evolution](https://arxiv.org/abs/2408.08912)**  
 
 🔗 **Online System**: https://genetic-flow.com / https://geneticflow.ye-sun.com/
+
+🎞️ **Demo Video**: https://youtu.be/zVbM7lgA6Ig
 
 See [User Manual](https://github.com/visdata/GeneticPrism/wiki/User-Manual) and [Appendix](https://github.com/visdata/GeneticPrism/wiki/Appendix) in Wiki pages.
 
