@@ -4,9 +4,9 @@
         "remove_isolated": "0",
         "node_prob": 0.5,
         "edge_prob": 0.5,
-        "topic_prob": 0.55,
+        "topic_prob": 0.6,
         "node_width": 10,
-        "help_link": "https://n.genetic-flow.com/gallery/GFVis/GeneticFlow2.0UserManual.pdf"
+        "help_link": "https://github.com/visdata/GeneticPrism/wiki/User-Manual"
     },
     "VCG": {
         "name": "VR, Graphics, and VIS",
