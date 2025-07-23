@@ -35,10 +35,28 @@ The system remains fully functional if only one archive (either AI or Non-AI) is
 ## Deployment  
 
 ### Step 1: Data Preparation  
-Place the extracted CSV files in the project root directory.
+Place the extracted CSV files in the project root directory. The directory structure should look like this:  
+```sh
+GeneticPrism/
+├── csv/
+│   ├── AI/  # Contains AI-related data
+│   │   ├── links/
+│   │   ├── papers/
+│   │   ├── paperIDDistribution.csv
+│   │   ├── top_field_authors.csv
+│   │   └── field_leaves.csv
+│   └── <field>     # Contains other research fields
+│       ├── links/
+│       ├── papers/
+│       └── ...
+├── manage.py
+└── ...
+```
 
 ### Step 2: Install Dependencies  
 ```bash
+conda create -n GFVis python=3.11
+conda activate GFVis
 pip install -r requirements.txt
 ```
 

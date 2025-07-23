@@ -36,7 +36,7 @@ for index, row in fellow_df.iterrows():
     authorID = row['MAGID']
     if authorID and authorID != 'NULL':
         authorID2fellow[authorID] += str(row['type']) + ':' + str(row['year']) + ','
-print('authorID2fellow', authorID2fellow)
+# print('authorID2fellow', authorID2fellow)
 
 field2top_authors = {}
 field2topicDist = {}

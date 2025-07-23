@@ -2,3 +2,8 @@ django
 graphviz
 thefuzz
 google-analytics-data
+django-cors-headers
+pandas
+bs4
+networkx
+tqdm
